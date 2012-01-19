@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html manifest="./cache.appcache">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" charset="utf-8" src="./../lib/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="./../lib/Kinetic.js"></script>
+
+<style>
+
+</style>
+</head>
+<body>
+
+
+<div id="gamearea_div"></div>
+
+<div id="volumeSlider">
+Volume Slider: 
+<input type="range" min="0" max="5" value="1" step="0.1" id="gain" onchange="adjustGain(event)">
+</div>
+
+  <input type="button" id="playButton" value="Play" onClick="playSoundCheckAudio(event)"/>
+
+<form method="post" action="main.html">
+<input type="submit" value="Let's get started" />
+</form>
+
+
+<script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"></script>
+</body>
+</html>

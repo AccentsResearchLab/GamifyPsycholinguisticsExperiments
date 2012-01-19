@@ -4,3 +4,7 @@ adjustGain = function(event) {
 playAudio = function(event){
 	debug("User clicked play.");
 };
+
+playSoundCheckAudio = function(event){
+	debug("User clicked play sound check.");
+};
