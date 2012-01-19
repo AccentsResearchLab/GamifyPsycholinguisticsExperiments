@@ -1,0 +1,12 @@
+{
+  "name": "GamifyPsycholinguistics",
+  "version": "1.3",
+  "description": "Online experiments.",
+  "app": {
+    "launch": {
+      "local_path": "view/main.html"
+    }
+  },
+  "offline_enabled": true
+  
+}
