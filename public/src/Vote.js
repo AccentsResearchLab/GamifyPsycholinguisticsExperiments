@@ -1,3 +1,8 @@
+var Vote = function(){
+ /*
+	member vars
+  */
+};
 /*
  * CRUD methods for the Vote module
  */
