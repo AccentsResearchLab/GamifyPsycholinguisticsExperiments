@@ -5,8 +5,18 @@ adjustGain = function(event, callback) {
 	}
 };
 playAudio = function(event, onAudioStarted, onAudioFinished){
-	debug("User clicked play.");
-	if(typeof onAudioStarted === 'function'){
+  if (window.sIndex == undefined || sIndex >= samples.length) {
+    window.sIndex = 0;
+  }
+  var sample = samples[sIndex++];
+ 
+  debug("Playing : " + sample.uri)
+
+  el = $("<audio></audio>");
+  el.attr("src", sample.uri);
+  el.get(0).play();
+	
+  if(typeof onAudioStarted === 'function'){
 		onAudioStarted();
 	}
 	if(typeof onAudioFinished === 'function'){
