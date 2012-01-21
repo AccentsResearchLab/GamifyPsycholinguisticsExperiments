@@ -1,22 +1,21 @@
-var Participant = Backbone.Model.extend({
-	defaults: {
-	/*
-	 * Variables gathered from browser on participant creation, used as indirect
-	 * measures of the participant's native language(s) and other factors that need
-	 * to be controlled for.
-	 */
-		systemLocale : '',
-		browser : '',
-		timezone : '',
-		ipaddress : '',
-		startTime : '',
-		exitTime : '',
-		sessionId : '',
-		surveyResults : [],
-		votes : []
-	},
+var ParticipantModel = Backbone.Model.extend({
 	initialize: function(){
 		debug("Welcome new participant.");
+		/*
+		 * Variables gathered from browser on participant creation, used as indirect
+		 * measures of the participant's native language(s) and other factors that need
+		 * to be controlled for.
+		 */
+		this.systemLocale = '';
+		this.browser = '';
+		this.timezone = '';
+		this.ipaddress = '';
+		this.startTime = '';
+		this.exitTime = '';
+		this.sessionId = Date.now();
+		this.surveyResults = [];
+		this.votes = [];
+
 		this.bind("change:votes", function(){
 			debug(this.attributes);
 		})
@@ -25,9 +24,7 @@ var Participant = Backbone.Model.extend({
 		debug("validating");
 	},
 	vote: function( value ){
-		var votes_array = this.get("votes");
-		votes_array.push( value );
-		this.set({ votes: votes_array });
+		debug("vote was called by "+this.get("sessionId"));
 	}
 });
 

@@ -1,3 +1,12 @@
+var Vote = Backbone.Model.extend({
+	defaults: {
+		
+	}
+});
+
+
+
+
 var Vote = function(){
  /*
 	member vars
@@ -48,7 +57,7 @@ Vote.prototype.del = function(callback){
 };
 vote = function(event, callback){
 	debug("User voted: "+event.target.value);
-	
+	playAudio(event);
 	if(typeof callback === 'function'){
 		callback();
 	}
