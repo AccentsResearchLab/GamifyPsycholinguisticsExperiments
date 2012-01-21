@@ -1,9 +1,4 @@
-adjustGain = function(event, callback) {
-	debug("User adjusted the gain to: "+event.target.value);
-	if(typeof callback === 'function'){
-		callback();
-	}
-};
+
 playAudio = function(event, onAudioStarted, onAudioFinished){
   if (window.sIndex == undefined || sIndex >= samples.length) {
     window.sIndex = 0;
