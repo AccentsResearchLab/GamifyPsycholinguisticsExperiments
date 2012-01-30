@@ -19,17 +19,17 @@ a:hover, a:active
 }
 
 #container {
-	background: transparent url(../images/mid.gif)  top left repeat-y;
-	width: 704px;
+	background: transparent url(..logo.png)  top left repeat-y;
+	width: 804px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 #header {
 	margin: 0px;
-	background: url(../images/top.gif) no-repeat center top;
+	background: url(..logo.png) no-repeat center top;
 	width: 704px;
-	height: 162px;
+	height: 62px;
 }
 
 #middle {
@@ -44,7 +44,7 @@ a:hover, a:active
 }
 
 #logo {
-	background: url(../images/gmu_logo.jpg) no-repeat center right;
+	background: url(..logo.png) no-repeat center right;
 	width: 650px;
 	height: 65px;
  	margin-top: 1px;
@@ -53,7 +53,7 @@ a:hover, a:active
 }
 
 #menu {
-	background: transparent url(../images/ear.gif) top right no-repeat;
+	background: transparent url(..logo.png) top right no-repeat;
 	float:left;
 	padding-top:5px;
     width:221px;
