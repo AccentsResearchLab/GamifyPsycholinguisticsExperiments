@@ -1,0 +1,82 @@
+body {
+	background: #ffffff;
+	font-family:"Trebuchet MS", Verdana, Tahoma, sans-serif;
+	font-size: 18px; 
+	margin: 0px;
+	padding: 0px; 
+}	
+
+a:link, a:visited
+{ 
+	text-decoration: none; 
+	color: #3A0617;
+}
+
+a:hover, a:active
+{ 
+	text-decoration: none; 
+	color: #C3B4B4;
+}
+
+#container {
+	background: transparent url(../images/mid.gif)  top left repeat-y;
+	width: 704px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header {
+	margin: 0px;
+	background: url(../images/top.gif) no-repeat center top;
+	width: 704px;
+	height: 162px;
+}
+
+#middle {
+	width: 704px;
+	height: 309px;
+}
+
+#footer {
+	background: url(../images/bot.gif) no-repeat center top;
+	width: 704px;
+	height: 30px;
+}
+
+#logo {
+	background: url(../images/gmu_logo.jpg) no-repeat center right;
+	width: 650px;
+	height: 65px;
+ 	margin-top: 1px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#menu {
+	background: transparent url(../images/ear.gif) top right no-repeat;
+	float:left;
+	padding-top:5px;
+    width:221px;
+	height:257px;
+}
+
+#menu ul {
+	margin: 0 0 0 0;
+	padding-left: 126px;
+	list-style-type: none;
+	text-align: left;
+}
+#menu li {
+ 	padding-top: 1px;
+ 	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+#text {	
+	background: transparent;
+	margin-left:221px;
+	padding: 75px 80px 20px 10px;
+	height:257px;
+	font-family:Verdana, "Trebuchet MS", Tahoma, sans-serif;
+	font-size: 12px;
+}
