@@ -1,9 +1,20 @@
+<head>
+<style type="text/css">
+h1 {text-align:center;}
+p.date {text-align:right;}
+p.main {text-align:justify;}
+</style>
+</head>
+
+
 body {
 	background: #ffffff;
 	font-family:"Trebuchet MS", Verdana, Tahoma, sans-serif;
 	font-size: 18px; 
 	margin: 0px;
 	padding: 0px; 
+
+
 }	
 
 a:link, a:visited
