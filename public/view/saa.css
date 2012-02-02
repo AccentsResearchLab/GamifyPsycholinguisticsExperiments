@@ -31,22 +31,20 @@ a:hover, a:active
 }
 
 #container {
-	background: transparent url(logo.png)  top left repeat-y;
 	width: 804px;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 #header {
+	background: transparent url(logo.png) top left no-repeat;
 	margin: 0px;
-	background: url(logo.png) no-repeat center top;
 	width: 704px;
-	height: 62px;
+	height: 262px;
 }
 
 #middle {
-	width: 704px;
-	height: 309px;
+	clear:both;
 }
 
 #footer {
@@ -55,7 +53,6 @@ a:hover, a:active
 }
 
 #logo {
-	background: url(logo.png) no-repeat center right;
 	width: 650px;
 	height: 65px;
  	margin-top: 1px;
@@ -64,11 +61,10 @@ a:hover, a:active
 }
 
 #menu {
-	background: transparent url(logo.png) top right no-repeat;
+	background: transparent;
 	float:left;
 	padding-top:5px;
-    width:221px;
-	height:257px;
+    	width:221px;
 }
 
 #menu ul {
@@ -84,10 +80,10 @@ a:hover, a:active
 }
 
 #text {	
+	float:left;
+	width:421px;
 	background: transparent;
-	margin-left:221px;
-	padding: 75px 80px 20px 10px;
-	height:257px;
+	padding: 15px 80px 20px 10px;
 	font-family:Verdana, "Trebuchet MS", Tahoma, sans-serif;
 	font-size: 12px;
 }
