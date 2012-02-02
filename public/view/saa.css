@@ -1,11 +1,12 @@
-<head>
-<style type="text/css">
-h1 {text-align:center;}
-p.date {text-align:right;}
-p.main {text-align:justify;}
-</style>
-</head>
-
+h1 {
+	text-align:center;
+}
+p.date {
+	text-align:right;
+}
+p.main {
+	text-align:justify;
+}
 
 body {
 	background: #ffffff;
@@ -30,7 +31,7 @@ a:hover, a:active
 }
 
 #container {
-	background: transparent url(..logo.png)  top left repeat-y;
+	background: transparent url(logo.png)  top left repeat-y;
 	width: 804px;
 	margin-left:auto;
 	margin-right:auto;
@@ -38,7 +39,7 @@ a:hover, a:active
 
 #header {
 	margin: 0px;
-	background: url(..logo.png) no-repeat center top;
+	background: url(logo.png) no-repeat center top;
 	width: 704px;
 	height: 62px;
 }
@@ -49,13 +50,12 @@ a:hover, a:active
 }
 
 #footer {
-	background: url(../images/bot.gif) no-repeat center top;
 	width: 704px;
 	height: 30px;
 }
 
 #logo {
-	background: url(..logo.png) no-repeat center right;
+	background: url(logo.png) no-repeat center right;
 	width: 650px;
 	height: 65px;
  	margin-top: 1px;
@@ -64,7 +64,7 @@ a:hover, a:active
 }
 
 #menu {
-	background: transparent url(..logo.png) top right no-repeat;
+	background: transparent url(logo.png) top right no-repeat;
 	float:left;
 	padding-top:5px;
     width:221px;
@@ -100,7 +100,7 @@ a:hover, a:active
 
 
 .button, .button:visited {
-    background: #222 url(overlay.png) repeat-x;
+    background: #222 ;
     display: inline-block;
     padding: 5px 10px 6px;
     color: #fff;
