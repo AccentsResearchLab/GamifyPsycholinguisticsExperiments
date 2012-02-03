@@ -37,7 +37,7 @@ a:hover, a:active
 }
 
 #header {
-	background: transparent url(logo2.png) left no-repeat;
+	background: transparent url(/images/logo2.png) left no-repeat;
 	margin: 0px;
 	width: 704px;
 	height: 262px;
