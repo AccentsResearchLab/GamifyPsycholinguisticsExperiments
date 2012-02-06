@@ -36,28 +36,22 @@
 
 <img src="/images/scale.png" width="620" height="74" alt="rate this sound" usemap="#Smileys">
 <map name="Smileys" id="Smileys">
-          <area shape="circle" coords="50,35,30" href="" alt="Not horrible">
-          <area shape="circle" coords="185,35,30" href="" alt="Bad">
-          <area shape="circle" coords="300,31,29" href="" alt="Really bad">
-          <area shape="circle" coords="425,31,29" href="" alt="Awful">
-          <area shape="circle" coords="565,31,29" href="" alt="Really awful">
+          <area shape="circle" coords="50,35,30" id="vote1" value="1" onClick="vote(event)" alt="Not horrible">
+          <area shape="circle" coords="185,35,30" id="vote2" value="2" onClick="vote(event)" alt="Bad">
+          <area shape="circle" coords="300,31,29" id="vote3" value="3" onClick="vote(event)" alt="Really bad">
+          <area shape="circle" coords="425,31,29" id="vote4" value="4" onClick="vote(event)" alt="Awful">
+          <area shape="circle" coords="565,31,29" id="vote5" value="5" onClick="vote(event)"  alt="Really awful">
           </map>
 
 
 
 
-<div id="voteButtons">
-  <input type="button" id="vote1" value="1" onClick="vote(event)"/>
-  <input type="button" id="vote2" value="2" onClick="vote(event)"/>
-  <input type="button" id="vote3" value="3" onClick="vote(event)"/>
-  <input type="button" id="vote4" value="4" onClick="vote(event)"/>
-  <input type="button" id="vote5" value="5" onClick="vote(event)"/>
-</div>
+
 
 
 
 <form method="post" action="survey.html">
-<input type="submit" value="Exit" />
+<input class="large pink button" type="submit" value="Exit" />
 </form>
 
 <script type="text/html"  id="game_view">
