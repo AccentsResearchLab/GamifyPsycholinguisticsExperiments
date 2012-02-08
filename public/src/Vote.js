@@ -61,7 +61,7 @@ vote = function(event, callback){
 	}else{
 		debug("User voted: "+event);
 	}
-	playAudio(event);
+	window.setTimeout("playAudio(event)",500);
 	if(typeof callback === 'function'){
 		callback();
 	}
