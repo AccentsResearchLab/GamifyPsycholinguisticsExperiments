@@ -56,7 +56,11 @@ Vote.prototype.del = function(callback){
 	}
 };
 vote = function(event, callback){
-	debug("User voted: "+event.target.value);
+	if(event.target){
+		debug("User voted: "+event.target.value);
+	}else{
+		debug("User voted: "+event);
+	}
 	playAudio(event);
 	if(typeof callback === 'function'){
 		callback();
