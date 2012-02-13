@@ -6,7 +6,6 @@
 	width:200px;
 	height:300px;
 }
-
 .vote1{
 	background-image: url('./../images/1.png');
 }
@@ -20,12 +19,7 @@
 }
 .vote2{
 	background-image: url('./../images/2.png');
-	background-repeat:no-repeat;
-	background-position: center;
-	background-color: transparent;
-	border:none;
-	width:200px;
-	height:300px;
+	
 }
 .vote2:hover{
 	background-image: url('./../images/2clicked.png');
@@ -33,12 +27,7 @@
 }
 .vote3{
 	background-image: url('./../images/3.png');
-	background-repeat:no-repeat;
-	background-position: center;
-	background-color: transparent;
-	border:none;
-	width:200px;
-	height:300px;
+	
 }
 .vote3:hover{
 	background-image: url('./../images/3clicked.png');
@@ -46,12 +35,7 @@
 }
 .vote4{
 	background-image: url('./../images/4.png');
-	background-repeat:no-repeat;
-	background-position: center;
-	background-color: transparent;
-	border:none;
-	width:200px;
-	height:300px;
+	
 }
 .vote4:hover{
 	background-image: url('./../images/4clicked.png');
@@ -59,12 +43,7 @@
 }
 .vote5{
 	background-image: url('./../images/5.png');
-	background-repeat:no-repeat;
-	background-position: center;
-	background-color: transparent;
-	border:none;
-	width:200px;
-	height:300px;
+	
 }
 .vote5:hover{
 	background-image: url('./../images/5clicked.png');
