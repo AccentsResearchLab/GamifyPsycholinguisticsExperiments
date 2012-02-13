@@ -8,6 +8,10 @@
 	height:300px;
 }
 .vote1:hover{
+	background-image: url('./../images/1b.png');
+	
+}
+.vote1:active{
 	background-image: url('./../images/1clicked.png');
 	
 }
