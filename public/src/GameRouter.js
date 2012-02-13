@@ -29,3 +29,9 @@ $(function(){
 	window.gameRouter = new GameRouter();
 	Backbone.history.start();
 });
+
+/*
+There are three games, Russian, Sussex, South African
+*/
+GameRouter.games = ["Russian","Sussex","South African"];
+GameRouter.activeGame = ["Russian"];
