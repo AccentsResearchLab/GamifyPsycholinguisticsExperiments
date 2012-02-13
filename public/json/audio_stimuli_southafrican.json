@@ -1,9 +1,4 @@
-[{"uri":"./../samples/CbertT.wav"},
- {"uri":"./../samples/CbeatQ.wav"},
- {"uri":"./../samples/CbatT.wav"},
- {"uri":"./../samples/MbeatD.wav"},
+{"uri":"./../samples/MbeatD.wav"},
  {"uri":"./../samples/MboughtD.wav"},
  {"uri":"./../samples/MbuyQ.wav"},
- {"uri":"./../samples/SbeatD.wav"},
- {"uri":"./../samples/SbitD.wav"},
- {"uri":"./../samples/SputD.wav"}]
+ 
