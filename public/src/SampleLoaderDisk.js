@@ -1,7 +1,7 @@
 // This is a simple "sample loader" which will load the samples
 // description from a json file on the disk
-loadSamples = function(callback) {
-  $.getJSON("./../json/audio_stimuli.json", function(data) {
+loadSamples = function(gameAudio, callback) {
+  $.getJSON(gameAudio, function(data) {
     window.samples = _.shuffle(data);
     if(typeof callback === 'function'){
       callback();
@@ -10,5 +10,5 @@ loadSamples = function(callback) {
 };
 
 $(function(){
-  loadSamples();
+  loadSamples("./../json/audio_stimuli.json");
 });
