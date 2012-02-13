@@ -1,11 +1,14 @@
-.vote1{
-	background-image: url('./../images/1.png');
+.vote{
 	background-repeat:no-repeat;
 	background-position: center;
 	background-color: transparent;
 	border:none;
 	width:200px;
 	height:300px;
+}
+
+.vote1{
+	background-image: url('./../images/1.png');
 }
 .vote1:hover{
 	background-image: url('./../images/1b.png');
