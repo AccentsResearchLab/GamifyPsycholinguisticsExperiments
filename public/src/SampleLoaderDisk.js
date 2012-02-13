@@ -8,7 +8,3 @@ loadSamples = function(gameAudio, callback) {
     }
  });
 };
-
-$(function(){
-  loadSamples("./../json/audio_stimuli.json");
-});
