@@ -6,6 +6,11 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   var sample = samples[sIndex++];
  
   debug("Playing : " + sample.uri)
+  window.countAudioInSet = window.countAudioInSet || 0;
+  window.countAudioInSet++; 
+  document.getElementById("countDown").innerHTML= 12-window.countAudioInSet;
+ 
+
 
   el = $("<audio></audio>");
   el.attr("src", sample.uri);

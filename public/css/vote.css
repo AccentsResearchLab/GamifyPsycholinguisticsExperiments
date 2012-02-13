@@ -1,17 +1,16 @@
 
 .vote{
 
- background-repeat:no-repeat;
-background-position: center;
+background-repeat:no-repeat;
+background-position: top;
 background-color: transparent;
 border:none;
 width:200px;
-height:900px;
-line-height:45em;
+height:300px;
+line-height:2em;
 vertical-align:bottom;
 color:#0ff;
 font-size:1.3em;
-
 
 }
 .vote1{
