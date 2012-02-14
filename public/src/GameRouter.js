@@ -8,6 +8,7 @@ var GameRouter = Backbone.Router.extend({
 			alert("Game language is not set, please click on a language.");
 			window.location="soundcheck.html";
 		}
+		document.getElementById("spytype").innerHTML=this.activeGame +" ";
 		/*
 		TODO get user browser and intialize game based on ip addresss
 		*/
