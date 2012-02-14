@@ -15,6 +15,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   el = $("<audio></audio>");
   el.attr("src", sample.uri);
   el.get(0).play();
+  window.currentAudio=sample.uri;
 	
   if(typeof onAudioStarted === 'function'){
 		onAudioStarted();
