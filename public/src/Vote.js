@@ -5,17 +5,16 @@ vote = function(event, callback){
 	vote.audio = window.currentAudio;
 	
 	if(event.target){
-		debug("User voted: "+event.target.value);
 		vote.value = event.target.value;
 	}else{
-		debug("User voted: "+event);
 		vote.value = event;
 
 	}
 	window.votes = window.votes || [];
 	window.votes.push(vote);
 	localStorage.setItem("votes",JSON.stringify(window.votes));
-	
+	debug("User voted: "+JSON.stringify(window.votes));
+		
 	/*
 	Play next Audio
 	*/
