@@ -21,6 +21,7 @@ debug = function(message){
 };
 
 setGameLanguage = function(event){
+	debug("Setting language to "+event.target.value);
 	localStorage.setItem("gameLanguage",event.target.value);
 	removeClass(document.getElementById("soundcheckbuttons"), "hidden");
 	addClass(document.getElementById("choosegamebuttons"), "hidden");
