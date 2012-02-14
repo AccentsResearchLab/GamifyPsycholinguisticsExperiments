@@ -1,16 +1,3 @@
-var GameView = Backbone.View.extend({
-	template: _.template($("#game_view").html()),
-	render: function(){
-		$(this.el).html(this.template());
-		return this.el;
-	},
-	events : {
-		"click #hello" : "sayHello"
-	},
-	sayHello : function(){
-		alert("hello");
-	}
-});
 
 var GameRouter = Backbone.Router.extend({
 	initialize: function(language){
@@ -29,9 +16,8 @@ var GameRouter = Backbone.Router.extend({
 		}else if(false){
 			//TODO
 		}
-		$(function(){
-		 	loadSamples( this.stimuliJson, this.startGame() );
-		});
+		loadSamples( this.stimuliJson, this.startGame() );
+		 
 	},
 	routes: {
 		"": "startGame"
