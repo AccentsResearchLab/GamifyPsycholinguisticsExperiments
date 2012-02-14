@@ -76,9 +76,11 @@
 <script type="text/javascript" charset="utf-8" src="./../src/SyncResultTable.js"></script>
 
 <script>
-window.gameRouter = new GameRouter();
-window.gameRouter.initialize();
 
+$(function(){
+  window.gameRouter = new GameRouter();
+  Backbone.history.start();
+});
 
 </script>
 

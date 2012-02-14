@@ -20,15 +20,7 @@ var GameRouter = Backbone.Router.extend({
 		/*
 		TODO get user browser and intialize game based on ip addresss
 		*/
-
-		this.startGame();
-	},
-	routes: {
-		"": "startGame"
-	},
-	startGame: function(){
-		var el = new GameView().render();
-		$("#gamearea_div").html(el);
+		debug("Game language is set to "+this.activeGame);
 		this.stimuliJson = "";
 		if(this.activeGame ==="Russian"){
 			this.stimuliJson ="./../json/audio_stimuli_russian.json";
@@ -38,21 +30,17 @@ var GameRouter = Backbone.Router.extend({
 			//TODO
 		}
 		$(function(){
-		  loadSamples(this.stimuliJson);
+		 	loadSamples( this.stimuliJson, this.startGame() );
 		});
-
+	},
+	routes: {
+		"": "startGame"
+	},
+	startGame: function(){
+		// var el = new GameView().render();
+		// $("#gamearea_div").html(el);
+		debug("Starting game.");
 	}
 });
-
-$(function(){
-	window.gameRouter = new GameRouter();
-	Backbone.history.start();
-});
-
-/*
-There are three games, Russian, Sussex, South African
-*/
-GameRouter
-GameRouter.activeGame = ["Russian"];
 
 
