@@ -1,6 +1,7 @@
 
 vote = function(event, callback){
 	
+
 	var vote = {};
 	vote.audio = window.currentAudio;
 	
@@ -15,6 +16,11 @@ vote = function(event, callback){
 	localStorage.setItem("votes",JSON.stringify(window.votes));
 	debug("User voted: "+JSON.stringify(window.votes));
 		
+	/*
+	Play a click
+	*/
+	document.getElementById("click_sound").play();
+
 	/*
 	Play next Audio
 	*/
