@@ -22,7 +22,8 @@ var GameRouter = Backbone.Router.extend({
 			this.stimuliJson ="./../json/audio_stimuli_southafrican.json";
 		}
 		loadSamples( this.stimuliJson, this.startGame() );
-		 
+		
+	
 	},
 	routes: {
 		"": "startGame"
