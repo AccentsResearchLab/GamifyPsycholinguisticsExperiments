@@ -19,13 +19,13 @@ vote = function(event, callback){
 	/*
 	Play a click
 	*/
-	var click = document.getElementById("click_sound")
-	click.play();
+	document.getElementById("click_sound").play();
 
 	/*
-	Play next Audio
+	Auto advance to next Audio Stimuli after 3 seconds
 	*/
 	window.setTimeout("playAudio(event)",3000);
+	
 	if(typeof callback === 'function'){
 		callback();
 	}
