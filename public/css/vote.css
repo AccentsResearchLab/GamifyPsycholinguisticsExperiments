@@ -25,35 +25,75 @@ font-size:1.2em;
 	background-image: url('./../images/1clicked.png');
 	
 }
+
+
+
+
+
 .vote2{
 	background-image: url('./../images/2.png');
 	
 }
 .vote2:hover{
+	background-image: url('./../images/2b.png');
+
+}
+.vote2:active{
 	background-image: url('./../images/2clicked.png');
 	
 }
+
+
 .vote3{
 	background-image: url('./../images/3.png');
 	
 }
 .vote3:hover{
+	background-image: url('./../images/3b.png');
+	
+}
+
+.vote3:active{
 	background-image: url('./../images/3clicked.png');
 	
 }
+
+
+
+
 .vote4{
 	background-image: url('./../images/4.png');
 	
 }
 .vote4:hover{
+	background-image: url('./../images/4b.png');
+	
+}
+
+.vote4:active{
 	background-image: url('./../images/4clicked.png');
 	
 }
+
+
+
 .vote5{
 	background-image: url('./../images/5.png');
 	
 }
 .vote5:hover{
+	background-image: url('./../images/5b.png');
+	
+}
+.vote5:active{
 	background-image: url('./../images/5clicked.png');
 	
 }
+
+
+
+
+
+
+
+

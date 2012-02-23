@@ -1,5 +1,7 @@
 h1 {
 	text-align:center;
+	font: "Trebuchet MS";
+	font-size: 30px;
 }
 p.date {
 	text-align:right;
@@ -7,6 +9,7 @@ p.date {
 p.main {
 	text-align:justify;
 }
+
 
 body {
 	background: #ffffff;
@@ -37,7 +40,7 @@ a:hover, a:active
 }
 
 #header {
-	background: transparent url(/images/logo2.png) left no-repeat;
+	background: transparent url(/images/spyOrNot.jpeg) left no-repeat;
 	margin: 0px;
 	width: 704px;
 	height: 262px;
