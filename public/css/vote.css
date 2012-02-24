@@ -5,12 +5,12 @@
 	background-color: transparent;
 	border:none;
 	width:150px;
-	height:150px;
+	height:250px;
 	white-space:nowrap;
-	vertical-align:bottom;
+	vertical-align:bottom !important;
 	color:#099;
 	font-size:1.2em;
-	border: 1px  #000 solid;
+	/*border: 1px  #000 solid;*/
 
 }
 .vote1{
