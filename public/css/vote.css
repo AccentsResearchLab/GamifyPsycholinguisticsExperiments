@@ -1,17 +1,16 @@
 
 .vote{
-
-background-repeat:no-repeat;
-background-position: top;
-background-color: transparent;
-border:none;
-width:150px;
-height:250px;
-line-height:2em;
-white-space:nowrap;
-vertical-align:bottom;
-color:#099;
-font-size:1.2em;
+	background-repeat:no-repeat;
+	background-position: top;
+	background-color: transparent;
+	border:none;
+	width:150px;
+	height:150px;
+	white-space:nowrap;
+	vertical-align:bottom;
+	color:#099;
+	font-size:1.2em;
+	border: 1px  #000 solid;
 
 }
 .vote1{
