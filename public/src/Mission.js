@@ -1,21 +1,21 @@
+loadData("./../json/game_description.json", null);
 
 setGameLanguage = function(event){
-	debug("Setting language to "+event.target.value);
-	localStorage.setItem("gameLanguage",event.target.value);
+	window.currentGame = event.target.value;
+
+	var language = games[currentGame].language;
+	debug("Setting language to "+language);
+	localStorage.setItem("gameLanguage",currentGame);
 	removeClass(document.getElementById("soundcheckbuttons"), "hidden");
 	addClass(document.getElementById("choosegamebuttons"), "hidden");
-	playGameMission(event.target.value);
+	playGameMission(currentGame);
+	localStorage.setItem( "games", JSON.stringify(games) );
 	
 }
-playGameMission = function(lang){
-	debug("Playing mission for "+lang);
+playGameMission = function(){
+	debug("Playing mission for "+games[currentGame].language);
 	el = $("<audio></audio>");
-	if(lang == "Russian"){
-		el.attr("src", "./../audio_stimuli/SbeatD.wav");//TODO put mission audio here
-	}else if(lang=="Sussex"){
-		el.attr("src", "./../audio_stimuli/SbeatD.wav");//TODO put mission audio here
-	}else if(lang=="South African"){
-		el.attr("src", "./../audio_stimuli/SbeatD.wav");//TODO put mission audio here
-	}
+	el.attr("src", games[currentGame].missionAudio);//TODO put mission audio here
+	document.getElementById("mission_text").innerHTML= games[currentGame].description;
 	el.get(0).play();
 }

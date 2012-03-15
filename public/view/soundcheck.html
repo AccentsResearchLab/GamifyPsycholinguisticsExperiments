@@ -30,41 +30,43 @@
 <div id="middle" >
 
 
-<div id="menu">
+<div id="menu" >
 
   <ul>
     
-    <li><a href="http://about.accentsresearch.com/?page_id=209">about</a></li>
+    <li><a target="top" href="http://about.accentsresearch.com/?page_id=209">about</a></li>
   </ul>
 
-</div>
 
-<div id="text">
-	<p>Welcome to the Gamify Psycholinguistics Experiment! Please turn your computer's sound on and set the volume level so you can hear me speaking clearly, as though I was having a conversation with you.</p>
-
-
-	<div id="choosegamebuttons">
-		<input class = "large purple button" type="button" value="Russian" onClick="setGameLanguage(event)"/>
-		<input class = "large seagreen button" type="button" value="Sussex" onClick="setGameLanguage(event)"/>
-		<input class = "large yellow button" type="button" value="South African" onClick="setGameLanguage(event)"/>
-
-	</div>
-
-
-	<div id="soundcheckbuttons" class="hidden">
-		<input class = "large green button" type="button" id="playButton" value="Listen to your Mission again..." onClick="playSoundCheckAudio(event)"/>
+<div id="soundcheckbuttons" class="hidden">
+		<input class = "large green button" type="button" id="playButton" value="Listen again..." onClick="playGameMission(event)"/>
 
 		<form method="post" action="main.html">
 		<input class = "large blue button" type="submit" value="Let's get started!" />
 		</form>
 	</div>
+</div>
+
+<div id="mission_text">
+	<p>Welcome to the Gamify Psycholinguistics Experiment! Please turn your computer's sound on and set the volume level so you can hear me speaking clearly, as though I was having a conversation with you.</p>
+
+
+	<div id="choosegamebuttons">
+		<button class = "large purple button" type="button" value="0" onClick="setGameLanguage(event)">Russian</button>
+		<button class = "large seagreen button" type="button" value="1" onClick="setGameLanguage(event)">Sussex</button>
+		<button class = "large yellow button" type="button" value="2" onClick="setGameLanguage(event)">South African</button>
+
+	</div>
+
+
+	
 
 </div><!-- close text -->
 </div><!-- close middle -->
 
 <div id="footer"></div>
 
-
+<script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Mission.js"></script>
 </body>
