@@ -67,7 +67,8 @@ a:hover, a:active
 	background: transparent;
 	float:left;
 	padding-top:5px;
-    	width:221px;
+    width:221px;
+    height:420px;
 }
 
 #menu ul {

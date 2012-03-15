@@ -1,26 +1,19 @@
 
 var GameRouter = Backbone.Router.extend({
 	initialize: function(language){
+		window.games = JSON.parse(localStorage.getItem("games"));
 		this.participant = new ParticipantModel();
-		this.games = ["Russian","Sussex","South African"];
 		this.activeGame = localStorage.getItem("gameLanguage") 
 		if( ! this.activeGame){
 			alert("Game language is not set, please click on a language.");
 			window.location="soundcheck.html";
 		}
-		document.getElementById("spytype").innerHTML=this.activeGame +" ";
+		document.getElementById("spytype").innerHTML=games[this.activeGame].language +" ";
 		/*
 		TODO get user browser and intialize game based on ip addresss
 		*/
-		debug("Game language is set to "+this.activeGame);
-		this.stimuliJson = "";
-		if(this.activeGame ==="Russian"){
-			this.stimuliJson ="./../json/audio_stimuli_russian.json";
-		}else if(this.activeGame ==="Sussex"){
-			this.stimuliJson ="./../json/audio_stimuli_sussex.json";
-		}else if(this.activeGame ==="South African"){
-			this.stimuliJson ="./../json/audio_stimuli_southafrican.json";
-		}
+		debug("Game language is set to "+games[this.activeGame].language);
+		this.stimuliJson = games[this.activeGame].stimuliJson;
 		loadSamples( this.stimuliJson, this.startGame() );
 		
 	
