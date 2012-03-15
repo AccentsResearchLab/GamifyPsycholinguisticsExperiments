@@ -15,7 +15,7 @@ var GameRouter = Backbone.Router.extend({
 		debug("Game language is set to "+games[this.activeGame].language);
 		this.stimuliJson = games[this.activeGame].stimuliJson;
 		loadSamples( this.stimuliJson, this.startGame() );
-		
+		draw_counter(0);
 	
 	},
 	routes: {
