@@ -1,10 +1,10 @@
 input[type='range'].meter{
 	-webkit-appearance: none; 
-	background-image: url('./../images/sidemeter2.png');
+	background-image: url('./../images/sidemeter2streached.png');
 	background-repeat:no-repeat;
 	background-color: transparent;
 	border:none;
-	width:130px;
+	width:224px;
 	height:106px;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
