@@ -8,7 +8,6 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   debug("Playing : " + sample.uri)
   window.countAudioInSet = window.countAudioInSet || 0;
   window.countAudioInSet++; 
-  document.getElementById("countDown").innerHTML= window.countAudioInSet;
   draw_counter(window.countAudioInSet);
 
 

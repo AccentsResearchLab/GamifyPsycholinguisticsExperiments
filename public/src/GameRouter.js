@@ -9,6 +9,8 @@ var GameRouter = Backbone.Router.extend({
 			window.location="soundcheck.html";
 		}
 		document.getElementById("spytype").innerHTML=games[this.activeGame].language +" ";
+		document.getElementById("spytype2").innerHTML=games[this.activeGame].language +" ";
+		document.getElementById("spytype3").innerHTML=games[this.activeGame].language +" ";
 		/*
 		TODO get user browser and intialize game based on ip addresss
 		*/

@@ -1,4 +1,20 @@
-
+input[type='range'].meter{
+	-webkit-appearance: none; 
+	background-image: url('./../images/sidemeter2.png');
+	background-repeat:no-repeat;
+	background-color: transparent;
+	border:none;
+	width:130px;
+	height:106px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.red{
+	color:#f33;
+}
+.blue{
+	color:#33f;
+}
 .vote{
 	background-repeat:no-repeat;
 	background-position: top;
