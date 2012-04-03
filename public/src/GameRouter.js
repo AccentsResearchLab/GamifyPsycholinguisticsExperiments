@@ -8,7 +8,7 @@ var GameRouter = Backbone.Router.extend({
 			alert("Game language is not set, please click on a language.");
 			window.location="soundcheck.html";
 		}
-		document.getElementById("spytype").innerHTML=games[this.activeGame].language +" ";
+		document.getElementById("spytype").innerHTML=games[this.activeGame].adjective +" ";
 		document.getElementById("spytype2").innerHTML=games[this.activeGame].language +" ";
 		document.getElementById("spytype3").innerHTML=games[this.activeGame].language +" ";
 		/*
