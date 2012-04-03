@@ -24,7 +24,7 @@ vote = function(event, callback){
 	/*
 	Auto advance to next Audio Stimuli after 3 seconds
 	*/
-	window.setTimeout("playAudio(event)",3000);
+	window.setTimeout("playAudio(event)", 0);
 	
 	if(typeof callback === 'function'){
 		callback();

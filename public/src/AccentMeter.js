@@ -31,9 +31,9 @@ var voteMeter = function(newValue)
 	document.getElementById("click_sound").play();
 
 	/*
-	Auto advance to next Audio Stimuli after 3 seconds
+	Auto advance to next Audio Stimuli after 1 seconds
 	*/
-	window.setTimeout("playAudio(event)",3000);
+	window.setTimeout("playAudio(event)",1000);
 	
 	if(typeof callback === 'function'){
 		callback();
