@@ -49,8 +49,8 @@ draw_counter = function(count){
       }
     }
   };
-  spyActive.src = './../images/spyOrNot.png';  
-  spy.src = './../images/spy.png';  
+  spyActive.src = './../images/spybody2.png';  
+  spy.src = './../images/spybody.png';  
 
   var img = new Image();
   img.onload = function(){
