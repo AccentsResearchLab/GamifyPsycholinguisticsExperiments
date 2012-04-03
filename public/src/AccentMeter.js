@@ -19,7 +19,7 @@ var voteMeter = function(newValue)
 	vote.audio = window.currentAudio;
 	
 	vote.value = newValue;
-	
+	document.getElementById("playButton").value = "Next                                  ";
 	window.votes = window.votes || [];
 	window.votes.push(vote);
 	localStorage.setItem("votes",JSON.stringify(window.votes));
