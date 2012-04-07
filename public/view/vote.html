@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+
+<title>Spy or Not</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" charset="utf-8" src="./../lib/jquery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./../css/saa.css" />
+
+</head>
+
+<body>
+
+<script>
+	
+	var actionURL ="https://docs.google.com/spreadsheet/formResponse?formkey=dHAzVW80RXhNVU1CNFo0TGZJNzJZTXc6MQ&ampifq";
+
+	function post_to_url(path, params, method) {
+  		method = method || "post"; // Set method to post by default, if not specified.
+
+	    var form = document.createElement("form");
+	    form.setAttribute("method", method);
+	    form.setAttribute("action", path);
+	    for(var key in params) {
+	        if(params.hasOwnProperty(key)) {
+	            var hiddenField = document.createElement("input");
+	            hiddenField.setAttribute("type", "hidden");
+	            hiddenField.setAttribute("name", key);
+	            hiddenField.setAttribute("value", params[key]);
+	            form.appendChild(hiddenField);
+	         }
+	    }
+	    document.body.appendChild(form);
+	    //alert(params.toString());
+	    localStorage.removeItem("vote");
+    	form.submit();
+	}
+
+	var submitForm = function(formurl){
+		var vote = localStorage.getItem("vote");
+ 		if(!vote){
+ 			return;
+ 		}
+ 		vote = JSON.parse(vote);
+		var params = [];
+		params["entry.0.single"] = vote.participantId;
+		params["entry.1.single"] = vote.audio;
+		params["entry.2.single"] = vote.value;
+		params["entry.3.single"] = vote.reactionTime;
+		params["entry.4.single"] = vote.details;
+		
+		post_to_url(formurl,params,"post");
+	}
+
+	//http://stackoverflow.com/questions/1043339/javascript-for-detecting-browser-language-preference
+	var language;
+	$.ajax({ 
+	    url: "http://ajaxhttpheaders.appspot.com", 
+	    dataType: 'jsonp', 
+	    success: function(headers) {
+	        language = headers['Accept-Language'];
+	        submitForm(actionURL);
+	    }
+	});
+	
+//Mac os x change system language to British English and got this:
+//en-GB,en-US;q=0.8,en;q=0.6
+
+</script>
+</body>
+</html>

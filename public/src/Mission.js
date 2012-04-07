@@ -13,6 +13,12 @@ setGameLanguage = function(gameindex){
 	document.getElementById("mission_text").innerHTML= games[currentGame].description;
 	el = document.getElementById("mission_audio");
 	el.setAttribute("src", games[currentGame].missionAudio);
+	var visitor = localStorage.getItem("visitor");
+	if(visitor){
+		visitor = JSON.parse(visitor);
+		visitor["visitorid"] = visitor["visitorid"] +":::"+language;
+		localStorage.setItem("visitor",JSON.stringify(visitor));
+	}
 
 }
 playGameMission = function(event){
