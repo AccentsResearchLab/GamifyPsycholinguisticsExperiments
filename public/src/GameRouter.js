@@ -3,6 +3,14 @@ var GameRouter = Backbone.Router.extend({
 	initialize: function(language){
 		window.games = JSON.parse(localStorage.getItem("games"));
 		this.participant = new ParticipantModel();
+		this.scores = [];
+		window.currentBlock=0;
+		this.scores[0] = {};
+		this.scores[0].nativepossible=0;
+		this.scores[0].nonnativepossible=0;
+		this.scores[0].nativescore=0;
+		this.scores[0].nonnativescore=0;
+		
 		this.activeGame = localStorage.getItem("gameLanguage") 
 		if( ! this.activeGame){
 			alert("Game language is not set, please click on a language.");
