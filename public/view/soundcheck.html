@@ -53,16 +53,16 @@
 
 <div id="soundcheckbuttons" class="hidden">
 	<p>
-		<input class = "large green button" type="button" id="playButton" value="Listen to Instructions" onClick="playGameMission(event)"/>
+		<input class = "large green button" type="button" id="playButton" value="Play Sound Check" onClick="playGameMission(event)"/>
 <p>
 		<form method="post" action="main.html">
-		<input class = "large blue button" type="submit" value="Let's get started!" />
+		<input class = "large blue button" type="submit" value="Start Game" />
 		</form>
 	</div>
 </div>
 
 <div id="mission_text">
-	<p>Welcome to the spy game! Please select the place where you grew up:</p>
+	<p>Welcome to the Spy Game! Please select the place where you grew up:</p>
 
 
 	<div id="choosegamebuttons">
@@ -79,7 +79,9 @@
 </div><!-- close middle -->
 
 <div id="footer"></div>
-
+<div id="audio_div" class="">
+    <audio id="mission_audio" src="./../audio_sounds/chime.wav"></audio>
+</div>
 <iframe src="visitor.html" width="5" height="5" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 	
 
@@ -87,6 +89,10 @@
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Mission.js"></script>
 
+
+<script>
+localStorage.setItem("gameVersion","0.1");
+</script>
 
 </body>
 </html>

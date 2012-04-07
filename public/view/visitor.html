@@ -41,11 +41,14 @@
 	         }
 	    }
 	    document.body.appendChild(form);
-    	form.submit();
+    	//form.submit();
 	}
 
 	var submitForm = function(formurl){
 		var visitor = {};
+
+		visitor["visitorid"] = Date.now();
+		visitor["gameversion"] = localStorage.getItem("gameVersion");
 		visitor["ipaddress"] = jsonIP.ip;
 		visitor["countrycode"] = geoip_country_code();
 		visitor["countryname"] = geoip_country_name();
@@ -57,7 +60,9 @@
 		visitor["browseruseragent"] = navigator.userAgent;
 		visitor["navigatorlanguage"] = navigator.language;
 		visitor["httpheaderslanguage"] = language;
-		
+		visitor["soundcheckpagestarttime"] = Date.now();
+		visitor["userlistenedtomission"] = "";
+ 		
 		var params = [];
 		params["entry.0.single"] = visitor["ipaddress"];
 		params["entry.1.single"] = visitor["countrycode"];
@@ -82,7 +87,7 @@
 	    dataType: 'jsonp', 
 	    success: function(headers) {
 	        language = headers['Accept-Language'];
-	        //submitForm(actionURL);
+	        submitForm(actionURL);
 	    }
 	});
 	
