@@ -21,6 +21,13 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   }else{
     window.countAudioInSet= 0;
   }
+  /*
+  If the block is done
+  */
+  if(window.countAudioInSet >=3){
+    draw_score();
+    return;
+  }
   draw_counter(window.countAudioInSet);
 
 
@@ -39,9 +46,40 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 		onAudioFinished();
 	}
 };
+next_block = function(){
+  window.currentBlock++;
+  window.game.scores[window.currentBlock] ={};
+  removeClass(document.getElementById("container"),"hidden");
+  addClass(document.getElementById("spy_score"),"hidden");
+  draw_counter(window.countAudioInSet);
+};
+draw_score = function(){
+  addClass(document.getElementById("container"),"hidden");
+  removeClass(document.getElementById("spy_score"),"hidden");
+  
+  /*
+  Draw Score
+  */
+  document.getElementById("spy_score").innerHTML="Scores Native "
+      +window.game.scores[window.currentBlock].nativescore
+      +"/"+window.game.scores[window.currentBlock].nativepossible
+      +", nonnative "
+      +window.game.scores[window.currentBlock].nonnativescore
+      +"/"+window.game.scores[window.currentBlock].nonnativepossible;
 
 
+  /*
+  TODO Play audio of buss driving a way
+  */
+
+  window.countAudioInSet = 0;
+  /* Display the score for 3seconds and come back to the game */
+  window.setTimeout("next_block();",3000);
+    
+};
 draw_counter = function(count){
+  
+
   var canvas = document.getElementById("counter");
   var ctx = canvas.getContext("2d");
   canvas.width = 600;

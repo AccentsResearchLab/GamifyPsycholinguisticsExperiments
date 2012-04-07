@@ -55,6 +55,23 @@ var voteMeter = function(newValue)
 	vote.value = newValue;
 	if(window.currentAudio){
 		localStorage.setItem("vote",JSON.stringify(vote));
+		/*
+		Score the participant's vote
+		*/
+		var matches = window.currentAudio.match(/[0-9][0-9]/);
+		if(!matches){
+			window.game.scores[window.currentBlock].nativepossible++;
+			window.game.scores[window.currentBlock].nativescore = window.game.scores[window.currentBlock].nativescore + (5+ parseInt(vote.value))/10;
+		}else{
+			window.game.scores[window.currentBlock].nonnativepossible++;
+			window.game.scores[window.currentBlock].nonnativescore = window.game.scores[window.currentBlock].nonnativescore + (5- parseInt(vote.value))/10;
+		}
+		debug("Scores native "
+			+window.game.scores[window.currentBlock].nativescore
+			+"/"+window.game.scores[window.currentBlock].nativepossible
+			+", nonnative "
+			+window.game.scores[window.currentBlock].nonnativescore
+			+"/"+window.game.scores[window.currentBlock].nonnativepossible);
 	}
 	
 	window.votes = window.votes || [];
