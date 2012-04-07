@@ -70,5 +70,40 @@
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Mission.js"></script>
+
+<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
+ <!--http://www.codeproject.com/Tips/191892/How-to-find-current-location-based-on-the-IP-addre-->
+<br>Country Code:
+<script language="JavaScript">document.write(geoip_country_code());</script>
+<br>Country Name:
+<script language="JavaScript">document.write(geoip_country_name());</script>
+<br>City:
+<script language="JavaScript">document.write(geoip_city());</script>
+<br>Region:
+<script language="JavaScript">document.write(geoip_region());</script>
+<br>Region Name:
+<script language="JavaScript">document.write(geoip_region_name());</script>
+<br>Latitude:
+<script language="JavaScript">document.write(geoip_latitude());</script>
+<br>Longitude:
+<script language="JavaScript">document.write(geoip_longitude());</script>
+<br>Postal Code:
+<script language="JavaScript">document.write(geoip_postal_code());</script>
+<br>Language:
+<span id="language"></span>
+<script>
+	//http://stackoverflow.com/questions/1043339/javascript-for-detecting-browser-language-preference
+	var action ="https://docs.google.com/spreadsheet/formResponse?formkey=dHpES3FFcnVVZFRKX2J3eWFqOXhtQkE6MQ&ifq";
+	var language;
+	$.ajax({ 
+	    url: "http://ajaxhttpheaders.appspot.com", 
+	    dataType: 'jsonp', 
+	    success: function(headers) {
+	        language = headers['Accept-Language'];
+	        document.getElementById("language").innerHTML= language;
+	    }
+	});
+
+</script>
 </body>
 </html>
