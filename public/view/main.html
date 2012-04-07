@@ -38,7 +38,7 @@
   </canvas>
 
 <div id="buttons_div">
-  <input class="large green button" type="button" id="playButton" value="Play                                  " onClick="voteMeter(document.getElementById('meter').value)"/>
+  <input class="large green button" type="button" id="playButton" value="Start                                  " onClick="voteMeter(document.getElementById('meter').value)"/>
   <p>
    <form method="post" action="survey.html">
      <input class="large pink button" type="submit" value="Exit the bus..." />
@@ -78,12 +78,14 @@
 </div>
 
 
+<iframe  id="vote_frame" src="vote.html" width="50" height="200" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+  
+
 
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/AccentMeter.js"></script>
-<script type="text/javascript" charset="utf-8" src="./../src/Vote.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Participant.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/GameRouter.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/SyncResultTable.js"></script>
@@ -91,7 +93,7 @@
 <script>
 
 $(function(){
-  window.gameRouter = new GameRouter();
+  window.game = new GameRouter();
   //Backbone.history.start();
 });
 
