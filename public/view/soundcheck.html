@@ -84,40 +84,83 @@
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Mission.js"></script>
 
-<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
- <!--http://www.codeproject.com/Tips/191892/How-to-find-current-location-based-on-the-IP-addre-->
-<br>Country Code:
-<script language="JavaScript">document.write(geoip_country_code());</script>
-<br>Country Name:
-<script language="JavaScript">document.write(geoip_country_name());</script>
-<br>City:
-<script language="JavaScript">document.write(geoip_city());</script>
-<br>Region:
-<script language="JavaScript">document.write(geoip_region());</script>
-<br>Region Name:
-<script language="JavaScript">document.write(geoip_region_name());</script>
-<br>Latitude:
-<script language="JavaScript">document.write(geoip_latitude());</script>
-<br>Longitude:
-<script language="JavaScript">document.write(geoip_longitude());</script>
-<br>Postal Code:
-<script language="JavaScript">document.write(geoip_postal_code());</script>
-<br>Language:
-<span id="language"></span>
+<script  src="http://j.maxmind.com/app/geoip.js"></script>
+<!--http://stackoverflow.com/questions/391979/get-client-ip-using-just-javascript-->
 <script>
+	function getip(json){
+      window.jsonIP=json; //gets ipaddress
+    }
+</script>
+<script  src="http://jsonip.appspot.com/?callback=getip"></script>
+
+<script>
+	
+	var actionURL ="https://docs.google.com/spreadsheet/formResponse?pli=1&formkey=dHpES3FFcnVVZFRKX2J3eWFqOXhtQkE6MQ&amp;ifq";
+
+	function post_to_url(path, params, method) {
+  		method = method || "post"; // Set method to post by default, if not specified.
+
+	    var form = document.createElement("form");
+	    form.setAttribute("method", method);
+	    form.setAttribute("action", path);
+	    for(var key in params) {
+	        if(params.hasOwnProperty(key)) {
+	            var hiddenField = document.createElement("input");
+	            hiddenField.setAttribute("type", "hidden");
+	            hiddenField.setAttribute("name", key);
+	            hiddenField.setAttribute("value", params[key]);
+	            form.appendChild(hiddenField);
+	         }
+	    }
+	    document.body.appendChild(form);
+    	form.submit();
+	}
+
+	var submitForm = function(formurl){
+		var visitor = {};
+		visitor["ipaddress"] = jsonIP.ip;
+		visitor["countrycode"] = geoip_country_code();
+		visitor["countryname"] = geoip_country_name();
+		visitor["city"] = geoip_city();
+		visitor["region"] = geoip_region();
+		visitor["regionname"] = geoip_region_name();
+		visitor["latitude"] = geoip_latitude();
+		visitor["longitude"] = geoip_longitude();
+		visitor["browseruseragent"] = navigator.userAgent;
+		visitor["navigatorlanguage"] = navigator.language;
+		visitor["httpheaderslanguage"] = language;
+		
+		var params = [];
+		params["entry.0.single"] = visitor["ipaddress"];
+		params["entry.1.single"] = visitor["countrycode"];
+		params["entry.2.single"] = visitor["countryname"];
+		params["entry.3.single"] = visitor["city"];
+		params["entry.4.single"] = visitor["region"];
+		params["entry.5.single"] = visitor["regionname"];
+		params["entry.6.single"] = visitor["latitude"];
+		params["entry.7.single"] = visitor["longitude"];
+		params["entry.8.single"] = visitor["browseruseragent"];
+		params["entry.9.single"] = visitor["navigatorlanguage"];
+		params["entry.10.single"] = visitor["httpheaderslanguage"];
+		
+		localStorage.setItem("visitor",JSON.stringify(visitor));
+  		post_to_url(formurl,params,"post");
+	}
+
 	//http://stackoverflow.com/questions/1043339/javascript-for-detecting-browser-language-preference
-	var action ="https://docs.google.com/spreadsheet/formResponse?formkey=dHpES3FFcnVVZFRKX2J3eWFqOXhtQkE6MQ&ifq";
 	var language;
 	$.ajax({ 
 	    url: "http://ajaxhttpheaders.appspot.com", 
 	    dataType: 'jsonp', 
 	    success: function(headers) {
 	        language = headers['Accept-Language'];
-	        document.getElementById("language").innerHTML= language;
+	        submitForm(actionURL);
 	    }
 	});
+	
 //Mac os x change system language to British English and got this:
 //en-GB,en-US;q=0.8,en;q=0.6
+
 </script>
 </body>
 </html>
