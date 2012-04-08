@@ -52,7 +52,7 @@
 	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title hidden" for="entry_0">partipantid
 	</label>
 	<label class="ss-q-help" for="entry_0"></label>
-	<input type="text" name="entry.0.single" value="" class="hidden ss-q-short" id="entry_0"></div></div></div>
+	<input type="text" name="entry.0.single" id="entry.0.single" value="" class="hidden ss-q-short" id="entry_0"></div></div></div>
 	<br> <div class="errorbox-good">
 	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title hidden" for="entry_1">browser
 	</label>
@@ -161,7 +161,7 @@
 	var visitor = localStorage.getItem("visitor");
 		if(visitor){
 			visitor = JSON.parse(visitor);
-			document.form["entry.0.single"].value = visitor.visitorid;
+			document.getElementById("entry.0.single").value = visitor.visitorid;
 		}
 
 </script>
