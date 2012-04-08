@@ -53,8 +53,8 @@ next_block = function(){
   window.game.scores[window.currentBlock].nonnativepossible=0;
   window.game.scores[window.currentBlock].nativescore=0;
   window.game.scores[window.currentBlock].nonnativescore=0;
-  removeClass(document.getElementById("container"),"hidden");
-  //addClass(document.getElementById("spy_score"),"hidden");
+  removeClass(document.getElementById("counter"),"hidden");
+  addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
 };
 var calculate_score = function(){
@@ -81,8 +81,8 @@ var calculate_score = function(){
   return scores;
 }
 var draw_score = function(scores){
-  if(document.getElementById("container")){
-    addClass(document.getElementById("container"),"hidden");
+  if(document.getElementById("counter")){
+    addClass(document.getElementById("counter"),"hidden");
   }
   if(document.getElementById("spy_score")){
     removeClass(document.getElementById("spy_score"),"hidden");
@@ -105,9 +105,9 @@ var draw_score = function(scores){
   TODO Play audio of buss driving a way
   */
   window.countAudioInSet = 0;
-  /* Display the score for 3seconds and come back to the game */
+  /* Display the score for 3 seconds and come back to the game */
   if(window.game){
-    window.setTimeout("next_block();",3000);
+    window.setTimeout("next_block();",5000);
   }
     
 };

@@ -31,34 +31,36 @@
        <h1 ><span id ="spytype"></span>Spy or Not?</h1>
 
 
-  <div id="spy_score" class="" style="float:right;">
-    <div id="viz"></div>
-    <input class="hidden" value=2 id="nonnativepositive"/>
-    <input class="hidden" value=2 id="nonnativemissing"/>
-    <input class="hidden" value=2 id="nativepositive"/>
-    <input class="hidden" value=2 id="nativemissing"/>
-  </div>
+  
  <div id="container">
+  
 
-  <canvas id="counter">
+  <canvas id="counter"  style="float:left; margin:auto;"> </canvas>
+
+  <div id="spy_score" class="hidden" style="float:right;">
+    <div id="viz"></div>
+    <div>
+      Hits: <input class="score" value=2 id="nativepositive"/>
+      <br/>
+      Misses: <input class="score" value=2 id="nativemissing"/>
+      <br/>
+      False positive: <input class="score" value=2 id="nonnativepositive"/>
+      <br/>
+      False negative:<input class="score" value=2 id="nonnativemissing"/>
+      <br/>
+      
+    </div>
+   </div>
+ </div>
 
 
-  </canvas>
-
-<div id="buttons_div">
-  <input class="large green button" type="button" id="playButton" value="Start                                  " onClick="voteMeter(document.getElementById('meter').value)"/>
-  <p>
-   <form method="post" action="survey.html">
-     <input class="large pink button" type="submit" value="Exit the bus..." />
-  </form>
  
 
+<div style="clear:both; display:block; margin:auto; padding:1em; text-align:center;">
+    <input class="large green button" type="button" id="playButton" value="Start         " onClick="voteMeter(document.getElementById('meter').value)"/>
 </div>
 
-
-
-<p>
-  <table cellpadding="0" cellspacing="0"><tr><td>
+  <table cellpadding="0" cellspacing="0" style="padding:0px; margin:auto;"><tr><td>
   <img  src="./../images/sidemeter1.png"/>
   </td><td>
   <input class="meter" id="meter" type="range"  min="-5" max="5" onchange="addVoteDetails(event.target.value)" >
@@ -67,10 +69,21 @@
   </td><td>
  
   </td></tr>
+ 
   </table>
 
-  <span class="blue">Not from <span id ="spytype2"></span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <span class="red">From <span id ="spytype3"></span></span>
+  <table cellpadding="0" cellspacing="0" style="padding:0px; margin:auto;"><tr><td>
+   <tr><td>
+    <span class="blue">Not from <span id ="spytype2"></span></span>
+  </td><td width="226px">
+  </td><td>
+    <span class="red">From <span id ="spytype3"></span></span>
+  </td></tr>
+  </table>
+
+  <form method="post" style="float:right;" action="survey.html">
+      <input class="large pink button" type="submit" value="Exit the bus..." />
+  </form>
   
   
   

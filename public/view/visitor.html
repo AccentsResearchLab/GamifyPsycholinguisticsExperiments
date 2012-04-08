@@ -15,6 +15,8 @@
 <script  src="http://j.maxmind.com/app/geoip.js"></script>
 <!--http://stackoverflow.com/questions/391979/get-client-ip-using-just-javascript-->
 <script>
+	window.jsonIP = {};
+	window.jsonIP.ip ="ip service down";
 	function getip(json){
       window.jsonIP=json; //gets ipaddress
     }
