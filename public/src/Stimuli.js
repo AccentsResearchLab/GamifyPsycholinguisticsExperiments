@@ -24,7 +24,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   /*
   If the block is done
   */
-  if(window.countAudioInSet >=3){
+  if(window.countAudioInSet >= 11){
     draw_score(calculate_score());
     return;
   }
