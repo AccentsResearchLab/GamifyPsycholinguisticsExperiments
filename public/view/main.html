@@ -31,7 +31,12 @@
        <h1 ><span id ="spytype"></span>Spy or Not?</h1>
 
 
-  <div id="spy_score" class="hidden">
+  <div id="spy_score" class="" style="float:right;">
+    <div id="viz"></div>
+    <input class="hidden" value=2 id="nonnativepositive"/>
+    <input class="hidden" value=2 id="nonnativemissing"/>
+    <input class="hidden" value=2 id="nativepositive"/>
+    <input class="hidden" value=2 id="nativemissing"/>
   </div>
  <div id="container">
 
@@ -93,7 +98,8 @@
 <script type="text/javascript" charset="utf-8" src="./../src/AccentMeter.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Participant.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/GameRouter.js"></script>
-<script type="text/javascript" charset="utf-8" src="./../src/SyncResultTable.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../lib/d3.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../lib/donut.js"></script>
 
 <script>
 

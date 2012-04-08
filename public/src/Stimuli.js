@@ -49,8 +49,12 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 next_block = function(){
   window.currentBlock++;
   window.game.scores[window.currentBlock] ={};
+  window.game.scores[window.currentBlock].nativepossible=0;
+  window.game.scores[window.currentBlock].nonnativepossible=0;
+  window.game.scores[window.currentBlock].nativescore=0;
+  window.game.scores[window.currentBlock].nonnativescore=0;
   removeClass(document.getElementById("container"),"hidden");
-  addClass(document.getElementById("spy_score"),"hidden");
+  //addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
 };
 draw_score = function(){
@@ -60,18 +64,29 @@ draw_score = function(){
   /*
   Draw Score
   */
-  document.getElementById("spy_score").innerHTML="Scores Native "
-      +window.game.scores[window.currentBlock].nativescore
-      +"/"+window.game.scores[window.currentBlock].nativepossible
-      +", nonnative "
-      +window.game.scores[window.currentBlock].nonnativescore
-      +"/"+window.game.scores[window.currentBlock].nonnativepossible;
-
+  var pc = 0.01;
+  var pm = 0.01;
+  var nc = 0.01;
+  var nm = 0.01;
+  if(window.game.scores[window.currentBlock].nativepossible != 0){
+    pc = window.game.scores[window.currentBlock].nativescore/window.game.scores[window.currentBlock].nativepossible;
+    pm = 1-pc;
+  }
+  if(window.game.scores[window.currentBlock].nonnativepossible != 0){
+    nc = window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible;
+    nm = 1-pc;
+  }
+  
+  document.getElementById("nativepositive").value = parseInt(pc * 100);
+  document.getElementById("nativemissing").value = parseInt(pm * 100);
+  document.getElementById("nonnativepositive").value = parseInt(nc * 100);
+  document.getElementById("nonnativemissing").value = parseInt(nm * 100);
+  debug(pc+","+pm+","+nc+","+nm);
+  submitForm();
 
   /*
   TODO Play audio of buss driving a way
   */
-
   window.countAudioInSet = 0;
   /* Display the score for 3seconds and come back to the game */
   window.setTimeout("next_block();",3000);
