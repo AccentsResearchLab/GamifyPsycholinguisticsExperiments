@@ -25,7 +25,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   If the block is done
   */
   if(window.countAudioInSet >=3){
-    draw_score();
+    draw_score(calculate_score());
     return;
   }
   draw_counter(window.countAudioInSet);
@@ -57,13 +57,7 @@ next_block = function(){
   //addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
 };
-draw_score = function(){
-  addClass(document.getElementById("container"),"hidden");
-  removeClass(document.getElementById("spy_score"),"hidden");
-  
-  /*
-  Draw Score
-  */
+var calculate_score = function(){
   var pc = 0.01;
   var pm = 0.01;
   var nc = 0.01;
@@ -76,12 +70,35 @@ draw_score = function(){
     nc = window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible;
     nm = 1-pc;
   }
-  
-  document.getElementById("nativepositive").value = parseInt(pc * 100);
-  document.getElementById("nativemissing").value = parseInt(pm * 100);
-  document.getElementById("nonnativepositive").value = parseInt(nc * 100);
-  document.getElementById("nonnativemissing").value = parseInt(nm * 100);
   debug(pc+","+pm+","+nc+","+nm);
+  
+  var scores = [];
+  scores.push(pc*100);
+  scores.push(pm*100);
+  scores.push(nc*100);
+  scores.push(nm*100);
+
+  return scores;
+}
+var draw_score = function(scores){
+  if(document.getElementById("container")){
+    addClass(document.getElementById("container"),"hidden");
+  }
+  if(document.getElementById("spy_score")){
+    removeClass(document.getElementById("spy_score"),"hidden");
+  }
+  
+  /*
+  Draw Score
+  */
+  debug(scores);
+  debug("that was teh scores");
+  localStorage.setItem("scores",JSON.stringify(scores));
+
+  document.getElementById("nativepositive").value = scores[0];
+  document.getElementById("nativemissing").value = scores[1];
+  document.getElementById("nonnativepositive").value = scores[2];
+  document.getElementById("nonnativemissing").value = scores[3];
   submitForm();
 
   /*
@@ -89,7 +106,9 @@ draw_score = function(){
   */
   window.countAudioInSet = 0;
   /* Display the score for 3seconds and come back to the game */
-  window.setTimeout("next_block();",3000);
+  if(window.game){
+    window.setTimeout("next_block();",3000);
+  }
     
 };
 draw_counter = function(count){
