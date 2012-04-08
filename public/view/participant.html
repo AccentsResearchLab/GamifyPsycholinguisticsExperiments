@@ -158,10 +158,10 @@
 
 
 <script>
-var visitor = localStorage.getItem("visitor");
+	var visitor = localStorage.getItem("visitor");
 		if(visitor){
 			visitor = JSON.parse(visitor);
-			document.form["entry.0.single"]value = visitor.visitorid;
+			document.form["entry.0.single"].value = visitor.visitorid;
 		}
 
 </script>

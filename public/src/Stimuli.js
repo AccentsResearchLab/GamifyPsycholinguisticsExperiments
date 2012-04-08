@@ -62,13 +62,16 @@ var calculate_score = function(){
   var pm = 0.01;
   var nc = 0.01;
   var nm = 0.01;
+  var total = window.game.scores[window.currentBlock].nativepossible+window.game.scores[window.currentBlock].nonnativepossible;
+  var nativeWeight = window.game.scores[window.currentBlock].nativepossible/total;
+  var nonnativeWeight = window.game.scores[window.currentBlock].nonnativepossible/total;
   if(window.game.scores[window.currentBlock].nativepossible != 0){
-    pc = window.game.scores[window.currentBlock].nativescore/window.game.scores[window.currentBlock].nativepossible;
-    pm = 1-pc;
+    pc = (window.game.scores[window.currentBlock].nativescore/window.game.scores[window.currentBlock].nativepossible) * nativeWeight;
+    pm = (1-pc)* nativeWeight;
   }
   if(window.game.scores[window.currentBlock].nonnativepossible != 0){
-    nc = window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible;
-    nm = 1-pc;
+    nc = (window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible) * nonnativeWeight;
+    nm = (1-pc) * nonnativeWeight;
   }
   debug(pc+","+pm+","+nc+","+nm);
   
