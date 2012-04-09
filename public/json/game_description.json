@@ -3,7 +3,7 @@
 	"language":"Russia"
 	,"adjective": "Russian"
 	,"stimuliJson":"./../json/audio_stimuli_russian.json"
-	,"missionAudio":"./../audio_stimuli/mission_audio/russian_distort.ogg"
+	,"missionAudio":"./../mission_audio/russian_distort.ogg"
 	,"description":"<p>So you think you can make for a good spy? We will be testing your skills to make sure you can do good work for our organization. Let's see how you are at detecting accents.</p><p>Here is your mission. You will get on bus number 7 without attracting any attention from other passengers. At each stop, a new passenger will get on the bus, approach you, and speak one sentence to you. This sentence will be a code, so pay attention even to simple sentences like ‘This boat is huge'.  Your mission is to assess whether this person is from Russia or not, based on the way they pronounce the sentence. </p><p>Now, you need to use your spy intuition! Use the slider on the hot-cold scale to reflect your degree of certainty in each case. The more sure you are that the person who just spoke to you is from Russia, the hotter the rating you should choose. The more sure you are that the person who just spoke to you is NOT from Russia, the colder the rating should be. If you really can't tell either way, then position the slider in the middle, halfway between hot and cold.</p><p>We will provide you with a report on your progress every 12th stop. Now get on the bus and don't forget we are watching you!</p>"
 	}
   ,{
@@ -11,7 +11,7 @@
 	,"adjective": "Sussex"
 
 	,"stimuliJson":"./../json/audio_stimuli_sussex.json"
-	,"missionAudio":"./../audio_stimuli/mission_audio/sussex_distort.ogg"
+	,"missionAudio":"./../mission_audio/sussex_distort.ogg"
 	,"description":"<p>So you think you can make for a good spy? We will be testing your skills to make sure you can do good work for our organization. Let's see how you are at detecting accents.</p><p>Here is your mission. You will get on bus number 7 without attracting any attention from other passengers. At each stop, a new passenger will get on the bus, approach you, and speak one sentence to you. This sentence will be a code, so pay attention even to simple sentences like ‘This boat is huge'.  Your mission is to assess whether this person is from Sussex or not, based on the way they pronounce the sentence. </p><p>Now, you need to use your spy intuition! Use the slider on the hot-cold scale to reflect your degree of certainty in each case. The more sure you are that the person who just spoke to you is from Sussex, the hotter the rating you should choose. The more sure you are that the person who just spoke to you is NOT from Sussex, the colder the rating should be. If you really can't tell either way, then position the slider in the middle, halfway between hot and cold.</p><p>We will provide you with a report on your progress every 12th stop. Now get on the bus and don't forget we are watching you!</p>"
 	}
 	,{
@@ -19,7 +19,7 @@
 	,"adjective": "South African"
 
 	,"stimuliJson":"./../json/audio_stimuli_southafrican.json"
-	,"missionAudio":"./../audio_stimuli/mission_audio/southAfrica_distort.ogg"
+	,"missionAudio":"./../mission_audio/southAfrica_distort.ogg"
 	,"description":"<p>So you think you can make for a good spy? We will be testing your skills to make sure you can do good work for our organization. Let's see how you are at detecting accents.</p><p>Here is your mission. You will get on bus number 7 without attracting any attention from other passengers. At each stop, a new passenger will get on the bus, approach you, and speak one sentence to you. This sentence will be a code, so pay attention even to simple sentences like ‘This boat is huge'.  Your mission is to assess whether this person is from South Africa or not, based on the way they pronounce the sentence. </p><p>Now, you need to use your spy intuition! Use the slider on the hot-cold scale to reflect your degree of certainty in each case. The more sure you are that the person who just spoke to you is from South Africa, the hotter the rating you should choose. The more sure you are that the person who just spoke to you is NOT from South Africa, the colder the rating should be. If you really can't tell either way, then position the slider in the middle, halfway between hot and cold.</p><p>We will provide you with a report on your progress every 12th stop. Now get on the bus and don't forget we are watching you!</p>"
 	}
 ]
