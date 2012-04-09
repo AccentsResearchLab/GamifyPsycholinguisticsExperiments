@@ -34,9 +34,10 @@ a:hover, a:active
 }
 
 #container {
-	width: 804px;
-	margin-left:auto;
-	margin-right:auto;
+	width: 80%;
+	margin:auto;
+	padding:1em;
+	clear:both;
 }
 
 #header {
@@ -62,7 +63,13 @@ a:hover, a:active
 	margin-left:auto;
 	margin-right:auto;
 }
-
+input.score{
+	size:3;
+	width:3em;
+	background-color:#000;
+	color:#fff;
+	border: 0px solid #006;
+}
 #menu {
 	background: transparent;
 	float:left;

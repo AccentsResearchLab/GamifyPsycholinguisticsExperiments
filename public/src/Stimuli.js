@@ -53,8 +53,8 @@ next_block = function(){
   window.game.scores[window.currentBlock].nonnativepossible=0;
   window.game.scores[window.currentBlock].nativescore=0;
   window.game.scores[window.currentBlock].nonnativescore=0;
-  removeClass(document.getElementById("container"),"hidden");
-  //addClass(document.getElementById("spy_score"),"hidden");
+  removeClass(document.getElementById("counter"),"hidden");
+  addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
 };
 var calculate_score = function(){
@@ -62,13 +62,16 @@ var calculate_score = function(){
   var pm = 0.01;
   var nc = 0.01;
   var nm = 0.01;
+  var total = window.game.scores[window.currentBlock].nativepossible+window.game.scores[window.currentBlock].nonnativepossible;
+  var nativeWeight = window.game.scores[window.currentBlock].nativepossible/total;
+  var nonnativeWeight = window.game.scores[window.currentBlock].nonnativepossible/total;
   if(window.game.scores[window.currentBlock].nativepossible != 0){
-    pc = window.game.scores[window.currentBlock].nativescore/window.game.scores[window.currentBlock].nativepossible;
-    pm = 1-pc;
+    pc = (window.game.scores[window.currentBlock].nativescore/window.game.scores[window.currentBlock].nativepossible) * nativeWeight;
+    pm = (1-pc)* nativeWeight;
   }
   if(window.game.scores[window.currentBlock].nonnativepossible != 0){
-    nc = window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible;
-    nm = 1-pc;
+    nc = (window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible) * nonnativeWeight;
+    nm = (1-pc) * nonnativeWeight;
   }
   debug(pc+","+pm+","+nc+","+nm);
   
@@ -81,8 +84,8 @@ var calculate_score = function(){
   return scores;
 }
 var draw_score = function(scores){
-  if(document.getElementById("container")){
-    addClass(document.getElementById("container"),"hidden");
+  if(document.getElementById("counter")){
+    addClass(document.getElementById("counter"),"hidden");
   }
   if(document.getElementById("spy_score")){
     removeClass(document.getElementById("spy_score"),"hidden");
@@ -105,9 +108,9 @@ var draw_score = function(scores){
   TODO Play audio of buss driving a way
   */
   window.countAudioInSet = 0;
-  /* Display the score for 3seconds and come back to the game */
+  /* Display the score for 3 seconds and come back to the game */
   if(window.game){
-    window.setTimeout("next_block();",3000);
+    window.setTimeout("next_block();",5000);
   }
     
 };
@@ -131,8 +134,8 @@ draw_counter = function(count){
       }
     }
   };
-  spyActive.src = './../images/spybody2.png';  
-  spy.src = './../images/spybody.png';  
+  spyActive.src = './../images/spyOrNot.png';  
+  spy.src = './../images/spy.png';  
 
   var img = new Image();
   img.onload = function(){
