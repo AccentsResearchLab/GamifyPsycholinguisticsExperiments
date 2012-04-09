@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE HTML>
 <html manifest="./cache.appcache">
 <head>
@@ -12,6 +14,7 @@
 <script type="text/javascript" charset="utf-8" src="./../lib/Backbone.js"></script>
 <style>
 </style>
+
 </head>
 <body>
 <div id="header">
@@ -19,190 +22,39 @@
 <h1>Spy or Not</h1>
 
 
+ <div id="spy_score" class="" style="float:right;">
+    <div id="viz"></div>
+    <input class="hidden" value=2 id="nonnativepositive"/>
+    <input class="hidden" value=2 id="nonnativemissing"/>
+    <input class="hidden" value=2 id="nativepositive"/>
+    <input class="hidden" value=2 id="nativemissing"/>
+  </div>
 </div>
 
 
-	<div id="infographic_of_results"></div>
-	<div id="audio_div" class="">
-  <audio id="flower_sound" src="./../audio_sounds/flower_beats_loop.mp3"></audio>
-  <script type="text/javascript" charset="utf-8">  
-  
-  	//document.getElementById("flower_sound").play();
 
-  </script>
-
-
-</div>
-
-	<div id="shareDiv">
+	<div id="shareDiv" class="hidden">
 		<input type="button" id="tweet" value="Tweet" onclick="document.form.submit()" /> <input
 			type="button" id="facebook" value="Facebook" />
 	</div>
 
 
-	<div id="category_A">
-		<input type="button" id="surveyClick1" value="1"
-			onClick="surveyClick(event)" /> <input type="button"
-			id="surveyClick2" value="2" onClick="surveyClick(event)" /> <input
-			type="button" id="surveyClick3" value="3"
-			onClick="surveyClick(event)" /> <input type="button"
-			id="surveyClick4" value="4" onClick="surveyClick(event)" /> <input
-			type="button" id="surveyClick5" value="5"
-			onClick="surveyClick(event)" />
-	</div>
+<iframe src="participant.html" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 
 
-
-	<div id="category_B">
-		<input type="button" id="surveyClick1" value="1"
-			onClick="surveyClick(event)" /> <input type="button"
-			id="surveyClick2" value="2" onClick="surveyClick(event)" /> <input
-			type="button" id="surveyClick3" value="3"
-			onClick="surveyClick(event)" /> <input type="button"
-			id="surveyClick4" value="4" onClick="surveyClick(event)" /> <input
-			type="button" id="surveyClick5" value="5"
-			onClick="surveyClick(event)" />
-	</div>
-
-
-	<div id="category_C">
-		<input type="button" id="surveyClick1" value="1"
-			onClick="surveyClick(event)" /> <input type="button"
-			id="surveyClick2" value="2" onClick="surveyClick(event)" /> <input
-			type="button" id="surveyClick3" value="3"
-			onClick="surveyClick(event)" /> <input type="button"
-			id="surveyClick4" value="4" onClick="surveyClick(event)" /> <input
-			type="button" id="surveyClick5" value="5"
-			onClick="surveyClick(event)" />
-	</div>
+<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEMyLTNQaXlubmNFRUp1dFQzaUVaZWc6MQ" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 	<script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 	<script type="text/javascript" charset="utf-8"
 		src="./../src/Participant.js"></script>
 	<script type="text/javascript" charset="utf-8" src="./../src/GameRouter.js"></script>
-	<script type="text/javascript" charset="utf-8"
-		src="./../src/SyncParticipantTable.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./../lib/d3.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../lib/donut.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"></script>
 
-
-
-
-
-	<div class="ss-form-container">
-	<div class="ss-form-heading"><h1 class="ss-form-title">Thanks for playing! </h1>
-	<p></p>
-	<div class="ss-form-desc ss-no-ignore-whitespace">Do you want to answer a brief survey?</div>
-
-	<hr class="ss-email-break" style="display:none;">
-	</div>
-	<div class="ss-form"><form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDB2Mzh5VjVod0E3MDdfUi05WS1Zdmc6MQ&amp;ifq" method="POST" id="ss-form">
-
-	<br>
-	<div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">ipaddress
-	</label>
-	<label class="ss-q-help" for="entry_0"></label>
-	<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">browser
-	</label>
-	<label class="ss-q-help" for="entry_1"></label>
-	<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_2">Name
-	</label>
-	<label class="ss-q-help" for="entry_2"></label>
-	<input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_3">Gender
-	</label>
-	<label class="ss-q-help" for="entry_3"></label>
-	<input type="text" name="entry.3.single" value="" class="ss-q-short" id="entry_3"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_4">Age
-	</label>
-	<label class="ss-q-help" for="entry_4"></label>
-	<input type="text" name="entry.4.single" value="" class="ss-q-short" id="entry_4"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_5">Place of birth
-	</label>
-	<label class="ss-q-help" for="entry_5"></label>
-	<input type="text" name="entry.5.single" value="" class="ss-q-short" id="entry_5"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_6">Where did you live between 1-14 years of age? (if you lived in more places, please list them below, specifying between what ages you lived in each of them)
-	</label>
-	<label class="ss-q-help" for="entry_6"></label>
-	<input type="text" name="entry.6.single" value="" class="ss-q-short" id="entry_6"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_7">Where do you live now?
-	</label>
-	<label class="ss-q-help" for="entry_7"></label>
-	<input type="text" name="entry.7.single" value="" class="ss-q-short" id="entry_7"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_8">What is your native language? (please specify if you are bilingual)
-	</label>
-	<label class="ss-q-help" for="entry_8"></label>
-	<input type="text" name="entry.8.single" value="" class="ss-q-short" id="entry_8"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_9">What is your parents' native language (or languages)?
-	</label>
-	<label class="ss-q-help" for="entry_9"></label>
-	<input type="text" name="entry.9.single" value="" class="ss-q-short" id="entry_9"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_10">What other languages do you speak, besides English, and what is your level of proficiency (beginner, intermediate, advanced)?
-	</label>
-	<label class="ss-q-help" for="entry_10"></label>
-	<input type="text" name="entry.10.single" value="" class="ss-q-short" id="entry_10"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_11">Have you ever been diagnosed for, or have you ever had hearing/speech problems?
-	</label>
-	<label class="ss-q-help" for="entry_11"></label>
-	<input type="text" name="entry.11.single" value="" class="ss-q-short" id="entry_11"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_12">Have you participated in a similar experiment in the past?
-	</label>
-	<label class="ss-q-help" for="entry_12"></label>
-	<input type="text" name="entry.12.single" value="" class="ss-q-short" id="entry_12"></div></div></div>
-	<br> <div class="errorbox-good">
-	<div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_13">What do you think this experiment was for? What did you learn?
-	</label>
-	<label class="ss-q-help" for="entry_13"></label>
-	<input type="text" name="entry.13.single" value="" class="ss-q-short" id="entry_13"></div></div></div>
-	<br>
-	<input type="hidden" name="pageNumber" value="0">
-	<input type="hidden" name="backupCache" value="">
-
-
-	<div class="ss-item ss-navigate"><div class="ss-form-entry">
-	<input type="submit" name="submit" value="Submit"></div></div></form>
-	<script type="text/javascript">
-
-	      (function() {
-	var divs = document.getElementById('ss-form').
-	getElementsByTagName('div');
-	var numDivs = divs.length;
-	for (var j = 0; j < numDivs; j++) {
-	if (divs[j].className == 'errorbox-bad') {
-	divs[j].lastChild.firstChild.lastChild.focus();
-	return;
-	}
-	}
-	for (var i = 0; i < numDivs; i++) {
-	var div = divs[i];
-	if (div.className == 'ss-form-entry' &&
-	div.firstChild &&
-	div.firstChild.className == 'ss-q-title') {
-	div.lastChild.focus();
-	return;
-	}
-	}
-	})();
-	      </script></div>
-	<div class="ss-footer"><div class="ss-attribution"></div>
-	<div class="ss-legal"><span class="ss-powered-by">Powered by <a href="http://docs.google.com">Google Docs</a></span>
-	<span class="ss-terms"><small><a href="https://docs.google.com/spreadsheet/reportabuse?formkey=dDB2Mzh5VjVod0E3MDdfUi05WS1Zdmc6MQ&amp;source=https%253A%252F%252Fdocs.google.com%252Fspreadsheet%252Fviewform%253Fformkey%253DdDB2Mzh5VjVod0E3MDdfUi05WS1Zdmc6MQ">Report Abuse</a>
-	-
-	<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
-	-
-<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></small></span></div></div></div>
+<script>
+	var scores = JSON.parse(localStorage.getItem("scores"));
+	draw_score(scores);
+</script>
 </body>
 </html>

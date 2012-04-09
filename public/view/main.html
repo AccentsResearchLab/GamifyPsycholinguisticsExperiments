@@ -11,12 +11,33 @@
   <script type="text/javascript" charset="utf-8" src="./../lib/Kinetic.js"></script>
 <link rel="stylesheet" type="text/css" href="./../css/saa.css" />
 <link rel="stylesheet" type="text/css" href="./../css/vote.css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30676346-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 
 
 <body>
        <h1 ><span id ="spytype"></span>Spy or Not?</h1>
 
+
+  <div id="spy_score" class="" style="float:right;">
+    <div id="viz"></div>
+    <input class="hidden" value=2 id="nonnativepositive"/>
+    <input class="hidden" value=2 id="nonnativemissing"/>
+    <input class="hidden" value=2 id="nativepositive"/>
+    <input class="hidden" value=2 id="nativemissing"/>
+  </div>
  <div id="container">
 
   <canvas id="counter">
@@ -25,10 +46,10 @@
   </canvas>
 
 <div id="buttons_div">
-  <input class="large green button" type="button" id="playButton" value="Play                                  " onClick="voteMeter(document.getElementById('meter').value)"/>
+  <input class="large green button" type="button" id="playButton" value="Start                                  " onClick="voteMeter(document.getElementById('meter').value)"/>
   <p>
    <form method="post" action="survey.html">
-     <input class="large pink button" type="submit" value="I'm done here, let me out..." />
+     <input class="large pink button" type="submit" value="Exit the bus..." />
   </form>
  
 
@@ -40,7 +61,7 @@
   <table cellpadding="0" cellspacing="0"><tr><td>
   <img  src="./../images/sidemeter1.png"/>
   </td><td>
-  <input class="meter" id="meter" type="range"  min="-5" max="5"  >
+  <input class="meter" id="meter" type="range"  min="-5" max="5" onchange="addVoteDetails(event.target.value)" >
   </td><td>
   <img  src="./../images/sidemeter3.png"/>
   </td><td>
@@ -55,49 +76,36 @@
   
   
 
+  <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEMyLTNQaXlubmNFRUp1dFQzaUVaZWc6MQ" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+<iframe  id="vote_frame" src="vote.html" width="5" height="5" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+  
 
 
   <div id="audio_div" class="">
     <audio id="click_sound" src="./../audio_sounds/click.mp3"></audio>
   </div>
 
+  <audio id="stimuli_audio" src="./../audio_sounds/click.mp3"></audio>
+
 
 </div>
-
-
-<!--
-<img src="/images/scale.png" width="620" height="74" alt="rate this sound" usemap="#Smileys">
-<map name="Smileys" id="Smileys">
-          <area shape="circle" coords="50,35,30" id="vote1" value="1" onClick="vote(1)" alt="Not horrible">
-          <area shape="circle" coords="185,35,30" id="vote2" value="2" onClick="vote(2)" alt="Bad">
-          <area shape="circle" coords="300,31,29" id="vote3" value="3" onClick="vote(3)" alt="Really bad">
-          <area shape="circle" coords="425,31,29" id="vote4" value="4" onClick="vote(4)" alt="Awful">
-          <area shape="circle" coords="565,31,29" id="vote5" value="5" onClick="vote(5)"  alt="Really awful">
-          </map>
-
--->
-
-
-
-
-
-
-
 
 
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/AccentMeter.js"></script>
-<script type="text/javascript" charset="utf-8" src="./../src/Vote.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Participant.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/GameRouter.js"></script>
-<script type="text/javascript" charset="utf-8" src="./../src/SyncResultTable.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../lib/d3.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../lib/donut.js"></script>
 
 <script>
 
 $(function(){
-  window.gameRouter = new GameRouter();
+  window.game = new GameRouter();
   //Backbone.history.start();
 });
 
