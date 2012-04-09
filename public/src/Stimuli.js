@@ -22,7 +22,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     window.countAudioInSet= 0;
   }
   /*
-  If the block is done
+  If the block of 12 is done
   */
   if(window.countAudioInSet >= 11){
     draw_score(calculate_score());
@@ -108,9 +108,9 @@ var draw_score = function(scores){
   TODO Play audio of buss driving a way
   */
   window.countAudioInSet = 0;
-  /* Display the score for 3 seconds and come back to the game */
+  /* Display the score for 8 seconds and come back to the game */
   if(window.game){
-    window.setTimeout("next_block();",5000);
+    window.setTimeout("next_block();",8000);
   }
     
 };
