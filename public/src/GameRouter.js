@@ -5,13 +5,11 @@ var GameRouter = Backbone.Router.extend({
 		this.participant = new ParticipantModel();
 		this.scores = [];
 		window.currentBlock=0;
-		this.scores[0] = {};
-		this.scores[0].nativepossible=0;
-		this.scores[0].nonnativepossible=0;
-		this.scores[0].nativescore=0;
-		this.scores[0].nonnativescore=0;
-		this.scores[0].prenonnativescore=0;
-		this.scores[0].prenonnativepossible=0;
+		this.scores[0] = [
+			{name: "Not", values: [0, 0 ]},
+   			{name: "Native", values: [0, 0]},
+    		{name: "Pre", values: [0, 0]}
+    		];
 		
 		this.activeGame = localStorage.getItem("gameLanguage") 
 		if( ! this.activeGame){

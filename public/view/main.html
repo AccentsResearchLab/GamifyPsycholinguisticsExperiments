@@ -35,18 +35,23 @@
  <div id="container">
   
 
-  <canvas id="counter"  style="float:left; margin:auto;"> </canvas>
-
-  <div id="spy_score" class="hidden" style="float:right;">
+  <div  style="margin:auto; text-align:center;">
+  <canvas id="counter"  style="margin:auto;"> </canvas>
+  </div>
+   <div id="spy_score" class="hidden" style="float:right;">
     <div id="viz"></div>
       <div>
-        Hits: <input class="score" value=2 id="nativepositive"/>
+        %Native correctly identified: <input class="score green" value=2 id="nativepositive"/>
         <br/>
-        Misses: <input class="score" value=2 id="nativemissing"/>
+        %Native incorectly rejected: <input class="score red" value=2 id="nativemissing"/>
         <br/>
-        False positive: <input class="score" value=2 id="nonnativepositive"/>
+        The fuzzy middle: <input class="score green " value=2 id="nonnativepositive"/>
         <br/>
-        False negative:<input class="score" value=2 id="nonnativemissing"/>
+        The fuzzy middle: <input class="score red" value=2 id="nonnativemissing"/>
+        <br/>
+        %Non-native correctly rejected: <input class="score green" value=2 id="prenonnativepositive"/>
+        <br/>
+        %Non-native incorrectly accepted:<input class="score red " value=2 id="prenonnativemissing"/>
         <br/>
       </div>
     </div>
@@ -113,7 +118,7 @@
 <script type="text/javascript" charset="utf-8" src="./../src/Participant.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/GameRouter.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../lib/d3.js"></script>
-<script type="text/javascript" charset="utf-8" src="./../lib/donut.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../lib/donuts_multiple.js"></script>
 
 <script>
 

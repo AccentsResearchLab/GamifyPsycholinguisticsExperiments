@@ -58,24 +58,22 @@ var voteMeter = function(newValue)
 		/*
 		Score the participant's vote
 		*/
-		var matches = window.currentAudio.match(/[0-9][0-9]/);
-		var machespre = window.currentAudio.match(/pre/);
-		if(!matches){
-			window.game.scores[window.currentBlock].nativepossible++;
-			window.game.scores[window.currentBlock].nativescore = window.game.scores[window.currentBlock].nativescore + (5+ parseInt(vote.value))/10;
-		}else if(machespre){
-			window.game.scores[window.currentBlock].prenonnativepossible++;
-			window.game.scores[window.currentBlock].prenonnativescore = window.game.scores[window.currentBlock].prenonnativescore - (-5+ parseInt(vote.value))/10;
+		var dataset =window.game.scores[window.currentBlock];
+
+		var nonnative = window.currentAudio.match(/[0-9][0-9]/);
+		var pretest = window.currentAudio.match(/pre/);
+
+		if( pretest ){
+			dataset[2].values[1]++; //augment the total of pre-test speakers
+			dataset[2].values[0]+= - (-5 + parseInt(vote.value))/10; //add a fraction of points based on their vote, assuming the correct vote is -5
+		}else if( nonnative ){
+			dataset[0].values[1]++; //augment the total notnative speakers
+			dataset[0].values[0]+= (5 + Math.random()*5)/10; //always give them 5 points, plus a random fraction of points, assuming equal distribution around 0 is the best score for nonnative speakers
 		}else{
-			window.game.scores[window.currentBlock].nonnativepossible++;
-			window.game.scores[window.currentBlock].nonnativescore = window.game.scores[window.currentBlock].nonnativescore + (5- parseInt(vote.value))/10;
+			dataset[1].values[1]++; //augment the total native speakers
+			dataset[1].values[0]+= (5 + parseInt(vote.value))/10; //add a fraction of points based on their vote, assuming 5 is the correct vote for native speakers
 		}
-		debug("Scores native "
-			+window.game.scores[window.currentBlock].nativescore
-			+"/"+window.game.scores[window.currentBlock].nativepossible
-			+", nonnative "
-			+window.game.scores[window.currentBlock].nonnativescore
-			+"/"+window.game.scores[window.currentBlock].nonnativepossible);
+		debug(JSON.stringify(dataset));
 	}
 	
 	window.votes = window.votes || [];

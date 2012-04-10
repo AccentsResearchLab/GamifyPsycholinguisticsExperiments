@@ -25,7 +25,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   If the block of 12 is done
   */
   if(window.countAudioInSet >= 11){
-    draw_score(calculate_score());
+    draw_score(window.game.scores[window.currentBlock]);
     return;
   }
   draw_counter(window.countAudioInSet);
@@ -48,42 +48,18 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 };
 next_block = function(){
   window.currentBlock++;
-  window.game.scores[window.currentBlock] ={};
-  window.game.scores[window.currentBlock].nativepossible=0;
-  window.game.scores[window.currentBlock].nonnativepossible=0;
-  window.game.scores[window.currentBlock].nativescore=0;
-  window.game.scores[window.currentBlock].nonnativescore=0;
+  var dataset = window.game.scores[window.currentBlock];
+  dataset = [
+        {name: "Not", values: [0, 0 ]},
+        {name: "Native", values: [0, 0]},
+        {name: "Pre", values: [0, 0]}
+        ];
   removeClass(document.getElementById("counter"),"hidden");
   addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
 };
-var calculate_score = function(){
-  var pc = 0.01;
-  var pm = 0.01;
-  var nc = 0.01;
-  var nm = 0.01;
-  var total = window.game.scores[window.currentBlock].nativepossible+window.game.scores[window.currentBlock].nonnativepossible;
-  var nativeWeight = window.game.scores[window.currentBlock].nativepossible/total;
-  var nonnativeWeight = window.game.scores[window.currentBlock].nonnativepossible/total;
-  if(window.game.scores[window.currentBlock].nativepossible != 0){
-    pc = (window.game.scores[window.currentBlock].nativescore/window.game.scores[window.currentBlock].nativepossible) * nativeWeight;
-    pm = (1-pc)* nativeWeight;
-  }
-  if(window.game.scores[window.currentBlock].nonnativepossible != 0){
-    nc = (window.game.scores[window.currentBlock].nonnativescore/window.game.scores[window.currentBlock].nonnativepossible) * nonnativeWeight;
-    nm = (1-pc) * nonnativeWeight;
-  }
-  debug(pc+","+pm+","+nc+","+nm);
-  
-  var scores = [];
-  scores.push(pc*100);
-  scores.push(pm*100);
-  scores.push(nc*100);
-  scores.push(nm*100);
 
-  return scores;
-}
-var draw_score = function(scores){
+var draw_score = function(dataset){
   if(document.getElementById("counter")){
     addClass(document.getElementById("counter"),"hidden");
   }
@@ -94,14 +70,28 @@ var draw_score = function(scores){
   /*
   Draw Score
   */
-  debug(scores);
+  debug(dataset);
   debug("that was teh scores");
-  localStorage.setItem("scores",JSON.stringify(scores));
+  localStorage.setItem("scores",JSON.stringify(dataset));
 
-  document.getElementById("nativepositive").value = scores[0];
-  document.getElementById("nativemissing").value = scores[1];
-  document.getElementById("nonnativepositive").value = scores[2];
-  document.getElementById("nonnativemissing").value = scores[3];
+  document.getElementById("nativepositive").value = dataset[1].values[0]; //corect
+  document.getElementById("nativemissing").value = dataset[1].values[1] - dataset[1].values[0]; //total - correct
+  if(dataset[1].values[1] == 0){
+    document.getElementById("nativemissing").value = 0.001; //put all as missing if there were no stimuli
+  }
+
+  document.getElementById("nonnativepositive").value = dataset[0].values[0];
+  document.getElementById("nonnativemissing").value = dataset[0].values[1] - dataset[0].values[0]; //total - correct
+  if(dataset[0].values[1] == 0){
+    document.getElementById("nonnativemissing").value = 0.001; //put all as missing if there were no stimuli
+  }
+
+  document.getElementById("prenonnativepositive").value = dataset[2].values[0];
+  document.getElementById("prenonnativemissing").value = dataset[2].values[1] - dataset[2].values[0]; //total - correct
+  if(dataset[2].values[1] == 0){
+    document.getElementById("prenonnativemissing").value = 0.001; //put all as missing if there were no stimuli
+  }
+  
   submitForm();
 
   /*
