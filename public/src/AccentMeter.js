@@ -59,9 +59,13 @@ var voteMeter = function(newValue)
 		Score the participant's vote
 		*/
 		var matches = window.currentAudio.match(/[0-9][0-9]/);
+		var machespre = window.currentAudio.match(/pre/);
 		if(!matches){
 			window.game.scores[window.currentBlock].nativepossible++;
 			window.game.scores[window.currentBlock].nativescore = window.game.scores[window.currentBlock].nativescore + (5+ parseInt(vote.value))/10;
+		}else if(machespre){
+			window.game.scores[window.currentBlock].prenonnativepossible++;
+			window.game.scores[window.currentBlock].prenonnativescore = window.game.scores[window.currentBlock].prenonnativescore - (-5+ parseInt(vote.value))/10;
 		}else{
 			window.game.scores[window.currentBlock].nonnativepossible++;
 			window.game.scores[window.currentBlock].nonnativescore = window.game.scores[window.currentBlock].nonnativescore + (5- parseInt(vote.value))/10;
