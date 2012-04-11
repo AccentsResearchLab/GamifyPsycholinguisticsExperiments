@@ -77,19 +77,19 @@ var draw_score = function(dataset){
   document.getElementById("nativepositive").value = dataset[1].values[0]; //corect
   document.getElementById("nativemissing").value = dataset[1].values[1] - dataset[1].values[0]; //total - correct
   if(dataset[1].values[1] == 0){
-    document.getElementById("nativemissing").value = 0.001; //put all as missing if there were no stimuli
+    document.getElementById("nativepositive").value = 0.001; //put all as missing if there were no stimuli
   }
 
   document.getElementById("nonnativepositive").value = dataset[0].values[0];
   document.getElementById("nonnativemissing").value = dataset[0].values[1] - dataset[0].values[0]; //total - correct
   if(dataset[0].values[1] == 0){
-    document.getElementById("nonnativemissing").value = 0.001; //put all as missing if there were no stimuli
+    document.getElementById("nonnativepositive").value = 0.001; //put all as missing if there were no stimuli
   }
 
   document.getElementById("prenonnativepositive").value = dataset[2].values[0];
   document.getElementById("prenonnativemissing").value = dataset[2].values[1] - dataset[2].values[0]; //total - correct
   if(dataset[2].values[1] == 0){
-    document.getElementById("prenonnativemissing").value = 0.001; //put all as missing if there were no stimuli
+    document.getElementById("prenonnativepositive").value = 0.001; //put all as missing if there were no stimuli
   }
   
   submitForm();
