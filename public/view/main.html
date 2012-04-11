@@ -37,18 +37,17 @@
 
   <div  style="margin:auto; text-align:center;">
   <canvas id="counter"  style="margin:auto;"> </canvas>
-  </div>
    <div id="spy_score" class="hidden" style="float:right;">
     <div id="viz"></div>
       <div>
         %Native correctly identified: <input class="score green" value=2 id="nativepositive"/>
         <br/>
         %Native incorectly rejected: <input class="score red" value=2 id="nativemissing"/>
-        <br/>
+        <br/><div class="hidden">
         The fuzzy middle: <input class="score green " value=2 id="nonnativepositive"/>
         <br/>
         The fuzzy middle: <input class="score red" value=2 id="nonnativemissing"/>
-        <br/>
+        <br/></div>
         %Non-native correctly rejected: <input class="score green" value=2 id="prenonnativepositive"/>
         <br/>
         %Non-native incorrectly accepted:<input class="score red " value=2 id="prenonnativemissing"/>

@@ -3,7 +3,7 @@
 // values will show up as slices in the circles. 
 var dataset = [
     {name: "Native", values: {0: 0, 1: 1 }},
-    {name: "Maybe", values: {0: 0, 1: 1 }},
+    //{name: "Maybe", values: {0: 0, 1: 1 }},
     {name: "Not", values: {0: 0, 1: 1 }}
 ];
 
@@ -96,7 +96,7 @@ function change_dataset(newDataset) {
     if(!newDataset){
         newDataset = [
             {name: "Native", values: {0: 3, 1: 1 }},
-            {name: "Maybe", values: {0: 2, 1: 1 }},
+            //{name: "Maybe", values: {0: 2, 1: 1 }},
             {name: "Not", values: {0: 4, 1: 1 }}
         ];
     }
@@ -179,7 +179,7 @@ arcs = ring_group.selectAll('.arc')
 function submitForm() {
    var userData = [
         {name: "Native", values: {0: parseFloat(document.getElementById("nativepositive").value), 1: parseFloat(document.getElementById("nativemissing").value) }},
-        {name: "Maybe", values: {0: parseFloat(document.getElementById("nonnativepositive").value), 1: parseFloat(document.getElementById("nonnativemissing").value) }},
+        //{name: "Maybe", values: {0: parseFloat(document.getElementById("nonnativepositive").value), 1: parseFloat(document.getElementById("nonnativemissing").value) }},
         {name: "Not", values: {0: parseFloat(document.getElementById("prenonnativepositive").value), 1: parseFloat(document.getElementById("prenonnativemissing").value) }}
     ];
     console.log(userData);
