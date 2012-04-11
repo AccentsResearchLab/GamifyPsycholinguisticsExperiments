@@ -41,7 +41,7 @@ var chartW      = 300;
 var chartH      = 200;
 var radius      = chartW / 8;
 var background  = '#FEFEFE';
-var foreground  = '#444444';
+var foreground  = '#fff';
 
 // main svg for the chart
 var chart = d3.select('#viz')
