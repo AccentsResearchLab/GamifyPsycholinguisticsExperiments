@@ -75,15 +75,16 @@ var tryToGuessDialect = function(){
 		rus_button  = false;
 		sus_button = false;
 		setGameLanguage(2);
-	}else
-	/*
-	If the visitor has british english set, or they are the UK, send them to the Sussex game
-	*/
-	if(visitor.navigatorlanguage.toLowerCase().indexOf("en-gb") > -1 || visitor.httpheaderslanguage.toLowerCase().indexOf("en-gb") == 0 || visitor.countrycode.indexOf("GB") > -1 ){
-		rus_button  = false;
-		southaf_button = false;
-		setGameLanguage(1);
 	}
+	// else
+	// /*
+	// If the visitor has british english set, or they are the UK, send them to the Sussex game
+	// */
+	// if(visitor.navigatorlanguage.toLowerCase().indexOf("en-gb") > -1 || visitor.httpheaderslanguage.toLowerCase().indexOf("en-gb") == 0 || visitor.countrycode.indexOf("GB") > -1 ){
+	// 	rus_button  = false;
+	// 	southaf_button = false;
+	// 	setGameLanguage(1);
+	// }
 	var r = document.getElementById("rus_button");
 	var s = document.getElementById("sus_button");
 	var a = document.getElementById("southaf_button");
