@@ -48,12 +48,12 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 };
 next_block = function(){
   window.currentBlock++;
-  var dataset = window.game.scores[window.currentBlock];
-  dataset = [
+  var  dataset = [
         {name: "Not", values: [0, 0 ]},
         {name: "Native", values: [0, 0]},
         {name: "Pre", values: [0, 0]}
         ];
+  window.game.scores[window.currentBlock] = dataset;
   removeClass(document.getElementById("counter"),"hidden");
   addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
