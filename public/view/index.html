@@ -31,17 +31,35 @@
 <div id="container">
 
 
-<div id="header">
-
 <h1>    Spy or Not?</h1>
+<img src="./../images/spyOrNot.jpeg"/>
+
+<div style="float:right;margin:2em;">
+<h4>Browser Test:</h4>
+<table  width="300"><tr><td width="100">
+Javascript
+</td><td width="100">
+Audio
+</td><td width="100">
+LocalStorage
+</td></tr><tr><td>
+<span class="red" id="javascript">✘</span>
+</td><td>
+<span class="green" id="audio">✔</span>
+</td><td>
+<span class="red" id="localstorage">✘</span>
+</td></tr></table>
+
+
 
 
 </div>
 
-
-
 <div id="middle" >
 
+
+
+	
 
 <div id="menu" >
 
@@ -50,6 +68,7 @@
     <li><a target="top" href="http://about.accentsresearch.com/?p=258">About</a></li>
   </ul>
 
+</div>
 
 <div id="soundcheckbuttons" class="hidden">
 	<p>
@@ -77,15 +96,12 @@
 <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEMyLTNQaXlubmNFRUp1dFQzaUVaZWc6MQ" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
-
-	
-
 </div><!-- close text -->
 </div><!-- close middle -->
 
 <div id="footer"></div>
 <div id="audio_div" class="">
-    <audio id="mission_audio" src="./../audio_sounds/chime.wav"></audio>
+    <audio id="mission_audio" src="./../audio_sounds/chime.wav">[This browser cannot play HTML5 audio files!]</audio>
 </div>
 
 
@@ -96,6 +112,20 @@
 
 <script>
 localStorage.setItem("gameVersion","0.1");
+if(localStorage){
+	document.getElementById("localstorage").innerHTML="✔";
+	addClass(document.getElementById("localstorage"),"green");
+}
+if(console){
+	document.getElementById("javascript").innerHTML="✔";
+	addClass(document.getElementById("javascript"), "green");
+}
+document.getElementById("mission_audio").onerror = function(){
+	document.getElementById("audio").innerHTML="✘";
+	addClass(document.getElementById("audio"), "red");
+}
+document.getElementById("mission_audio").play();
+
 </script>
 
 </body>
