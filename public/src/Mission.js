@@ -13,6 +13,7 @@ setGameLanguage = function(gameindex){
 	document.getElementById("mission_text").innerHTML= games[currentGame].description;
 	el = document.getElementById("mission_audio");
 	el.setAttribute("src", games[currentGame].missionAudio);
+	el.play();
 	var visitor = localStorage.getItem("visitor");
 	if(visitor){
 		visitor = JSON.parse(visitor);

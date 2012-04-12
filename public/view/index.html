@@ -41,11 +41,15 @@ Javascript
 </td><td width="100">
 Audio
 </td><td width="100">
+Slider
+</td><td width="100">
 LocalStorage
 </td></tr><tr><td>
 <span class="red" id="javascript">✘</span>
 </td><td>
 <span class="green" id="audio">✔</span>
+</td><td>
+<span class="red" id="slider">✘</span>
 </td><td>
 <span class="red" id="localstorage">✘</span>
 </td></tr></table>
@@ -119,6 +123,10 @@ if(localStorage){
 if(console){
 	document.getElementById("javascript").innerHTML="✔";
 	addClass(document.getElementById("javascript"), "green");
+}
+if(navigator.userAgent.indexOf("Safari") > -1){
+	document.getElementById("slider").innerHTML="✔";
+	addClass(document.getElementById("slider"), "green");
 }
 document.getElementById("mission_audio").onerror = function(){
 	document.getElementById("audio").innerHTML="✘";
