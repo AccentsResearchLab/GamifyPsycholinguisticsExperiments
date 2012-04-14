@@ -1,24 +1,22 @@
-h1 {
-	text-align:center;
-	font: "Trebuchet MS";
-	font-size: 2em;
-}
-p.date {
-	text-align:right;
-}
-p.main {
-	text-align:justify;
-}
 
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lobster'), url('./../fonts/google_lobster_font.woff') format('woff');
+}
+h1,h2,h3,h4 {
+	text-align:center;
+	font-family:"Lobster", Verdana, Tahoma, sans-serif;
+}
 
 body {
 	background: #333333;
 	font-family:"Trebuchet MS", Verdana, Tahoma, sans-serif;
-	font-size: 18px; 
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+	font-size: 1em; 
+	margin: 0em;
+	padding: 0em;
 	color:#fff;
-
 }	
 
 a:link, a:visited
@@ -32,35 +30,23 @@ a:hover, a:active
 	text-decoration: none; 
 	color: #C3B4B4;
 }
-
-#container {
-	width: 100%;
-	margin:auto;
-	clear:both;
+#soundcheckbuttons{
+	text-align:right;
 }
-
-#header {
-	background: transparent url(./../images/spyOrNot.jpeg) left no-repeat;
-	margin: 0px;
-	width: 704px;
-	height: 262px;
+#mission_text{
+	clear:both; 
+	display:block; 
+	margin:auto; 
+	width:80%
 }
-
-#middle {
-	clear:both;
+#choose_game{
+	clear:both; 
+	margin:auto; 
+	width:80%
 }
-
 #footer {
 	width: 704px;
 	height: 30px;
-}
-
-#logo {
-	width: 650px;
-	height: 65px;
- 	margin-top: 1px;
-	margin-left:auto;
-	margin-right:auto;
 }
 input.score{
 	size:3;
@@ -81,35 +67,6 @@ input.green{
 .green{
 	color:#090;
 }
-#menu {
-	background: transparent;
-	float:left;
-	padding-top:5px;
-    width:221px;
-    height:420px;
-}
-
-#menu ul {
-	margin: 0 0 0 0;
-	padding-left: 126px;
-	list-style-type: none;
-	text-align: left;
-}
-#menu li {
- 	padding-top: 1px;
- 	padding-bottom: 5px;
-	font-weight: bold;
-}
-
-#text {	
-	float:left;
-	width:421px;
-	background: transparent;
-	padding: 15px 80px 20px 10px;
-	font-family:Verdana, "Trebuchet MS", Tahoma, sans-serif;
-	font-size: 12px;
-}
-
 #buttons_div {
 	float: right;
 }
@@ -148,7 +105,7 @@ input.green{
     cursor: pointer
 }
 
-  .small.button                    { font-size: 11px}
+ .small.button                    { font-size: 11px}
 .button, .medium.button      { font-size: 13px;
                                               font-weight: bold;
                                               line-height: 1;

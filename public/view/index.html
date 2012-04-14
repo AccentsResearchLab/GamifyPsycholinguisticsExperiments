@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html manifest="./cache.appcache">
+<html >
 <head>
 
 <title>Spy or Not</title>
@@ -25,85 +25,64 @@
 </head>
 
 <body>
-
-
-
-<div id="container">
-
-
-<h1>    Spy or Not?</h1>
-<img src="./../images/spyOrNot.jpeg"/>
-
-<div style="float:right;margin:2em;">
-<h4>Browser Test:</h4>
-<table  width="300"><tr><td width="100">
-Javascript
-</td><td width="100">
-Audio
-</td><td width="100">
-Slider
-</td><td width="100">
-LocalStorage
-</td></tr><tr><td>
-<span class="red" id="javascript">✘</span>
-</td><td>
-<span class="green" id="audio">✔</span>
-</td><td>
-<span class="red" id="slider">✘</span>
-</td><td>
-<span class="red" id="localstorage">✘</span>
-</td></tr></table>
-
-
-
-
-</div>
-
-<div id="middle" >
-
-
-
-	
-
-<div id="menu" >
-
-  <ul>
-    
-    <li><a target="top" href="http://about.accentsresearch.com/?p=258">About</a></li>
-  </ul>
-
-</div>
-
-<div id="soundcheckbuttons" class="hidden">
-	<p>
-		<input class = "large green button" type="button" id="playButton" value="Play Sound Check" onClick="playGameMission(event)"/>
-<p>
-		<form method="post" action="main.html">
-		<input class = "large blue button" type="submit" value="Start Game" />
-		</form>
+<h1>Spy or Not?</h1>
+<div style="clear:both; display:block; margin:1em;">
+	<div style="float:left; ">
+		
+		<img src="./../images/spyOrNot.jpeg"/>
+		<p>
+			<a target="top" href="http://about.accentsresearch.com/?p=258">About</a>
+		</p>
+	</div>
+	<div style="float:right; margin:1em;">
+		<div id="browser_test">
+			<h4>Browser Test:</h4>
+			<table  width="300"><tr>
+				<td width="100">
+				Javascript
+				</td><td width="100">
+				Audio
+				</td><td width="100">
+				Slider
+				</td><td width="100">
+				LocalStorage
+				</td></tr><tr><td>
+				<span class="red" id="javascript">✘</span>
+				</td><td>
+				<span class="green" id="audio">✔</span>
+				</td><td>
+				<span class="red" id="slider">✘</span>
+				</td><td>
+				<span class="red" id="localstorage">✘</span>
+				</td>
+			</tr></table>
+		</div>
+		
+		<div id="soundcheckbuttons" class="hidden" >
+			<input class = "large green button" type="button" id="playButton" value="Play Sound Check" onClick="playGameMission(event)"/>
+			<form method="post" action="main.html">
+				<input class = "large blue button" type="submit" value="Start Game" />
+			</form>
+		</div>
 	</div>
 </div>
 
 <div id="mission_text">
-	<p>Welcome to the Spy Game! Please select the place where you grew up:</p>
-
-
-	<div id="choosegamebuttons">
-		<button id="rus_button" class = "large purple button" type="button" value="0" onClick="setGameLanguage(event.target.value)">Russia</button>
-		<button id="sus_button" class = "large seagreen button" type="button" value="1" onClick="setGameLanguage(event.target.value)">Sussex England</button>
-		<button id="southaf_button" class = "large yellow button" type="button" value="2" onClick="setGameLanguage(event.target.value)">South Africa</button>
-
-	</div>
+	<p>Welcome to the Spy Game! Please select the place where you grew up:</p>			
+</div>
+<div id="choose_game">		
+	<button id="rus_button" class = "large purple button" type="button" value="0" onClick="setGameLanguage(event.target.value)">Russia</button>
+	<button id="sus_button" class = "large seagreen button" type="button" value="1" onClick="setGameLanguage(event.target.value)">Sussex England</button>
+	<button id="southaf_button" class = "large yellow button" type="button" value="2" onClick="setGameLanguage(event.target.value)">South Africa</button>
+</div>
 
 <iframe src="visitor.html" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 	
-<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEMyLTNQaXlubmNFRUp1dFQzaUVaZWc6MQ" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div style="margin:3em;">
+	<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEMyLTNQaXlubmNFRUp1dFQzaUVaZWc6MQ" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
 
 
-</div><!-- close text -->
-</div><!-- close middle -->
-
-<div id="footer"></div>
 <div id="audio_div" class="">
     <audio id="mission_audio" src="./../audio_sounds/chime.wav">[This browser cannot play HTML5 audio files!]</audio>
 </div>
@@ -115,7 +94,10 @@ LocalStorage
 
 
 <script>
-localStorage.setItem("gameVersion","0.1");
+localStorage.setItem("gameVersion","2.0");
+localStorage.setItem("serverUrl","http://localhost:3000");
+localStorage.setItem("audioUrl","http://game.accentsresearch.com/");
+
 if(localStorage){
 	document.getElementById("localstorage").innerHTML="✔";
 	addClass(document.getElementById("localstorage"),"green");

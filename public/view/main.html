@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html manifest="./cache.appcache">
+<html>
 <head>
 
 <title>Spy or Not</title>
@@ -9,36 +9,33 @@
   <script type="text/javascript" charset="utf-8" src="./../lib/underscore.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="./../lib/Backbone.js"></script>
   <script type="text/javascript" charset="utf-8" src="./../lib/Kinetic.js"></script>
-<link rel="stylesheet" type="text/css" href="./../css/saa.css" />
-<link rel="stylesheet" type="text/css" href="./../css/vote.css" />
-<script type="text/javascript">
+  <link rel="stylesheet" type="text/css" href="./../css/saa.css" />
+  <link rel="stylesheet" type="text/css" href="./../css/vote.css" />
+  <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30676346-1']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30676346-1']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
-</script>
+  </script>
 </head>
 
 
 <body>
-       <h1 ><span id ="spytype"></span>Spy or Not?</h1>
+  <h1 ><span id ="spytype"></span>Spy or Not?</h1>
 
-
-  
- <div id="container">
-  
-
-  <div  style="margin:auto; text-align:center;">
-  <canvas id="counter"  style="margin:auto;"> </canvas>
-   <div id="spy_score" class="hidden" style="float:right;">
-    <div id="viz"></div>
+  <div style="margin:auto; text-align:center;">
+    <canvas id="counter"  style="margin:auto;"> 
+    </canvas>
+    <div id="spy_score" class="hidden" style="float:right;">
+      <div id="viz">
+      </div>
       <div>
         Native correctly identified: <input class="score green" value=2 id="nativepositive"/>
         <br/>
@@ -56,24 +53,21 @@
     </div>
   </div>
 
-
- 
-
 <div style="clear:both; display:block; margin:auto; padding:1em; text-align:center;">
     <input class="large green button" type="button" id="playButton" value="Start         " onClick="voteMeter(document.getElementById('meter').value)"/>
 </div>
 
-  <table cellpadding="0" cellspacing="0" style="padding:0px; margin:auto;"><tr><td>
-  <img  src="./../images/sidemeter1.png"/>
-  </td><td>
-  <input class="meter" id="meter" type="range"  min="-5" max="5" onchange="addVoteDetails(event.target.value)" >
-  </td><td>
-  <img  src="./../images/sidemeter3.png"/>
-  </td><td>
- 
-  </td></tr>
- 
-  </table>
+  <table cellpadding="0" cellspacing="0" style="padding:0px; margin:auto;"><tr>
+    <td>
+    <img  src="./../images/sidemeter1.png"/>
+    </td><td>
+    <input class="meter" id="meter" type="range"  min="-5" max="5" onchange="addVoteDetails(event.target.value)" >
+    </td><td>
+    <img  src="./../images/sidemeter3.png"/>
+    </td><td>
+   
+    </td>
+  </tr> </table>
 
   <table cellpadding="0" cellspacing="0" style="padding:0px; margin:auto;"><tr><td>
    <tr><td>
@@ -91,9 +85,9 @@
   
   
   
-<p>&nbsp;</p>
+<div style="margin:3em;">
   <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEMyLTNQaXlubmNFRUp1dFQzaUVaZWc6MQ" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+</div>
 
 
 <iframe  id="vote_frame" src="vote.html" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0"></iframe>
@@ -107,7 +101,6 @@
   <audio id="stimuli_audio" src="./../audio_sounds/click.mp3"></audio>
 
 
-</div>
 
 
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>

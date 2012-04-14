@@ -7,10 +7,11 @@ setGameLanguage = function(gameindex){
 	debug("Setting language to "+language);
 	localStorage.setItem("gameLanguage",currentGame);
 	removeClass(document.getElementById("soundcheckbuttons"), "hidden");
-	addClass(document.getElementById("choosegamebuttons"), "hidden");
+	addClass(document.getElementById("choose_game"), "hidden");
+	addClass(document.getElementById("browser_test"), "hidden");
 	//playGameMission(currentGame);
 	localStorage.setItem( "games", JSON.stringify(games) );
-	document.getElementById("mission_text").innerHTML= games[currentGame].description;
+	document.getElementById("mission_text").innerHTML= "<h3>Your Mission:</h3>"+games[currentGame].description;
 	el = document.getElementById("mission_audio");
 	el.setAttribute("src", games[currentGame].missionAudio);
 	el.play();

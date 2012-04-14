@@ -105,8 +105,6 @@ var draw_score = function(dataset){
     
 };
 draw_counter = function(count){
-  
-
   var canvas = document.getElementById("counter");
   var ctx = canvas.getContext("2d");
   canvas.width = 600;
@@ -123,16 +121,15 @@ draw_counter = function(count){
         ctx.drawImage(spy,spys[x],y+Math.random()*15);
       }
     }
+    var img = new Image();
+    img.onload = function(){
+        ctx.drawImage(img,0,0,canvas.width,canvas.height);
+    };
+    img.src = './../images/bus.png';
   };
   spyActive.src = './../images/spybody2.png';  
   spy.src = './../images/spybody.png'; 
 
-  var img = new Image();
-  img.onload = function(){
-      ctx.drawImage(img,0,0,canvas.width,canvas.height);
-      /*TODO draw the scale */
-      ;
-  };
-  img.src = './../images/bus.png';
+  
 
 };
