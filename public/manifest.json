@@ -1,7 +1,7 @@
 {
-  "name": "GamifyPsycholinguistics",
-  "version": "1.3",
-  "description": "Online experiments.",
+  "name": "Spy or Not",
+  "version": "2.0",
+  "description": "Are you a good spy?",
   "app": {
     "launch": {
       "local_path": "view/index.html"
