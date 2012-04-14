@@ -19,3 +19,6 @@ function removeClass(ele,cls) {
 debug = function(message){
 	console.log(message);
 };
+bug = function(message){
+	alert(message);
+}

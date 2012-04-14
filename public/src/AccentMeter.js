@@ -19,7 +19,7 @@ var addVoteDetails = function(newValue){
 var voteMeter = function(newValue)
 {
 	
-	document.getElementById("playButton").value = "Next                                  ";
+	document.getElementById("playButton").value = "Next";
 	
 	/*
 	Dont let the user go too fast
@@ -32,6 +32,7 @@ var voteMeter = function(newValue)
 	}
 	if (timepassed < 1000 || clicktime < 1000){
 	    window.audioStatus = window.audioStatus+ " User clicked Next too fast: "+timepassed+" or "+clicktime;
+	    bug("Slow down grasshopper...");
 	    debug(window.audioStatus);
 	    window.lastnextClick = Date.now();
 	    return; 

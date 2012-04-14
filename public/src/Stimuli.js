@@ -54,14 +54,14 @@ next_block = function(){
         {name: "Pre", values: [0, 0]}
         ];
   window.game.scores[window.currentBlock] = dataset;
-  removeClass(document.getElementById("counter"),"hidden");
+  removeClass(document.getElementById("game_area"),"hidden");
   addClass(document.getElementById("spy_score"),"hidden");
   draw_counter(window.countAudioInSet);
 };
 
 var draw_score = function(dataset){
-  if(document.getElementById("counter")){
-    addClass(document.getElementById("counter"),"hidden");
+  if(document.getElementById("game_area")){
+    addClass(document.getElementById("game_area"),"hidden");
   }
   if(document.getElementById("spy_score")){
     removeClass(document.getElementById("spy_score"),"hidden");
@@ -108,11 +108,11 @@ draw_counter = function(count){
   var canvas = document.getElementById("counter");
   var ctx = canvas.getContext("2d");
   canvas.width = 600;
-  canvas.height = 290;
-  var spys = [500,470,430,400,370,340,300,250,210,170,100,50];
+  canvas.height = 200;
+  var spys = [500,470,430,400,370,330,300,240,200,160,90,30];
   var spyActive = new Image();
   var spy = new Image();
-  var y = 115;
+  var y =60;
   spy.onload = function(){
     for(x in spys){
       if(x == count){
