@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/',function(req,res){ 
- 	res.redirect('/view/soundcheck.html');
+ 	res.redirect('/view/index.html');
 });
 app.post('/view/main.html',function(req,res){
   res.redirect('/view/main.html');
