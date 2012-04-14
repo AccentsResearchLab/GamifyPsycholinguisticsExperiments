@@ -1,7 +1,5 @@
 .wav
-
-# private constants #
-NonPublicConstants.java
+audio_stimuli
 
 .idea
 .project
