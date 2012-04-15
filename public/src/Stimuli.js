@@ -132,6 +132,10 @@ draw_counter = function(count){
     var img = new Image();
     img.onload = function(){
         ctx.drawImage(img,0,0,canvas.width,canvas.height);
+        ctx.fillStyle = "#ccc";
+        ctx.font  = 'bold 26px Lobster';
+        var busnumber = parseInt(window.game.currentBlock)+1;
+        ctx.fillText("#"+busnumber,300,140);
     };
     img.src = './../images/bus.png';
   };
