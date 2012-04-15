@@ -2,7 +2,7 @@
 // description from a json file on the disk
 loadSamples = function(filename, callback) {
   $.getJSON(filename, function(data) {
-    window.samples = _.shuffle(data);
+    window.game.samples = _.shuffle(data);
     if(typeof callback === 'function'){
       callback();
     }

@@ -102,9 +102,7 @@
   </div>
 
   <audio id="stimuli_audio" src="./../audio_sounds/click.mp3"></audio>
-
-
-
+  <audio id="bus_audio" src="./../audio_sounds/bus_driving_away2.mp3"></audio>
 
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
@@ -117,10 +115,14 @@
 
 <script>
 
-$(function(){
-  window.game = new GameRouter();
-  //Backbone.history.start();
-});
+  $(function(){
+    if(localStorage.getItem("game")){
+      window.game = JSON.parse(localStorage.getItem("game"));
+      startGame();
+    }else{
+      window.game = new GameRouter();
+    }
+  });
 
 </script>
 

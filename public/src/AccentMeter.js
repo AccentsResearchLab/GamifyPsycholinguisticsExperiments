@@ -32,7 +32,8 @@ var voteMeter = function(newValue)
 	}
 	if (timepassed < 1000 || clicktime < 1000){
 	    window.audioStatus = window.audioStatus+ " User clicked Next too fast: "+timepassed+" or "+clicktime;
-	    bug("Slow down grasshopper...");
+	    var slow_messages = ["Slow down grasshopper...","Hot potato, hot potatot...","Patience is a virtue...","Are you sure you heard the whole pass phrase?"];
+	    bug(slow_messages[Math.round(Math.random()*3)]);
 	    debug(window.audioStatus);
 	    window.lastnextClick = Date.now();
 	    return; 
@@ -59,7 +60,7 @@ var voteMeter = function(newValue)
 		/*
 		Score the participant's vote
 		*/
-		var dataset =window.game.scores[window.currentBlock];
+		var dataset =window.game.scores[window.game.currentBlock];
 
 		var nonnative = window.currentAudio.match(/[0-9][0-9]/);
 		var pretest = window.currentAudio.match(/pre/);
@@ -80,8 +81,8 @@ var voteMeter = function(newValue)
 	window.votes = window.votes || [];
 	window.votes.push(vote);
 	localStorage.setItem("votes",JSON.stringify(window.votes));
-	//debug("User voted: "+JSON.stringify(window.votes));
-		
+	/* Set a return point so the user can come back */
+  	localStorage.setItem("game",JSON.stringify(window.game));	
 	/*
 	Play a click
 	*/

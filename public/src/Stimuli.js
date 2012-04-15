@@ -10,25 +10,25 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     return; 
   }
 
-  if (window.sIndex == undefined || sIndex >= samples.length) {
-    window.sIndex = 0;
+  if (window.game.stimuliIndex == undefined || window.game.stimuliIndex >= window.game.samples.length) {
+    window.game.stimuliIndex = 0;
   }
-  var sample = samples[sIndex++];
+  var sample = window.game.samples[window.game.stimuliIndex++];
  
   debug("Playing : " + sample.uri)
-  if(window.countAudioInSet > -1){
-    window.countAudioInSet++; 
+  if(window.game.countAudioInSet > -1){
+    window.game.countAudioInSet++; 
   }else{
-    window.countAudioInSet= 0;
+    window.game.countAudioInSet= 0;
   }
   /*
   If the block of 12 is done
   */
-  if(window.countAudioInSet >= 11){
-    draw_score(window.game.scores[window.currentBlock]);
+  if(window.game.countAudioInSet >= 11){
+    draw_score(window.game.scores[window.game.currentBlock]);
     return;
   }
-  draw_counter(window.countAudioInSet);
+  draw_counter(window.game.countAudioInSet);
 
 
   el = document.getElementById("stimuli_audio");
@@ -47,16 +47,20 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 	}
 };
 next_block = function(){
-  window.currentBlock++;
+
+
+  window.game.currentBlock++;
   var  dataset = [
         {name: "Not", values: [0, 0 ]},
         {name: "Native", values: [0, 0]},
         {name: "Pre", values: [0, 0]}
         ];
-  window.game.scores[window.currentBlock] = dataset;
+  window.game.scores[window.game.currentBlock] = dataset;
   removeClass(document.getElementById("game_area"),"hidden");
   addClass(document.getElementById("spy_score"),"hidden");
-  draw_counter(window.countAudioInSet);
+  localStorage.setItem("game",JSON.stringify(window.game)); 
+    
+  draw_counter(window.game.countAudioInSet);
 };
 
 var draw_score = function(dataset){
@@ -71,7 +75,7 @@ var draw_score = function(dataset){
   Draw Score
   */
   debug(dataset);
-  debug("that was teh scores");
+  debug("that was the scores");
   localStorage.setItem("scores",JSON.stringify(dataset));
 
   document.getElementById("nativepositive").value = dataset[1].values[0]; //corect
@@ -95,11 +99,15 @@ var draw_score = function(dataset){
   submitForm();
 
   /*
-  TODO Play audio of buss driving a way
+  Play audio of buss driving away
   */
-  window.countAudioInSet = 0;
+  if(document.getElementById("bus_audio")){
+    document.getElementById("bus_audio").play();
+  }
+
   /* Display the score for 8 seconds and come back to the game */
   if(window.game){
+    window.game.countAudioInSet = 0;
     window.setTimeout("next_block();",8000);
   }
     
@@ -117,7 +125,7 @@ draw_counter = function(count){
     for(x in spys){
       if(x == count){
         ctx.drawImage(spyActive,spys[x],y+Math.random()*15);
-      }else{
+      }else if (x > count){
         ctx.drawImage(spy,spys[x],y+Math.random()*15);
       }
     }

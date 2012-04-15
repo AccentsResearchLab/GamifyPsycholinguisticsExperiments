@@ -59,7 +59,7 @@
 		</div>
 		
 		<div id="soundcheckbuttons" class="hidden" >
-			<input class = "large green button" type="button" id="playButton" value="Play Sound Check" onClick="playGameMission(event)"/>
+			<input class = "large green button" type="button" id="playButton" value="Stop Sound Check" onClick="playGameMission(event)"/>
 			<form name="startgame" method="post" action="main.html">
 				<input class = "large blue button" type="submit" value="Start Game" />
 			</form>
@@ -94,12 +94,13 @@
 
 
 <script>
-if(localStorage.getItem("gameVersion")){
+if(localStorage.getItem("game")){
 	var x = window.confirm("Wecome back! Continue game?")
 	if (x){
 		document.startgame.submit();
 	}	else{
 		//let them choose
+		localStorage.removeItem("game");
 	}
 }else{
 	localStorage.setItem("gameVersion","2.0");	
