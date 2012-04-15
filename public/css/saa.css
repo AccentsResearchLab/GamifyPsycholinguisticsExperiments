@@ -47,9 +47,11 @@ a:hover, a:active
 	margin:auto; 
 	width:80%
 }
-#footer {
-	width: 704px;
-	height: 30px;
+#share_div{
+	width:80%;
+	text-align:center;
+	margin:auto;
+	overflow:visible;
 }
 input.score{
 	size:3;

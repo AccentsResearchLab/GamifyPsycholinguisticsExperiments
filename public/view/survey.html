@@ -17,6 +17,15 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="header">
 
 <h1>Spy or Not</h1>
@@ -42,9 +51,15 @@
   </div>
 
 
-	<div id="shareDiv" class="hidden">
-		<input type="button" id="tweet" value="Tweet" onclick="document.form.submit()" /> <input
-			type="button" id="facebook" value="Facebook" />
+	<div id="share_div" class="">
+    <h2>Final Score - <span id="percent_score">82</span></h2>
+		<p>Challenge your friends to beat your score!</p>
+  
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://game.accentsresearch.com" id="twitter_el" data-text="I played #SpyOrNot and got 8/10 spys!">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  
+    <div class="fb-send" data-href="http://game.accentsresearch.com" data-font="arial"></div>
+
 	</div>
   <div style="clear:both; margin:2em;"><p>
    Experimental Design and Audio copyright <a href="http://accentsresearch.com">Dr. Laura Spinu,</a> <a href="http://cmll.concordia.ca/linguistics">Concordia University</a>.</p>

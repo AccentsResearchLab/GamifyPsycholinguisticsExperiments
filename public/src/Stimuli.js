@@ -77,8 +77,10 @@ var draw_score = function(dataset){
   debug(dataset);
   debug("that was the scores");
   localStorage.setItem("scores",JSON.stringify(dataset));
+  
 
   document.getElementById("nativepositive").value = dataset[1].values[0]; //corect
+
   document.getElementById("nativemissing").value = dataset[1].values[1] - dataset[1].values[0]; //total - correct
   if(dataset[1].values[1] == 0){
     document.getElementById("nativepositive").value = 0.001; //put all as missing if there were no stimuli
@@ -109,6 +111,23 @@ var draw_score = function(dataset){
   if(window.game){
     window.game.countAudioInSet = 0;
     window.setTimeout("next_block();",8000);
+  }
+  if(document.getElementById("percent_score")){
+    var score = 0;
+    var total = 0;
+
+    // score += dataset[0].values[0];
+    score += dataset[1].values[0];
+    score += dataset[2].values[0];
+
+    // total += dataset[0].values[1];
+    total += dataset[1].values[1];
+    total += dataset[2].values[1];
+    
+    var percent = Math.round(score)+"/"+total;
+    document.getElementById("percent_score").innerHTML=percent;
+    var el = document.getElementById("twitter_el");
+    el.setAttribute("data-text","I played #SpyOrNot and got "+percent+" spys!");
   }
     
 };
