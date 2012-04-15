@@ -33,7 +33,7 @@
 
    <div id="spy_score" class="hidden" style="float:right;">
     <div id="viz"></div>
-      <div>
+      <div class="hidden">
         Native correctly identified: <input class="score green" value=2 id="nativepositive"/>
         <br/>
         Native incorectly rejected: <input class="score red" value=2 id="nativemissing"/>
@@ -87,8 +87,26 @@
 <script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"></script>
 
 <script>
-	var scores = JSON.parse(localStorage.getItem("scores"));
-	draw_score(scores);
+  var game = JSON.parse(localStorage.getItem("game"));
+
+	var score = [
+      {name: "Not", values: [0, 0 ]},
+        {name: "Native", values: [0, 0]},
+        {name: "Pre", values: [0, 0]}
+        ];
+  for (var s = 0; s < game.scores.length ; s++){
+    score[0].values[0] += game.scores[s][0].values[0];
+    score[0].values[1] += game.scores[s][0].values[1];
+
+    score[1].values[0] += game.scores[s][1].values[0];
+    score[1].values[1] += game.scores[s][1].values[1];
+    
+    score[2].values[0] += game.scores[s][2].values[0];
+    score[2].values[1] += game.scores[s][2].values[1];
+    if(s+1 == game.scores.length){
+      draw_score(score);
+    }
+  }
 </script>
 </body>
 </html>

@@ -16,10 +16,14 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   var sample = window.game.samples[window.game.stimuliIndex++];
  
   debug("Playing : " + sample.uri)
+  
   if(window.game.countAudioInSet > -1){
+    draw_counter(window.game.countAudioInSet);
     window.game.countAudioInSet++; 
   }else{
     window.game.countAudioInSet = 0;
+    draw_counter(window.game.countAudioInSet);
+
   }
   /*
   If the block of 12 is done
@@ -28,8 +32,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     draw_score(window.game.scores[window.game.currentBlock]);
     return;
   }
-  draw_counter(window.game.countAudioInSet);
-
+  
 
   el = document.getElementById("stimuli_audio");
   el.setAttribute("src", sample.uri);
@@ -54,11 +57,14 @@ next_block = function(){
         {name: "Pre", values: [0, 0]}
         ];
   window.game.scores[window.game.currentBlock] = dataset;
-  removeClass(document.getElementById("game_area"),"hidden");
-  addClass(document.getElementById("spy_score"),"hidden");
+  if(document.getElementById("game_area")){
+    removeClass(document.getElementById("game_area"),"hidden");
+    addClass(document.getElementById("spy_score"),"hidden");
+    draw_counter(window.game.countAudioInSet);
+  }
   localStorage.setItem("game",JSON.stringify(window.game)); 
     
-  draw_counter(window.game.countAudioInSet);
+  
 };
 
 var draw_score = function(dataset){
@@ -106,7 +112,7 @@ var draw_score = function(dataset){
   }
 
   /* Display the score for 8 seconds and come back to the game */
-  if(window.game){
+  if(document.getElementById("game_area")){
     window.game.countAudioInSet = 0;
     window.setTimeout("next_block();",8000);
   }
@@ -114,11 +120,11 @@ var draw_score = function(dataset){
     var score = 0;
     var total = 0;
 
-    // score += dataset[0].values[0];
+    score += dataset[0].values[0];
     score += dataset[1].values[0];
     score += dataset[2].values[0];
 
-    // total += dataset[0].values[1];
+    total += dataset[0].values[1];
     total += dataset[1].values[1];
     total += dataset[2].values[1];
     
