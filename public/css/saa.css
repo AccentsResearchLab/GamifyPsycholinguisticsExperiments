@@ -24,7 +24,8 @@ body {
 a:link, a:visited
 { 
 	text-decoration: none; 
-	color: #FFFF00;
+	font-weight:bold;
+	color: #Fc8;
 }
 
 a:hover, a:active
