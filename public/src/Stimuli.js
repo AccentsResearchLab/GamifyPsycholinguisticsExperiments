@@ -19,12 +19,12 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   if(window.game.countAudioInSet > -1){
     window.game.countAudioInSet++; 
   }else{
-    window.game.countAudioInSet= 0;
+    window.game.countAudioInSet = 0;
   }
   /*
   If the block of 12 is done
   */
-  if(window.game.countAudioInSet >= 11){
+  if(window.game.countAudioInSet >= 12){
     draw_score(window.game.scores[window.game.currentBlock]);
     return;
   }
@@ -47,8 +47,6 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 	}
 };
 next_block = function(){
-
-
   window.game.currentBlock++;
   var  dataset = [
         {name: "Not", values: [0, 0 ]},
@@ -124,7 +122,7 @@ var draw_score = function(dataset){
     total += dataset[1].values[1];
     total += dataset[2].values[1];
     
-    var percent = Math.round(score)+"/"+total;
+    var percent = Math.round(score*10)/10+"/"+total;
     document.getElementById("percent_score").innerHTML=percent;
     var el = document.getElementById("twitter_el");
     el.setAttribute("data-text","I played #SpyOrNot and got "+percent+" spys!");

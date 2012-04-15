@@ -18,7 +18,6 @@ var addVoteDetails = function(newValue){
 
 var voteMeter = function(newValue)
 {
-	
 	document.getElementById("playButton").value = "Next";
 	
 	/*
@@ -32,7 +31,7 @@ var voteMeter = function(newValue)
 	}
 	if (timepassed < 1000 || clicktime < 1000){
 	    window.audioStatus = window.audioStatus+ " User clicked Next too fast: "+timepassed+" or "+clicktime;
-	    var slow_messages = ["Slow down grasshopper...","Hot potato, hot potatot...","Patience is a virtue...","Are you sure you heard the whole pass phrase?"];
+	    var slow_messages = ["Slow down grasshopper...","Hot potato, hot potato...","Patience, my child...","Are you sure you heard the whole pass phrase?"];
 	    bug(slow_messages[Math.round(Math.random()*3)]);
 	    debug(window.audioStatus);
 	    window.lastnextClick = Date.now();
