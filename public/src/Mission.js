@@ -14,7 +14,7 @@ setGameLanguage = function(gameindex){
 	document.getElementById("mission_text").innerHTML= "<h3>Your Mission:</h3>"+games[currentGame].description;
 	el = document.getElementById("mission_audio");
 	el.setAttribute("src", games[currentGame].missionAudio);
-	el.play();
+	playAudioFile("mission_audio");
 	var visitor = localStorage.getItem("visitor");
 	if(visitor){
 		visitor = JSON.parse(visitor);
@@ -26,8 +26,7 @@ setGameLanguage = function(gameindex){
 playGameMission = function(event){
 	if(event.target.value =="Pause"){
 		event.target.value = "Play Sound Check";
-		el = document.getElementById("mission_audio");
-		el.pause();
+		pauseAudioFile("mission_audio");
 		var visitor = localStorage.getItem("visitor");
 		if(visitor){
 			visitor = JSON.parse(visitor);
@@ -37,8 +36,7 @@ playGameMission = function(event){
 		return;
 	}
 	debug("Playing mission for "+games[currentGame].language);
-	el = document.getElementById("mission_audio");
-	el.play();
+	playAudioFile("mission_audio");
 	event.target.value="Pause";
 
 	var visitor = localStorage.getItem("visitor");

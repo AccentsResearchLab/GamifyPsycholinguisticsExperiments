@@ -1,3 +1,4 @@
+
 // Code based on: http://www.visualizing.org/full-screen/37074
 
 // values will show up as slices in the circles. 
@@ -182,7 +183,7 @@ function submitForm() {
         //{name: "Maybe", values: {0: parseFloat(document.getElementById("nonnativepositive").value), 1: parseFloat(document.getElementById("nonnativemissing").value) }},
         {name: "Not", values: {0: parseFloat(document.getElementById("prenonnativepositive").value), 1: parseFloat(document.getElementById("prenonnativemissing").value) }}
     ];
-    console.log(userData);
+    //console.log(userData);
     change_dataset(userData);
 }
 

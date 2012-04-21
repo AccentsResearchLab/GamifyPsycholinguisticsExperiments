@@ -15,7 +15,13 @@ var addVoteDetails = function(newValue){
 	window.audioStatus = window.audioStatus + "; (" + newValue + ":" + moment+")";
 	window.lastAction = Date.now();
 }
-
+var drawMeter = function(){
+	if(isAndroidApp()){
+		document.getElementById("meterdiv").innerHTML='<input value="0" id="meter"  onchange="addVoteDetails(event.target.value)" />';
+	}else{
+		document.getElementById(divid).play();
+	}
+};
 var voteMeter = function(newValue)
 {
 	document.getElementById("playButton").value = "Next";
@@ -85,7 +91,7 @@ var voteMeter = function(newValue)
 	/*
 	Play a click
 	*/
-	document.getElementById("click_sound").play();
+	playAudioFile("click_sound");
 
 	/*
 	Auto advance to next Audio Stimuli after 1 seconds

@@ -58,12 +58,12 @@
     </div>
   </div>
 
-<div style="padding:0px; display:block; clear:both;">
+<div style="padding:0px; display:block; clear:both;" id="meterdiv">
   <table cellpadding="0" cellspacing="0" style="padding:0px; margin:auto;"><tr>
     <td>
     <img  src="./../images/sidemeter1.png"/>
     </td><td>
-    <input class="meter" id="meter" type="range"  min="-5" max="5" onchange="addVoteDetails(event.target.value)" >
+    <input class="meter" id="meter" type="range"  min="-5" max="5" onchange="addVoteDetails(event.target.value)" />
     </td><td>
     <img  src="./../images/sidemeter3.png"/>
     </td><td>
@@ -98,11 +98,11 @@
 
 
   <div id="audio_div" class="">
-    <video id="click_sound" src="./../audio_sounds/click.mp3"></video>
+    <audio id="click_sound" src="./../audio_sounds/click.mp3"></audio>
   </div>
 
-  <video id="stimuli_audio" src="./../audio_sounds/click.mp3"></video>
-  <video id="bus_audio" src="./../audio_sounds/bus_driving_away2.mp3"></video>
+  <audio id="stimuli_audio" src="./../audio_sounds/click.mp3"></audio>
+  <audio id="bus_audio" src="./../audio_sounds/bus_driving_away2.mp3"></audio>
 
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
@@ -125,6 +125,7 @@
     }
   });
 
+  drawMeter();
 </script>
 
 </body>

@@ -87,7 +87,7 @@
 
 
 <div id="audio_div" class="">
-    <video id="mission_audio" src="./../audio_sounds/chime.wav">[This browser cannot play HTML5 audio files!]</video>
+    <audio id="mission_audio" src="./../audio_sounds/chime.wav">[This browser cannot play HTML5 audio files!]</audio>
 </div>
 
 
@@ -97,6 +97,7 @@
 
 
 <script>
+
 if(localStorage.getItem("game")){
 	var x = window.confirm("Wecome back! Continue game?")
 	if (x){
@@ -123,11 +124,13 @@ if(navigator.userAgent.indexOf("Safari") > -1){
 	document.getElementById("slider").innerHTML="✔";
 	addClass(document.getElementById("slider"), "green");
 }
+
 document.getElementById("mission_audio").onerror = function(){
 	document.getElementById("audio").innerHTML="✘";
 	addClass(document.getElementById("audio"), "red");
 }
-document.getElementById("mission_audio").play();
+playAudioFile("mission_audio");
+
 
 </script>
 

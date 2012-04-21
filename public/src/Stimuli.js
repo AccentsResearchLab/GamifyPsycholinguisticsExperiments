@@ -36,7 +36,7 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
 
   el = document.getElementById("stimuli_audio");
   el.setAttribute("src", sample.uri);
-  el.play();
+  playAudioFile("stimuli_audio");
   window.currentAudio=sample.uri;
   window.currentAudioStartTime=Date.now();
   window.audioStatus ="Played stimuli "+sample.uri;
@@ -78,7 +78,7 @@ var draw_score = function(dataset){
   /*
   Draw Score
   */
-  debug(dataset);
+  //debug(dataset);
   debug("that was the scores");
   localStorage.setItem("scores",JSON.stringify(dataset));
   
@@ -108,7 +108,7 @@ var draw_score = function(dataset){
   Play audio of buss driving away
   */
   if(document.getElementById("bus_audio")){
-    document.getElementById("bus_audio").play();
+    playAudioFile("bus_audio");
   }
 
   /* Display the score for 8 seconds and come back to the game */
