@@ -57,12 +57,15 @@ var setAudioUrl = function(audiourl){
 		if (dir.length > 0){
 			
 		}else{
-			dir =  "http://game.accentsresearch.com/";
+			dir =  audiourl;
 		}
 		localStorage.setItem("audioUrl",dir);
 	}else{
 		// localStorage.setItem("audioUrl","./../"); //same host
-		localStorage.setItem("audioUrl","http://game.accentsresearch.com/");
+		localStorage.setItem("audioUrl",audiourl);
 	}
 	debug("Audio url is set to "+localStorage.getItem("audioUrl") );
+};
+var setLogicUrl = function(logicUrl){
+	localStorage.setItem("logicUrl",logicUrl);
 }

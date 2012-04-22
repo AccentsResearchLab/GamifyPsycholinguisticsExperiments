@@ -98,6 +98,9 @@
 
 <script>
 
+setLogicUrl("http://localhost:3000");
+setAudioUrl("http://game.accentsresearch.com/");
+
 if(localStorage.getItem("game")){
 	var x = window.confirm("Wecome back! Continue game?")
 	if (x){
@@ -109,8 +112,6 @@ if(localStorage.getItem("game")){
 }else{
 	localStorage.setItem("gameVersion","2.0");	
 }
-localStorage.setItem("serverUrl","http://localhost:3000");
-setAudioUrl();
 
 if(localStorage){
 	document.getElementById("localstorage").innerHTML="✔";
