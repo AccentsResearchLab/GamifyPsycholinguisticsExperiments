@@ -140,39 +140,43 @@ var draw_score = function(dataset){
 draw_counter = function(count){
   var canvas = document.getElementById("counter");
   var ctx = canvas.getContext("2d");
-  canvas.width = Math.max(600, window.innerWidth);
+  canvas.width = window.innerWidth-50;
+  if(canvas.width >600){
+    canvas.width=600;
+  }
   canvas.height = canvas.width/3;
-  var spydist = canvas.width/14;
-  var spys = [canvas.width-spydist
-      ,canvas.width-2*spydist
-      ,canvas.width-3*spydist
-      ,canvas.width-4*spydist
-      ,canvas.width-5*spydist
-      ,canvas.width-6*spydist
-      ,canvas.width-7*spydist
-      ,canvas.width-8*spydist
-      ,canvas.width-9*spydist
-      ,canvas.width-10*spydist
-      ,canvas.width-11*spydist
-      ,canvas.width-12*spydist];
+  var spydist = canvas.width/15;
+
+  var spys = [12*spydist
+      ,11*spydist
+      ,10*spydist
+      ,9*spydist
+      ,8*spydist
+      ,7*spydist
+      ,6*spydist
+      ,5*spydist
+      ,4*spydist
+      ,3*spydist
+      ,2*spydist
+      ,spydist];
   var spyActive = new Image();
   var spy = new Image();
-  var y =canvas.height*.3;
+  var y =canvas.height*.28;
   spy.onload = function(){
     for(x in spys){
       if(x == count){
-        ctx.drawImage(spyActive,spys[x],y+Math.random()*15);
+        ctx.drawImage(spyActive,spys[x],y+Math.random()*15, canvas.width*.05,canvas.height*.5);
       }else if (x > count){
-        ctx.drawImage(spy,spys[x],y+Math.random()*15);
+        ctx.drawImage(spy,spys[x],y+Math.random()*15, canvas.width*.05,canvas.height*.5);
       }
     }
     var img = new Image();
     img.onload = function(){
         ctx.drawImage(img,0,0,canvas.width,canvas.height);
         ctx.fillStyle = "#ccc";
-        ctx.font  = 'bold 26px Lobster';
+        ctx.font  = 'bold 24px Lobster';
         var busnumber = parseInt(window.game.currentBlock)+1;
-        ctx.fillText("#"+busnumber,300,140);
+        ctx.fillText("#"+busnumber,canvas.width/2,canvas.height*.7);
     };
     img.src = './../images/bus.png';
   };
