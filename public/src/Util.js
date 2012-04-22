@@ -28,17 +28,41 @@ isAndroidApp = function() {
 	//console.log(navigator.userAgent.indexOf("Spy or Not"));
 	return navigator.userAgent.indexOf("Spy or Not") > -1;
 }
+isAndroid4 = function(){
+	return navigator.userAgent.indexOf("Android 4") > -1;
+}
 playAudioFile = function(divid){
-	if(isAndroidApp()){
+	/*
+	Android 4 plays HTML5 audio
+	*/
+	if( isAndroidApp() ){
 		Android.playAudio(document.getElementById(divid).src);
 	}else{
 		document.getElementById(divid).play();
 	}
 }
 pauseAudioFile = function(divid){
-	if(isAndroidApp()){
+	/*
+	Android 4 plays HTML5 audio
+	*/
+	if( isAndroidApp()  ){
 		Android.pauseAudio();
 	}else{
 		document.getElementById(divid).pause();
 	}
+}
+var setAudioUrl = function(audiourl){
+	if(isAndroidApp()){
+		var dir = Android.getWifiOrSdcardDir();
+		if (dir.length > 0){
+			
+		}else{
+			dir =  "http://game.accentsresearch.com/";
+		}
+		localStorage.setItem("audioUrl",dir);
+	}else{
+		// localStorage.setItem("audioUrl","./../"); //same host
+		localStorage.setItem("audioUrl","http://game.accentsresearch.com/");
+	}
+	debug("Audio url is set to "+localStorage.getItem("audioUrl") );
 }

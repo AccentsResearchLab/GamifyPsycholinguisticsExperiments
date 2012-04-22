@@ -17,7 +17,7 @@ var addVoteDetails = function(newValue){
 }
 var drawMeter = function(){
 	if(isAndroidApp()){
-		document.getElementById("meterdiv").innerHTML='<input value="0" id="meter"  onchange="addVoteDetails(event.target.value)" />';
+		document.getElementById("meterdiv").innerHTML='<input value="0" id="meter" onchange="addVoteDetails(event.target.value)" />';
 	}
 };
 var voteMeter = function(newValue)

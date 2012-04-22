@@ -110,8 +110,7 @@ if(localStorage.getItem("game")){
 	localStorage.setItem("gameVersion","2.0");	
 }
 localStorage.setItem("serverUrl","http://localhost:3000");
-// localStorage.setItem("audioUrl","./../"); //same host
-localStorage.setItem("audioUrl","http://game.accentsresearch.com/");
+setAudioUrl();
 
 if(localStorage){
 	document.getElementById("localstorage").innerHTML="✔";
