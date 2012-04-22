@@ -3,7 +3,7 @@
   font-family: 'Lobster';
   font-style: normal;
   font-weight: normal;
-  src: local('Lobster'), url('./../fonts/google_lobster_font.woff') format('woff');
+  src: local('Lobster'), url('./../fonts/google_lobster_font.woff') format('woff'), url('./../fonts/Lobster.ttf');
 }
 h1,h2,h3,h4 {
 	text-align:center;
