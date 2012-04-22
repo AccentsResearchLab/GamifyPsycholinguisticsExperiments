@@ -6,6 +6,8 @@ loadStimuliList = function(filename, callback) {
     console.log(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""));
     $.getJSON(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""), function(data) {
       window.game.stimuli = data;
+      debug(data.length);
+      //TODO if remote data has a problem, load the local one.
       if(typeof callback === 'function'){
         callback();
       }

@@ -30,7 +30,7 @@ var GameRouter = Backbone.Router.extend({
 	
 });
 var downloadNext12Audio = function(){
-	var files = window.game.stimuli.slice(window.game.stimuliIndex, window.game.stimuliIndex+12);
+	var files = window.game.stimuli.slice(window.game.stimuliIndex, window.game.stimuliIndex+24);
 	for (f in files){
 		files[f].path = "http://game.accentsresearch.com/";
 	}
