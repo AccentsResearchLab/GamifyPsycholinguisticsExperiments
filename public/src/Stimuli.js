@@ -140,12 +140,24 @@ var draw_score = function(dataset){
 draw_counter = function(count){
   var canvas = document.getElementById("counter");
   var ctx = canvas.getContext("2d");
-  canvas.width = 600;
-  canvas.height = 200;
-  var spys = [500,470,430,400,370,330,300,240,200,160,90,30];
+  canvas.width = Math.max(600, window.innerWidth);
+  canvas.height = canvas.width/3;
+  var spydist = canvas.width/14;
+  var spys = [canvas.width-spydist
+      ,canvas.width-2*spydist
+      ,canvas.width-3*spydist
+      ,canvas.width-4*spydist
+      ,canvas.width-5*spydist
+      ,canvas.width-6*spydist
+      ,canvas.width-7*spydist
+      ,canvas.width-8*spydist
+      ,canvas.width-9*spydist
+      ,canvas.width-10*spydist
+      ,canvas.width-11*spydist
+      ,canvas.width-12*spydist];
   var spyActive = new Image();
   var spy = new Image();
-  var y =60;
+  var y =canvas.height*.3;
   spy.onload = function(){
     for(x in spys){
       if(x == count){
