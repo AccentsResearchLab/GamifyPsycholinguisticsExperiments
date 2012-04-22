@@ -2,7 +2,8 @@
   "name": "gamify-psycholinguistics",
   "version": "0.0.1",
   "dependencies": {
-		"express": "latest",
+    "express": "latest",
+    "underscore": "latest",
     "paperboy": "latest"
   }
 }
