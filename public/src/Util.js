@@ -69,3 +69,10 @@ var setAudioUrl = function(audiourl){
 var setLogicUrl = function(logicUrl){
 	localStorage.setItem("logicUrl",logicUrl);
 }
+var setBugFrameWidth = function(){
+	var b = document.getElementById("bugframe");
+	if (b){
+		b.setAttribute("width",window.innerWidth-50);
+	}
+}
+setBugFrameWidth();
