@@ -24,7 +24,26 @@
 <script  src="http://jsonip.appspot.com/?callback=getip"></script>
 
 <script>
-	
+	isAndroidApp = function() {
+		//Development tablet navigator.userAgent:
+		//Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; gTablet Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13 
+		//console.log(navigator.userAgent.indexOf("Spy or Not"));
+		return navigator.userAgent.indexOf("Spy or Not") > -1;
+	}
+	if(isAndroidApp()){
+		geoip_country_code = function(){
+			return Android.getCountryCode();
+		};
+		geoip_country_name = function(){
+			return Android.getCountryName();
+		};
+		geoip_latitude = function(){
+			return Android.getLatitude();
+		};
+		geoip_longitude = function(){
+			return Android.getLongitude();
+		};
+	}
 	var actionURL ="https://docs.google.com/spreadsheet/formResponse?pli=1&formkey=dHpES3FFcnVVZFRKX2J3eWFqOXhtQkE6MQ&amp;ifq";
 
 	function post_to_url(path, params, method) {
@@ -43,7 +62,7 @@
 	         }
 	    }
 	    document.body.appendChild(form);
-    	//form.submit();
+    	form.submit();
 	}
 
 	var submitForm = function(formurl){
@@ -79,6 +98,7 @@
 		params["entry.10.single"] = visitor["httpheaderslanguage"];
 		
 		localStorage.setItem("visitor",JSON.stringify(visitor));
+		console.log(JSON.stringify(visitor));
   		post_to_url(formurl,params,"post");
 	}
 
