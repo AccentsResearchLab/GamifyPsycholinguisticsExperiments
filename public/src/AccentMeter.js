@@ -18,8 +18,6 @@ var addVoteDetails = function(newValue){
 var drawMeter = function(){
 	if(isAndroidApp()){
 		document.getElementById("meterdiv").innerHTML='<input value="0" id="meter"  onchange="addVoteDetails(event.target.value)" />';
-	}else{
-		document.getElementById(divid).play();
 	}
 };
 var voteMeter = function(newValue)

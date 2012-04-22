@@ -33,9 +33,12 @@ var GameRouter = Backbone.Router.extend({
 var startGame = function(){
 	debug("Starting game.");
 	document.getElementById("spytype").innerHTML=window.games[window.game.activeGame].adjective +" ";
-	document.getElementById("spytype2").innerHTML=window.games[window.game.activeGame].language +" ";
-	document.getElementById("spytype3").innerHTML=window.games[window.game.activeGame].language +" ";
-	
+	if(document.getElementById("spytype2")){
+		document.getElementById("spytype2").innerHTML=window.games[window.game.activeGame].language +" ";
+	}
+	if(document.getElementById("spytype3")){
+		document.getElementById("spytype3").innerHTML=window.games[window.game.activeGame].language +" ";
+	}
 	debug("Game language is set to "+window.games[window.game.activeGame].language);
 		
 	draw_counter(window.game.countAudioInSet);

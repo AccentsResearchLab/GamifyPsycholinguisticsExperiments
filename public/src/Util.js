@@ -25,7 +25,7 @@ bug = function(message){
 isAndroidApp = function() {
 	//Development tablet navigator.userAgent:
 	//Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; gTablet Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13 
-	console.log(navigator.userAgent.indexOf("Spy or Not"));
+	//console.log(navigator.userAgent.indexOf("Spy or Not"));
 	return navigator.userAgent.indexOf("Spy or Not") > -1;
 }
 playAudioFile = function(divid){

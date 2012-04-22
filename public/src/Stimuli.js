@@ -35,7 +35,8 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   
 
   el = document.getElementById("stimuli_audio");
-  el.setAttribute("src", sample.uri);
+  var audiourl = localStorage.getItem("audioUrl");
+  el.setAttribute("src", audiourl+sample.uri);
   playAudioFile("stimuli_audio");
   window.currentAudio=sample.uri;
   window.currentAudioStartTime=Date.now();
