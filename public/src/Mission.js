@@ -1,5 +1,6 @@
 loadData("./../json/game_description.json", null);
-
+    
+  
 setGameLanguage = function(gameindex){
 	window.currentGame = gameindex;
 
@@ -22,6 +23,16 @@ setGameLanguage = function(gameindex){
 		localStorage.setItem("visitor",JSON.stringify(visitor));
 	}
 
+	/* srart loading the game audio */
+	if(localStorage.getItem("game")){
+      window.game = JSON.parse(localStorage.getItem("game"));
+    }else{
+      window.game = new GameRouter();
+      window.onbeforeunload = function(){
+      	localStorage.setItem("game",JSON.stringify(window.game));
+      };
+    }
+  
 }
 playGameMission = function(event){
 	if(event.target.value =="Pause"){

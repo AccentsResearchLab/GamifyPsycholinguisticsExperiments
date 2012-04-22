@@ -19,7 +19,7 @@ var GameRouter = Backbone.Router.extend({
 		}
 		this.stimuliJson = window.games[this.activeGame].stimuliJson;
 		window.game = this;
-		loadSamples( this.stimuliJson, startGame() );
+		loadSamples( this.stimuliJson );
 
 	
 	},

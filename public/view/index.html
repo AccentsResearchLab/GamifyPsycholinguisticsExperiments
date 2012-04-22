@@ -4,7 +4,10 @@
 
 <title>Spy or Not</title>
 	<meta charset="utf-8">
-	<script type="text/javascript" charset="utf-8" src="./../lib/jquery.js"></script>
+	
+  <script type="text/javascript" charset="utf-8" src="./../lib/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="./../lib/underscore.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="./../lib/Backbone.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./../css/vote.css" />
 <link rel="stylesheet" type="text/css" href="./../css/saa.css" />
@@ -28,7 +31,7 @@
 </head>
 
 <body>
-<h1>Spy or Not?</h1>
+<h1 ><span id ="spytype"></span>Spy or Not?</h1>
 <div style="clear:both; display:block; margin:1em;">
 	<div style="float:left; ">
 		
@@ -93,8 +96,14 @@
 
 <script type="text/javascript" charset="utf-8" src="./../src/SampleLoaderDisk.js"></script>
 <script type="text/javascript" charset="utf-8" src="./../src/Util.js"></script>
-<script type="text/javascript" charset="utf-8" src="./../src/Mission.js"></script>
 
+<script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../src/AccentMeter.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../src/Participant.js"></script>
+<script type="text/javascript" charset="utf-8" src="./../src/GameRouter.js"></script>
+
+
+<script type="text/javascript" charset="utf-8" src="./../src/Mission.js"></script>
 
 <script>
 
@@ -104,8 +113,9 @@ setAudioUrl("http://game.accentsresearch.com/");
 if(localStorage.getItem("game")){
 	var x = window.confirm("Wecome back! Continue game?")
 	if (x){
-		document.startgame.submit();
-	}	else{
+     	window.game = JSON.parse(localStorage.getItem("game"));
+     	document.startgame.submit();
+	}else{
 		//let them choose
 		localStorage.removeItem("game");
 	}
@@ -131,6 +141,7 @@ document.getElementById("mission_audio").onerror = function(){
 	addClass(document.getElementById("audio"), "red");
 }
 playAudioFile("mission_audio");
+
 
 
 </script>
