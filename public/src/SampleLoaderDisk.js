@@ -1,6 +1,6 @@
-// This is a simple "sample loader" which will load the samples
-// description from a json file on the disk
-loadSamples = function(filename, callback) {
+// This is a simple "sample loader" which will load the stimuli
+// description from a json file on the disk, or from a server
+loadStimuliList = function(filename, callback) {
   var logicURL = localStorage.getItem("logicUrl");
   if(logicURL.length > 0){
     console.log(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""));

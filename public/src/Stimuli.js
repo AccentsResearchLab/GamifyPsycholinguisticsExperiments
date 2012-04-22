@@ -115,6 +115,7 @@ var draw_score = function(dataset){
   /* Display the score for 8 seconds and come back to the game */
   if(document.getElementById("game_area")){
     window.game.countAudioInSet = 0;
+    downloadNext12Audio();
     window.setTimeout("next_block();",8000);
   }
   if(document.getElementById("percent_score")){

@@ -11,6 +11,7 @@ var GameRouter = Backbone.Router.extend({
     		];
     	this.currentBlock=0;
     	this.countAudioInSet =0;
+    	this.stimuliIndex =0;
 		this.activeGame = localStorage.getItem("gameLanguage") 
 		
 		if( ! this.activeGame){
@@ -19,7 +20,7 @@ var GameRouter = Backbone.Router.extend({
 		}
 		this.stimuliJson = window.games[this.activeGame].stimuliJson;
 		window.game = this;
-		loadSamples( this.stimuliJson, downloadNext12Audio() );
+		loadStimuliList( this.stimuliJson, downloadNext12Audio );
 
 	
 	},
@@ -29,12 +30,12 @@ var GameRouter = Backbone.Router.extend({
 	
 });
 var downloadNext12Audio = function(){
+	var files = window.game.stimuli.slice(window.game.stimuliIndex, window.game.stimuliIndex+12);
+	for (f in files){
+		files[f].path = "http://game.accentsresearch.com/";
+	}
 	if(isAndroidApp()){
-		var files = window.game.stimuli.splice(window.game.stimuliIndex, 12);
-		for (f in files){
-			files[f].path = "http://game.accentsresearch.com/";
-		}
-		Android.downloadAudioBlock(files);
+		Android.downloadAudioBlock(JSON.stringify(files));
 	}
 };
 

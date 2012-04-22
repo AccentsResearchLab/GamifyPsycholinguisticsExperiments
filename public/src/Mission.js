@@ -35,7 +35,7 @@ setGameLanguage = function(gameindex){
   
 }
 playGameMission = function(event){
-	if(event.target.value =="Pause"){
+	if(event.target.value.indexOf("Pause") > -1){
 		event.target.value = "Play Sound Check";
 		pauseAudioFile("mission_audio");
 		var visitor = localStorage.getItem("visitor");

@@ -34,7 +34,7 @@ app.post('/view/survey.html',function(req,res){
 
 app.use(express.static(__dirname + '/public'));
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
