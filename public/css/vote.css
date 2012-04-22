@@ -43,8 +43,18 @@ input[type='range'].meter{
 
 
 
+.scale{
+	padding:2em;
+	margin:0px;
+	border:none;
+	
+}
 
-
+.scale:hover{
+	-moz-box-shadow:0 0 6px #f8b635;
+	-webkit-box-shadow:0 0 6px #f8b635;		
+}
+}
 .vote2{
 	background-image: url('./../images/2.png');
 	

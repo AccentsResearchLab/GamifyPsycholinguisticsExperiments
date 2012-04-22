@@ -134,6 +134,8 @@ if(console){
 if(navigator.userAgent.indexOf("Safari") > -1){
 	document.getElementById("slider").innerHTML="✔";
 	addClass(document.getElementById("slider"), "green");
+}else{
+	localStorage.setItem("useSlider","false");
 }
 
 document.getElementById("mission_audio").onerror = function(){

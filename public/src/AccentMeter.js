@@ -16,10 +16,25 @@ var addVoteDetails = function(newValue){
 	window.lastAction = Date.now();
 }
 var drawMeter = function(){
-	if(isAndroidApp()){
-		document.getElementById("meterdiv").innerHTML='<input value="0" id="meter" onchange="addVoteDetails(event.target.value)" />';
+	if(isAndroidApp()|| localStorage.getItem("useSlider")  == "false"){
+		document.getElementById("justmeter").innerHTML=
+		'<input value="0" class="hidden" id="meter" onchange="addVoteDetails(event.target.value)" />'
+		+'<button value="-5" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#2c59d6;"></button>'
+		+'<button value="-4" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#3c52c6;"></button>'
+		+'<button value="-3" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#4b4cb8;"></button>'
+		+'<button value="-2" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#5d44a4;"></button>'
+		+'<button value="-1" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#743b8e;"></button>'
+		+'<button value="0" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#7f3782;"></button>'
+		+'<button value="1" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#942f6d;"></button>'
+		+'<button value="2" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#b12350;"></button>'
+		+'<button value="3" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#be1e42;"></button>'
+		+'<button value="4" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#d3152d;"></button>'
+		+'<button value="5" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#d91327;"></button>';
 	}
 };
+var transferVoteToMeter = function(value){
+	document.getElementById("meter").value= value;
+}
 var voteMeter = function(newValue)
 {
 	document.getElementById("playButton").value = "Next";
