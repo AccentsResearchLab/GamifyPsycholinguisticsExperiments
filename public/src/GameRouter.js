@@ -19,7 +19,7 @@ var GameRouter = Backbone.Router.extend({
 		}
 		this.stimuliJson = window.games[this.activeGame].stimuliJson;
 		window.game = this;
-		loadSamples( this.stimuliJson );
+		loadSamples( this.stimuliJson, downloadNext12Audio() );
 
 	
 	},
@@ -28,7 +28,15 @@ var GameRouter = Backbone.Router.extend({
 	},
 	
 });
-
+var downloadNext12Audio = function(){
+	if(isAndroidApp()){
+		var files = window.game.stimuli.splice(window.game.stimuliIndex, 12);
+		for (f in files){
+			files[f].path = "http://game.accentsresearch.com/";
+		}
+		Android.downloadAudioBlock(files);
+	}
+};
 
 var startGame = function(){
 	debug("Starting game.");

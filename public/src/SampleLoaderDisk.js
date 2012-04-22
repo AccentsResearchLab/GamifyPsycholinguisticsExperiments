@@ -5,14 +5,14 @@ loadSamples = function(filename, callback) {
   if(logicURL.length > 0){
     console.log(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""));
     $.getJSON(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""), function(data) {
-      window.game.samples = data;
+      window.game.stimuli = data;
       if(typeof callback === 'function'){
         callback();
       }
     });
   }else{
     $.getJSON(filename, function(data) {
-      window.game.samples = _.shuffle(data);
+      window.game.stimuli = _.shuffle(data);
       if(typeof callback === 'function'){
         callback();
       }

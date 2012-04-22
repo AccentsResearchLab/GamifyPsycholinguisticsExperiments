@@ -10,10 +10,10 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     return; 
   }
 
-  if (window.game.stimuliIndex == undefined || window.game.stimuliIndex >= window.game.samples.length) {
+  if (window.game.stimuliIndex == undefined || window.game.stimuliIndex >= window.game.stimuli.length) {
     window.game.stimuliIndex = 0;
   }
-  var sample = window.game.samples[window.game.stimuliIndex++];
+  var sample = window.game.stimuli[window.game.stimuliIndex++];
  
   debug("Playing : " + sample.uri)
   
