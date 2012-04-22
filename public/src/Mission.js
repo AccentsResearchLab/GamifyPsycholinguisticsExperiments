@@ -48,7 +48,7 @@ playGameMission = function(event){
 	}
 	debug("Playing mission for "+games[currentGame].language);
 	playAudioFile("mission_audio");
-	event.target.value="Pause";
+	event.target.value="Pause Sound Check";
 
 	var visitor = localStorage.getItem("visitor");
 	if(visitor){
