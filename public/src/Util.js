@@ -73,6 +73,7 @@ var setLogicUrl = function(logicUrl){
 var hideBugFrameOnAndroid = function(){
 	if(isAndroidApp()){
 		document.getElementById("bugframe").setAttribute("src","");
+		document.getElementById("bugframe").setAttribute("height","0");
 	}
 }
 hideBugFrameOnAndroid();
