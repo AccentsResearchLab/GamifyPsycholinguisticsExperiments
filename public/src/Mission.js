@@ -12,7 +12,7 @@ setGameLanguage = function(gameindex){
 	addClass(document.getElementById("browser_test"), "hidden");
 	//playGameMission(currentGame);
 	localStorage.setItem( "games", JSON.stringify(games) );
-	document.getElementById("mission_text").innerHTML= "<h3>Your Mission:</h3>"+games[currentGame].description;
+	document.getElementById("mission_text").innerHTML= "<h3>Your Mission:</h3>"+"<p>So you think you can make for a good spy? Let's see how you are at detecting accents.</p><p> At each bus stop, a new passenger will approach you, and speak one sentence to you. This sentence will be a code, so pay attention closely. We will provide you with a report on your progress every 12th stop.</p><p> Now get on the bus and don't forget, we are watching you!</p>";//games[currentGame].description;
 	el = document.getElementById("mission_audio");
 	el.setAttribute("src", games[currentGame].missionAudio);
 	playAudioFile("mission_audio");

@@ -125,6 +125,13 @@
     }
   });
 
+  var missions = games[localStorage.getItem("gameLanguage")].description.split(":::");
+  for (m in missions){
+    if(missions[m].length > 2){
+      bug(missions[m]);
+    }
+  }
+
   drawMeter();
 </script>
 
