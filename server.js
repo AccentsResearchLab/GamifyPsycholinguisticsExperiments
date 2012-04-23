@@ -24,7 +24,7 @@ app.get('/stimuliOrder/southafrican',function(req,res){
   res.write(JSON.stringify(_.shuffle(southAfricanJSON)));
   res.end();
 });
-app.get('/getip?callback=getip',function(req,res){
+app.get('/getip',function(req,res){
   var ip_address = null;
   try {
     ip_address = req.headers['x-forwarded-for'];
