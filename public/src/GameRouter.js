@@ -31,11 +31,13 @@ var GameRouter = Backbone.Router.extend({
 	
 });
 var downloadNext12Audio = function(){
+	debug("Downloading next 12 audio");
 	var files = window.game.stimuli.slice(window.game.stimuliIndex, window.game.stimuliIndex+24);
 	for (f in files){
 		files[f].path = "http://game.accentsresearch.com/";
 	}
 	if(isAndroidApp()){
+		debug("\t on Android");
 		Android.downloadAudioBlock(JSON.stringify(files));
 	}
 };
