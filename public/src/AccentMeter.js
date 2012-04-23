@@ -45,7 +45,11 @@ var voteMeter = function(newValue)
 	    window.lazyzerocount =0;
 	    bug(slow_messages[Math.round(Math.random()*3)]);
 	}else{
-	 	window.lazyzerocount++;
+		if(newValue == 0){
+		 	window.lazyzerocount++;
+		 }else{
+		 	window.lazyzerocount =0;
+		 }
 	}
 	if (timepassed < 1000 || clicktime < 1000){
 	    window.audioStatus = window.audioStatus+ " User clicked Next too fast: "+timepassed+" or "+clicktime;
