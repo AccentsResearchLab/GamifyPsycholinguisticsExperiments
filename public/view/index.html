@@ -9,6 +9,7 @@
   <script type="text/javascript" charset="utf-8" src="./../lib/underscore.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="./../lib/Backbone.js"></script>
 
+
 <link rel="stylesheet" type="text/css" href="./../css/vote.css" />
 <link rel="stylesheet" type="text/css" href="./../css/saa.css" />
 <meta property="og:title" content="Spy Or Not?" />
@@ -109,6 +110,16 @@
 
 setLogicUrl("http://pure-mountain-5519.herokuapp.com/"); //http://pure-mountain-5519.herokuapp.com/
 setAudioUrl("http://game.accentsresearch.com/");
+
+/* if they are browsing on an Android, and not using the App version, bring them to the app version */
+if(navigator.userAgent.indexOf("Android") > -1 && navigator.userAgent.indexOf("Spy or Not") == -1){
+	var x = window.confirm("Spy Or Not is availible from the Market, do you want to play offline?")
+	if (x){
+     	window.location = "https://play.google.com/store/apps/details?id=ca.ilanguage.spyornot";
+	}else{
+		//let them stay
+	}
+}
 
 if(localStorage.getItem("game")){
 	var x = window.confirm("Wecome back! Continue game?")
