@@ -67,7 +67,11 @@ next_block = function(){
     
   
 };
-
+var androidShareIt= function(){
+    if(isAndroidApp()){
+      Android.shareIt(document.getElementById("share_text_input").value);
+    }
+}
 var draw_score = function(dataset){
   if(document.getElementById("game_area")){
     addClass(document.getElementById("game_area"),"hidden");
@@ -136,6 +140,10 @@ var draw_score = function(dataset){
     if(el){
       el.setAttribute("data-text","I played #SpyOrNot and got "+percent+" spys!");
     }
+    var as = document.getElementById("share_text_input");
+    if(as){
+      as.value = "I played #SpyOrNot and got "+percent+" spys! http://game.accentsresearch.com";
+    }
   }
     
 };
@@ -184,7 +192,4 @@ draw_counter = function(count){
   };
   spyActive.src = './../images/spybody2.png';  
   spy.src = './../images/spybody.png'; 
-
-  
-
 };

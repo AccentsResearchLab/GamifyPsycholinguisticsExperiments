@@ -58,6 +58,11 @@ a:hover, a:active
 	margin:auto;
 	overflow:visible;
 }
+.sharetext{
+  border: 0;  
+  -moz-box-shadow:0 0 16px #f8b635;
+  -webkit-box-shadow:0 0 16px #f8b635; 
+}
 input.score{
 	size:3;
 	width:3em;

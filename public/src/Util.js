@@ -81,7 +81,12 @@ var hideBugFrameOnAndroid = function(){
 		if(r){
 			addClass(r,"hidden");
 		}
-		
+		var f = document.getElementById("tweet_facebook");
+		if(f){
+			addClass(f,"hidden");
+			document.getElementById("android_share").innerHTML="<input type='image' src='./../images/share.png' onclick='androidShareIt()' /><textarea id='share_text_input' value='' class='sharetext'></textarea>";
+		}
 	}
+	
 }
 hideBugFrameOnAndroid();
