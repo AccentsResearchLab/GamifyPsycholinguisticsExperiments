@@ -73,6 +73,9 @@ var androidShareIt= function(){
     }
 }
 var draw_score = function(dataset){
+  if(document.getElementById("playButton")){
+    document.getElementById("playButton").value = "Start";
+  }
   if(document.getElementById("game_area")){
     addClass(document.getElementById("game_area"),"hidden");
   }
