@@ -25,10 +25,7 @@ var drawMeter = function(){
 var transferVoteToMeter = function(value){
 	document.getElementById("meter").value= value;
 }
-var voteMeter = function(newValue)
-{
-	document.getElementById("playButton").value = "Next";
-	
+var voteMeter = function(newValue){
 	/*
 	Dont let the user go too fast
 	*/
@@ -61,8 +58,26 @@ var voteMeter = function(newValue)
 	}
 	window.lastnextClick = Date.now();
 
+	/*
+	Play a click
+	*/
+	playAudioFile("click_sound");
+
+	/*
+	Auto advance to next Audio Stimuli after 1 seconds
+	*/
+	window.setTimeout("playAudio(event)",1000);
+	
+	/* Dont record as a vote if the button said start */
+	if(document.getElementById("playButton").value.indexOf("Start") > -1){
+		document.getElementById("playButton").value = "Next";
+		return;
+	}
 
 
+	/*
+	Record the vote
+	*/
 	var el = document.getElementById("stimuli_audio");
   	var audioDuration = Math.round(el.duration*1000);
   
@@ -104,15 +119,7 @@ var voteMeter = function(newValue)
 	localStorage.setItem("votes",JSON.stringify(window.votes));
 	/* Set a return point so the user can come back */
   	localStorage.setItem("game",JSON.stringify(window.game));	
-	/*
-	Play a click
-	*/
-	playAudioFile("click_sound");
-
-	/*
-	Auto advance to next Audio Stimuli after 1 seconds
-	*/
-	window.setTimeout("playAudio(event)",1000);
+	
 	
 	/*
 	Record the vote
@@ -126,4 +133,7 @@ var voteMeter = function(newValue)
 	Reset the vote meter to 0
 	*/
 	document.getElementById("meter").value=0;
+	document.getElementById("playButton").value = "Next";
+	
+	
 };

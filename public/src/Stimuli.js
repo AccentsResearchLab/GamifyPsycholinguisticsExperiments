@@ -1,5 +1,5 @@
 
-playAudio = function(event, onAudioStarted, onAudioFinished){
+playAudio = function(event){
   /*
   Dont let the user go too fast
   */
@@ -9,25 +9,6 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     debug(window.audioStatus);
     return; 
   }
-
-  if(window.game.stimuli == null){
-    bug("There was a problem loading the game.");
-  }
-  if (window.game.stimuliIndex == undefined || window.game.stimuliIndex >= window.game.stimuli.length) {
-    window.game.stimuliIndex = 0;
-  }
-  var sample = window.game.stimuli[window.game.stimuliIndex++];
- 
-  debug("Playing : " + sample.uri)
-  
-  if(window.game.countAudioInSet > -1){
-    draw_counter(window.game.countAudioInSet);
-    window.game.countAudioInSet++; 
-  }else{
-    window.game.countAudioInSet = 0;
-    draw_counter(window.game.countAudioInSet);
-
-  }
   /*
   If the block of 12 is done
   */
@@ -35,8 +16,19 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     draw_score(window.game.scores[window.game.currentBlock]);
     return;
   }
-  
 
+  /* Validate the stimuli and stimuli index */
+  if(window.game.stimuli == null){
+    bug("There was a problem loading the game.");
+    return;
+  }
+  if (window.game.stimuliIndex == undefined || window.game.stimuliIndex >= window.game.stimuli.length) {
+    window.game.stimuliIndex = 0;
+  }
+
+  /* Play the audio */
+  var sample = window.game.stimuli[window.game.stimuliIndex];
+  debug("Playing : " + sample.uri)
   el = document.getElementById("stimuli_audio");
   var audiourl = localStorage.getItem("audioUrl");
   el.setAttribute("src", audiourl+sample.uri);
@@ -45,13 +37,18 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
   window.currentAudioStartTime=Date.now();
   window.audioStatus ="Played stimuli "+sample.uri;
   window.lastAction = Date.now();
-	
-  if(typeof onAudioStarted === 'function'){
-		onAudioStarted();
-	}
-	if(typeof onAudioFinished === 'function'){
-		onAudioFinished();
-	}
+  /* Increase the count */
+  if(window.game.countAudioInSet > -1){
+    draw_counter(window.game.countAudioInSet);
+    window.game.countAudioInSet++; 
+  }else{
+    window.game.countAudioInSet = 0;
+    draw_counter(window.game.countAudioInSet);
+
+  }
+  window.game.stimuliIndex++;
+  
+  
 };
 next_block = function(){
   window.game.currentBlock++;
