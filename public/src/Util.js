@@ -81,10 +81,7 @@ var hideBugFrameOnAndroid = function(){
 		if(r){
 			addClass(r,"hidden");
 		}
-		var v = document.getElementById("spy_score");
-		if (v && !isAndroid4()){
-			addClass(v,"hidden");
-		}
+		
 	}
 }
 hideBugFrameOnAndroid();
