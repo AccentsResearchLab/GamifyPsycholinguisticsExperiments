@@ -21,7 +21,7 @@ var GameRouter = Backbone.Router.extend({
 		this.stimuliJson = window.games[this.activeGame].stimuliJson;
 		window.stimuli = {};
 		window.game = this;
-		loadRemoteStimuliList( this.stimuliJson, downloadNext12Audio );
+		loadRemoteStimuliList( this.stimuliJson );
 
 	
 	},

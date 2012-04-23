@@ -9,7 +9,7 @@ loadStimuliList = function(filename, callback) {
       }
   });
 };
-loadRemoteStimuliList = function(filename,callback){
+loadRemoteStimuliList = function(filename){
   var logicURL = localStorage.getItem("logicUrl");
   if(logicURL.length > 0){
     debug(logicURL+"stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json","")+"?callback=getstimuliorder");
@@ -19,6 +19,8 @@ loadRemoteStimuliList = function(filename,callback){
     debug("\tAdding the stimuli order script to the document.");
     document.body.appendChild(s);
   }
+
+
 };
 var getstimuliorder = function(data){
   debug("The stimuli order was downloaded.");
@@ -26,6 +28,7 @@ var getstimuliorder = function(data){
   if(data == null){
         loadStimuliList(filename,callback);
   }
+  downloadNext12Audio();
 };
 
 loadData = function(filename, callback){
