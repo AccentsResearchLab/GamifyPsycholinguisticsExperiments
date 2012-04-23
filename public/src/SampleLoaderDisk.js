@@ -4,7 +4,7 @@ loadStimuliList = function(filename, callback) {
   debug("Loading stimuli");
   var logicURL = localStorage.getItem("logicUrl");
   if(logicURL.length > 0){
-    console.log(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""));
+    debug(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""));
     $.getJSON(logicURL+"/stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json",""), function(data) {
       window.game.stimuli = data;
       

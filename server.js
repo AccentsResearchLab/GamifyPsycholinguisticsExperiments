@@ -11,18 +11,32 @@ app.get('/',function(req,res){
 });
 app.get('/stimuliOrder/russian',function(req,res){ 
 	res.writeHead(200, {'content-type': 'application/json'});
-    res.write(JSON.stringify(_.shuffle(russianJSON)));
-    res.end();
+  res.write(JSON.stringify(_.shuffle(russianJSON)));
+  res.end();
 });
 app.get('/stimuliOrder/sussex',function(req,res){ 
 	res.writeHead(200, {'content-type': 'application/json'});
-    res.write(JSON.stringify(_.shuffle(sussexJSON)));
-    res.end();
+  res.write(JSON.stringify(_.shuffle(sussexJSON)));
+  res.end();
 });
 app.get('/stimuliOrder/southafrican',function(req,res){ 
 	res.writeHead(200, {'content-type': 'application/json'});
-    res.write(JSON.stringify(_.shuffle(southAfricanJSON)));
-    res.end();
+  res.write(JSON.stringify(_.shuffle(southAfricanJSON)));
+  res.end();
+});
+app.get('/getip',function(req,res){
+  var ip_address = null;
+  try {
+    ip_address = req.headers['x-forwarded-for'];
+  }
+  catch ( error ) {
+    ip_address = req.connection.remoteAddress;
+  }
+  var returnobj = {};
+  returnobj.ip = ip_address;
+  res.writeHead(200, {'content-type': 'application/json'});
+  res.write(JSON.stringify(returnobj));
+  res.end();
 });
 app.post('/view/main.html',function(req,res){
   res.redirect('/view/main.html');

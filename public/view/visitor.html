@@ -12,14 +12,10 @@
 
 <body>
 
-<script  src="http://j.maxmind.com/app/geoip.js"></script>
-<!--http://stackoverflow.com/questions/391979/get-client-ip-using-just-javascript-->
-<script>
-	window.jsonIP = {};
-	window.jsonIP.ip ="ip service down";
-	function getip(json){
-      window.jsonIP=json; //gets ipaddress
-    }
+<script >
+$.getJSON("http://pure-mountain-5519.herokuapp.com/stimuliOrder/getip", function(data) {
+    window.jsonIP=data;
+ });
 </script>
 <script  src="http://jsonip.appspot.com/?callback=getip"></script>
 
