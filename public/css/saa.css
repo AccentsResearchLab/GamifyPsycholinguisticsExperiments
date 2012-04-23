@@ -5,12 +5,7 @@
   font-weight: normal;
   src:  url('./../fonts/Lobster.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'Juergen';
-  font-style: normal;
-  font-weight: normal;
-  src: url('./../fonts/Juergen.ttf');
-}
+
 h1,h2,h3,h4 {
 	text-align:center;
 	font-family:"Lobster", Verdana, Tahoma, sans-serif;
