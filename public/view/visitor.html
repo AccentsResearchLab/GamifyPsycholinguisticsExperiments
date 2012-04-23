@@ -14,9 +14,9 @@
 <script src="http://pure-mountain-5519.herokuapp.com/getip&callback=getip"></script>
 <script >
 window.jsonIP ={};
-window.jsonIP ="ip service down";
+window.jsonIP.ip ="ip service down";
 getip = function(data){
- 	window.jsonIP=data;
+ 	window.jsonIP=JSON.parse(data);
  }
 </script>
 <script>
