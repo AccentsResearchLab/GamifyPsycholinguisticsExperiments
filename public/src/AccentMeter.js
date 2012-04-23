@@ -40,6 +40,7 @@ var voteMeter = function(newValue)
 	}
 	window.lazyzerocount = window.lazyzerocount || 0;
 	if(window.lazyzerocount >2){
+		window.audioStatus = window.audioStatus+ "User is voting zero a lot, alerted them with to use actually vote. ";
 		var slow_messages = ["Wow... you wouldn't make a good spy.","Are you sure you're from "+window.game.language+"?","You had better get your hearing checked.","Don't forget, we are watching you!"];
 	    window.lazyzerocount =0;
 	    bug(slow_messages[Math.round(Math.random()*3)]);
