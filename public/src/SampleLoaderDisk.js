@@ -16,10 +16,12 @@ loadRemoteStimuliList = function(filename,callback){
     /* To prevent cross site scripting errors, append a script to the document */   
     var s = document.createElement("script");
     s.src = logicURL+"stimuliOrder/"+filename.replace("./../json/audio_stimuli_","").replace(".json","")+"?callback=getstimuliorder";
+    debug("\tAdding the stimuli order script to the document.");
     document.body.appendChild(s);
   }
 };
 var getstimuliorder = function(data){
+  debug("The stimuli order was downloaded.");
   window.game.stimuli = JSON.parse(data);
   if(data == null){
         loadStimuliList(filename,callback);
