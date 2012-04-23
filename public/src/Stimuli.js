@@ -10,6 +10,9 @@ playAudio = function(event, onAudioStarted, onAudioFinished){
     return; 
   }
 
+  if(window.game.stimuli == null){
+    bug("There was a problem loading the game.");
+  }
   if (window.game.stimuliIndex == undefined || window.game.stimuliIndex >= window.game.stimuli.length) {
     window.game.stimuliIndex = 0;
   }

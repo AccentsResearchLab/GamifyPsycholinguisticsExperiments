@@ -38,13 +38,13 @@ var voteMeter = function(newValue)
 	}else{
 		var clicktime= 2000;
 	}
-	var lazyzerocount = lazyzerocount || 0;
-	if(lazyzerocount >2){
-		var slow_messages = ["Wow... you wouldn't make a good spy.","Remember, use your spy intuition.","You had better get your hearing checked.","Don't forget, we are watching you!"];
-	    lazyzerocount =0;
+	window.lazyzerocount = window.lazyzerocount || 0;
+	if(window.lazyzerocount >2){
+		var slow_messages = ["Wow... you wouldn't make a good spy.","Are you sure you're from "+window.game.language+"?","You had better get your hearing checked.","Don't forget, we are watching you!"];
+	    window.lazyzerocount =0;
 	    bug(slow_messages[Math.round(Math.random()*3)]);
 	}else{
-	 	lazyzerocount++;
+	 	window.lazyzerocount++;
 	}
 	if (timepassed < 1000 || clicktime < 1000){
 	    window.audioStatus = window.audioStatus+ " User clicked Next too fast: "+timepassed+" or "+clicktime;

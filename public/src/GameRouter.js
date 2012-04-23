@@ -12,15 +12,16 @@ var GameRouter = Backbone.Router.extend({
     	this.currentBlock=0;
     	this.countAudioInSet =0;
     	this.stimuliIndex =0;
-		this.activeGame = localStorage.getItem("gameLanguage") 
-		
+    	this.activeGame = localStorage.getItem("gameLanguage") 
 		if( ! this.activeGame){
 		// alert("Game language is not set, please click on a language.");
 		// window.location="soundcheck.html";
 		}
+		this.language = window.games[this.activeGame].language;
 		this.stimuliJson = window.games[this.activeGame].stimuliJson;
+		window.stimuli = {};
 		window.game = this;
-		loadStimuliList( this.stimuliJson, downloadNext12Audio );
+		loadRemoteStimuliList( this.stimuliJson, downloadNext12Audio );
 
 	
 	},

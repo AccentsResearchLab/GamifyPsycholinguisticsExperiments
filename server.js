@@ -11,17 +11,17 @@ app.get('/',function(req,res){
 });
 app.get('/stimuliOrder/russian',function(req,res){ 
 	res.writeHead(200, {'content-type': 'application/json'});
-  res.write(JSON.stringify(_.shuffle(russianJSON)));
+  res.write('getstimuliorder(\''+JSON.stringify(_.shuffle(russianJSON))+'\');');
   res.end();
 });
 app.get('/stimuliOrder/sussex',function(req,res){ 
 	res.writeHead(200, {'content-type': 'application/json'});
-  res.write(JSON.stringify(_.shuffle(sussexJSON)));
+  res.write('getstimuliorder(\''+JSON.stringify(_.shuffle(sussexJSON))+'\');');
   res.end();
 });
 app.get('/stimuliOrder/southafrican',function(req,res){ 
 	res.writeHead(200, {'content-type': 'application/json'});
-  res.write(JSON.stringify(_.shuffle(southAfricanJSON)));
+  res.write('getstimuliorder(\''+JSON.stringify(_.shuffle(southAfricanJSON))+'\');');
   res.end();
 });
 app.get('/getip',function(req,res){
