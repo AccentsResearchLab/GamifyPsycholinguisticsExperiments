@@ -131,7 +131,7 @@
   var missions = games[localStorage.getItem("gameLanguage")].description.split(":::");
   for (m in missions){
     if(missions[m].length > 2){
-      bug(missions[m]);
+      window.setTimeout("bug('"+missions[m]+"');",2000);
     }
   }
 
