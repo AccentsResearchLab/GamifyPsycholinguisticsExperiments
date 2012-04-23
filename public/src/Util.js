@@ -77,6 +77,10 @@ var hideBugFrameOnAndroid = function(){
 			b.setAttribute("style","");
 			b.innerHTML="";
 		}
+		var r = document.getElementById("browser_test");
+		if(r){
+			addClass(r,"hidden");
+		}
 	}
 }
 hideBugFrameOnAndroid();
