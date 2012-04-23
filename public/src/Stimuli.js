@@ -133,7 +133,9 @@ var draw_score = function(dataset){
     var percent = Math.round(score*10)/10+"/"+total;
     document.getElementById("percent_score").innerHTML=percent;
     var el = document.getElementById("twitter_el");
-    el.setAttribute("data-text","I played #SpyOrNot and got "+percent+" spys!");
+    if(el){
+      el.setAttribute("data-text","I played #SpyOrNot and got "+percent+" spys!");
+    }
   }
     
 };
