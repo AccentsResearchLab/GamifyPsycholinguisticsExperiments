@@ -35,7 +35,7 @@ app.get('/getip',function(req,res){
   var returnobj = {};
   returnobj.ip = ip_address;
   res.writeHead(200, {'content-type': 'application/json'});
-  res.write('"'+ip_address+'"');
+  res.write('getip("'+ip_address+'");');
   res.end();
 });
 app.post('/view/main.html',function(req,res){

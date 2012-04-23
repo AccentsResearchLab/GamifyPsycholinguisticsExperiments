@@ -11,7 +11,6 @@
 </head>
 
 <body>
-<script src="http://pure-mountain-5519.herokuapp.com/getip?callback=getip"></script>
 <script  src="http://j.maxmind.com/app/geoip.js"></script>
 <script >
 window.jsonIP ={};
@@ -20,6 +19,7 @@ getip = function(data){
  	window.jsonIP.ip=data;
  }
 </script>
+<script src="http://pure-mountain-5519.herokuapp.com/getip?callback=getip"></script>
 <script>
 	isAndroidApp = function() {
 		//Development tablet navigator.userAgent:
