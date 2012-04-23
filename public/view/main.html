@@ -128,12 +128,8 @@
     }
   });
 
-  var missions = games[localStorage.getItem("gameLanguage")].description.split(":::");
-  for (m in missions){
-    if(missions[m].length > 2){
-      window.setTimeout("bug('"+missions[m]+"');",2000);
-    }
-  }
+  var instructions = games[localStorage.getItem("gameLanguage")].description.split(":::");
+  window.setTimeout("bug(instructions)",2000);
 
   drawMeter();
 </script>
