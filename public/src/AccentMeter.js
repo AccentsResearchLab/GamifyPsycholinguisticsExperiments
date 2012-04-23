@@ -1,15 +1,4 @@
-var drawOnCanvas = function (){
-	var canvas = document.getElementById("accent_meter");
-	var ctx = canvas.getContext("2d");
-	canvas.width = 160;
-	canvas.height = 500;
-	var img = new Image();
-	    img.onload = function(){
-	      ctx.drawImage(img,0,0,canvas.width,canvas.height);
-	      
-	    };
- 	img.src = './../images/meter.png';
-};
+
 var addVoteDetails = function(newValue){
 	var moment = Date.now();
 	window.audioStatus = window.audioStatus + "; (" + newValue + ":" + moment+")";
@@ -17,6 +6,7 @@ var addVoteDetails = function(newValue){
 }
 var drawMeter = function(){
 	if(isAndroidApp()|| localStorage.getItem("useSlider")  == "false"){
+		document.getElementById("justmeter").setAttribute("style","text-align:center;");
 		document.getElementById("justmeter").innerHTML=
 		'<input value="0" class="hidden" id="meter" onchange="addVoteDetails(event.target.value)" />'
 		+'<button value="-5" onclick="transferVoteToMeter(event.target.value)" class="scale" style="background-color:#2c59d6;"></button>'
