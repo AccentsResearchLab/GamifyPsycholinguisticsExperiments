@@ -7,6 +7,14 @@
       "local_path": "view/index.html"
     }
   },
-  "offline_enabled": true
+  "offline_enabled": true,
+  "permissions": [
+  	"unlimitedStorage"
+  ],
+  "icons": { 
+  	"16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  }
   
 }
