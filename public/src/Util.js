@@ -31,6 +31,10 @@ isAndroidApp = function() {
 isAndroid4 = function(){
 	return navigator.userAgent.indexOf("Android 4") > -1;
 }
+
+isChromeApp = function(){
+	return window.location.href.indexOf("chrome-extension") > -1;
+}
 playAudioFile = function(divid){
 	/*
 	Android 4 plays HTML5 audio
@@ -84,9 +88,17 @@ var hideBugFrameOnAndroid = function(){
 		var f = document.getElementById("tweet_facebook");
 		if(f){
 			addClass(f,"hidden");
-			document.getElementById("android_share").innerHTML="<input type='image' src='./../images/share.png' onclick='androidShareIt()' /><textarea id='share_text_input' value='' class='sharetext'></textarea>";
+			document.getElementById("android_share").innerHTML="<input type='image' src='./../images/share.png' onclick='androidShareIt()' /><span id='share_text_input'  class='sharetext'></span>";
 		}
 	}
+	if(isChromeApp()){
+		var b = document.getElementById("bugframe");
+		if(b){
+			b.setAttribute("style","");
+			b.innerHTML="";
+		}
+	}
+	
 	
 }
 hideBugFrameOnAndroid();

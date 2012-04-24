@@ -35,19 +35,7 @@ var voteMeter = function(newValue){
 	}else{
 		var clicktime= 2000;
 	}
-	window.lazyzerocount = window.lazyzerocount || 0;
-	if(window.lazyzerocount >2){
-		window.audioStatus = window.audioStatus+ "User is voting zero a lot, alerted them with to use actually vote. ";
-		var slow_messages = ["Wow... you wouldn't make a good spy.","Are you sure you're from "+window.game.language+"?","You had better get your hearing checked.","Don't forget, we are watching you!"];
-	    window.lazyzerocount =0;
-	    bug(slow_messages[Math.round(Math.random()*3)]);
-	}else{
-		if(newValue == 0){
-		 	window.lazyzerocount++;
-		 }else{
-		 	window.lazyzerocount =0;
-		 }
-	}
+	
 	if (timepassed < 1000 || clicktime < 1000){
 	    window.audioStatus = window.audioStatus+ " User clicked Next too fast: "+timepassed+" or "+clicktime;
 	    var slow_messages = ["Slow down grasshopper...","Hot potato, hot potato...","Patience, my child...","Are you sure you heard the whole pass phrase?"];
@@ -78,6 +66,20 @@ var voteMeter = function(newValue){
 	/*
 	Record the vote
 	*/
+
+	window.lazyzerocount = window.lazyzerocount || 0;
+	if(window.lazyzerocount >2){
+		window.audioStatus = window.audioStatus+ "User is voting zero a lot, alerted them with to use actually vote. ";
+		var slow_messages = ["Wow... you wouldn't make a good spy.","Are you sure you're from "+window.game.language+"?","You had better get your hearing checked.","Don't forget, we are watching you!"];
+	    window.lazyzerocount =0;
+	    bug(slow_messages[Math.round(Math.random()*3)]);
+	}else{
+		if(newValue == 0){
+		 	window.lazyzerocount++;
+		 }else{
+		 	window.lazyzerocount =0;
+		 }
+	}
 	var el = document.getElementById("stimuli_audio");
   	var audioDuration = Math.round(el.duration*1000);
   

@@ -69,7 +69,7 @@ next_block = function(){
 };
 var androidShareIt= function(){
     if(isAndroidApp()){
-      Android.shareIt(document.getElementById("share_text_input").value);
+      Android.shareIt(document.getElementById("share_text_input").innerHTML);
     }
 }
 var draw_score = function(dataset){
@@ -145,7 +145,7 @@ var draw_score = function(dataset){
     }
     var as = document.getElementById("share_text_input");
     if(as){
-      as.value = "I played #SpyOrNot and got "+percent+" spys! http://game.accentsresearch.com";
+      as.innerHTML = "I played #SpyOrNot and got "+percent+" spys! http://game.accentsresearch.com";
     }
   }
     

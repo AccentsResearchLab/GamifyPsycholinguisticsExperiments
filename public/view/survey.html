@@ -30,8 +30,41 @@
 
 <h1>Spy or Not?</h1>
 
+<div style="clear:both; display:block; width:100%;">
+<div style="float:left; margin:.5em;">
+    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'search',
+      search: '#phonetics OR #SpyOrNot',
+      interval: 30000,
+      title: 'Spy Or Not!',
+      subject: '',
+      width: 250,
+      height: 300,
+      theme: {
+        shell: {
+          background: '#Fc8',
+          color: '#ffffff'
+        },
+        tweets: {
+          background: '#333333',
+          color: '#ffffff',
+          links: '#Fc8'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: true,
+        live: true,
+        behavior: 'default'
+      }
+    }).render().start();
+    </script>
+</div>
 
-   <div id="spy_score" class="hidden" style="float:right;">
+   <div id="spy_score" class="hidden" style="float:right; width:25%;">
     <div id="viz"></div>
       <div class="hidden">
         Native correctly identified: <input class="score green" value=2 id="nativepositive"/>
@@ -51,7 +84,7 @@
   </div>
 
 
-	<div id="share_div" class="">
+	<div id="share_div" class="" style="float:left; width:50%; margin:.5em;">
     <h2>Final Score - <span id="percent_score"></span></h2>
 		<p>Spread the word, challenge your friends to beat your score!</p>
       <div id="tweet_facebook">
@@ -64,6 +97,8 @@
       </div>
 
 	   </div>
+
+  </div>
   <div style="clear:both; margin:2em;"><p>
    Experimental Design by <a href="http://accentsresearch.com">Dr. Laura Spinu and her students,</a> <a href="http://cmll.concordia.ca/linguistics">Concordia University</a>.</p>
    <p>
