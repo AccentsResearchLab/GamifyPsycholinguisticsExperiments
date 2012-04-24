@@ -113,9 +113,18 @@ setAudioUrl("http://game.accentsresearch.com/");
 
 /* if they are browsing on an Android, and not using the App version, bring them to the app version */
 if(navigator.userAgent.indexOf("Android") > -1 && navigator.userAgent.indexOf("Spy or Not") == -1){
-	var x = window.confirm("Spy Or Not is availible from the Market, do you want to play offline?")
+	var x = window.confirm("Spy Or Not is now availible on the Market, install it to show phonetics some love!")
 	if (x){
      	window.location = "https://play.google.com/store/apps/details?id=ca.ilanguage.spyornot";
+	}else{
+		//let them stay
+	}
+}
+/* if they are browsing on an Chrome, and not using the App version, bring them to the app version */
+if(navigator.userAgent.indexOf("Chrome") > -1 &&  window.location.href.indexOf("chrome-extension") == -1){
+	var x = window.confirm("Spy Or Not is now availible in the Chrome Store, install it to show phonetics some love!")
+	if (x){
+     	window.location = "https://chrome.google.com/webstore/detail/fenibdogbhofdlheclalfnbafmcpeidi";
 	}else{
 		//let them stay
 	}
