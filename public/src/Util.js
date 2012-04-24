@@ -88,7 +88,7 @@ var hideBugFrameOnAndroid = function(){
 		var f = document.getElementById("tweet_facebook");
 		if(f){
 			addClass(f,"hidden");
-			document.getElementById("android_share").innerHTML="<input type='image' src='./../images/share.png' onclick='androidShareIt()' /><span id='share_text_input'  class='sharetext'></span>";
+			document.getElementById("android_share").innerHTML="<input type='image' src='./../images/share.png' onclick='androidShareIt()' /><div class='sharetext'><span id='share_text_input' ></span></div>";
 		}
 	}
 	if(isChromeApp()){
@@ -98,7 +98,7 @@ var hideBugFrameOnAndroid = function(){
 			b.innerHTML="";
 		}
 	}
-	
+
 	
 }
 hideBugFrameOnAndroid();
