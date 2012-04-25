@@ -1,20 +1,18 @@
 #create labels for plots
-articulationlabel <- "Articulation rate (syl/phonation)"
-labparticipantslabel <- "Lab Participants"
-bloggingpodcasterslabel <- "Blogging Podcasters"
-nusableparticipants <- "(n=5)"
-nallparticipants <- "(n=12)"
+participantIDlabel <- "ParticipantID"
+audioStimulilabel <- "AudioStimuli"
+votelabel <- "(n=11)"
+reactionlabel <- "reaction"
 
 
 #read in data
-aublog <- read.table("/Users/gina/Documents/aublog/results/resultsboxplotformat.csv", header=TRUE, sep="," )
-aublogall <- read.table("/Users/gina/Documents/aublog/results/results.csv", header=TRUE, sep="," )
+SpyOrNot <- read.table("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/SpyOrNotVoteTable120419.csv", header=TRUE, sep="," )
 
 # histogram for all lab participant aritculation rate
-pdf("/Users/gina/Documents/aublog/results/histogramalllab.pdf",width=6,height=6,paper='special')
-x <- aublogall$artirate
-title <-paste(labparticipantslabel,nallparticipants, sep = " ", collapse = NULL)
-h<-hist(x, breaks=10, col="red", xlab=articulationlabel, yaxt="n",
+pdf("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/results1.pdf",width=6,height=6,paper='special')
+x <- SpyOrNot$vote
+title <-paste(participantIDlabel,audioStimulilabel, sep = " ", collapse = NULL)
+h<-hist(x, breaks=11, col="red", xlab="vote", yaxt="n",
   	 main=title) 
 xfit<-seq(min(x),max(x),length=40) 
 yfit<-dnorm(xfit,mean=mean(x),sd=sd(x)) 
@@ -24,8 +22,8 @@ dev.off()
 
 #Box plot comparing articulation rate in the two blog drafts
 # http://www.statmethods.net/graphs/boxplot.html
-pdf("/Users/gina/Documents/aublog/results/boxplotusablelab.pdf",width=6,height=6,paper='special')
-title <-paste(labparticipantslabel,nusableparticipants,"p = 0.2662", sep = " ", collapse = NULL)
+pdf("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/boxplot.pdf",width=6,height=6,paper='special')
+title <-paste(participantIDlabel,nusableparticipants,"p = 0.2662", sep = " ", collapse = NULL)
 boxplot(artirate~draft,data=aublog, notch=TRUE, col=(c("red","darkgreen")), main=title,  xlab="(Insignificant Tendency for faster syllable timing in second Blog Draft)", ylab=articulationlabel)
 dev.off()
 
@@ -35,8 +33,8 @@ dev.off()
 
 
 #Compaire groups via kernal density
-pdf("/Users/gina/Documents/aublog/results/densityusablelab.pdf",width=6,height=6,paper='special')
-title <-paste(labparticipantslabel,"density distribution",nusableparticipants, sep = " ", collapse = NULL)
+pdf("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/densityusablelab.pdf",width=6,height=6,paper='special')
+title <-paste(votelabel,"density distribution",participantIDlabel, sep = " ", collapse = NULL)
 sm.density.compare(aublog$artirate, aublog$draft, xlab=articulationlabel) 
 title(main=title)
 # add legend via mouse click
