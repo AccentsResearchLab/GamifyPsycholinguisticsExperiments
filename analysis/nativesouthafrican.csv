@@ -1,0 +1,8 @@
+Timestamp,participantID,audioStimuli,vote,reactionTime,voteDetails
+4/17/2012 15:40:01,1334691487666,./../audio_stimuli/stimuli/MbaitT.mp3,-2,6959,2037:::Played stimuli ./../audio_stimuli/stimuli/MbaitT.mp3; (-1:1334691551060); (-2:1334691551121)
+4/17/2012 15:40:08,1334691487666,./../audio_stimuli/stimuli/MaboutD.mp3,-2,3954,1645:::Played stimuli ./../audio_stimuli/stimuli/MaboutD.mp3; (0:1334691558035); (-1:1334691558115); (-2:1334691558232)
+4/17/2012 15:40:16,1334691487666,./../audio_stimuli/stimuli/MbatD.mp3,-1,5552,1515:::Played stimuli ./../audio_stimuli/stimuli/MbatD.mp3; (0:1334691564174); (1:1334691564238); (2:1334691564691); (1:1334691564925); (0:1334691565060); (-1:1334691565109); (-2:1334691565176); (-1:1334691565831)
+4/17/2012 15:40:25,1334691487666,./../audio_stimuli/stimuli/MpotD.mp3,-3,6313,1645:::Played stimuli ./../audio_stimuli/stimuli/MpotD.mp3; (0:1334691574959); (-1:1334691574988); (-2:1334691575156); (-3:1334691575426)
+4/17/2012 15:41:18,1334691487666,./../audio_stimuli/stimuli/MbuyQ.mp3,-2,8096,1750:::Played stimuli ./../audio_stimuli/stimuli/MbuyQ.mp3; (0:1334691627796); (-1:1334691627841); (-2:1334691628444)
+4/17/2012 15:45:46,1334691487666,./../audio_stimuli/stimuli/MbuyT.mp3,0,1189,2272:::Played stimuli ./../audio_stimuli/stimuli/MbuyT.mp3
+

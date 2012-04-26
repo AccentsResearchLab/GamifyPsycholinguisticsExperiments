@@ -1,4 +1,4 @@
-#create labels for plots
+x#create labels for plots
 participantIDlabel <- "ParticipantID"
 audioStimulilabel <- "AudioStimuli"
 votelabel <- "(n=11)"
@@ -6,19 +6,84 @@ reactionlabel <- "reaction"
 
 
 #read in data
-SpyOrNot <- read.table("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/SpyOrNotVoteTable120419.csv", header=TRUE, sep="," )
+SpyOrNot <- read.table("~/Downloads/SpyOrNot/analysis/SpyOrNotVoteTable120419.csv", header=TRUE, sep="," )
 
-# histogram for all lab participant aritculation rate
-pdf("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/results1.pdf",width=6,height=6,paper='special')
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_histogram.pdf",width=6,height=6,paper='special')
 x <- SpyOrNot$vote
-title <-paste(participantIDlabel,audioStimulilabel, sep = " ", collapse = NULL)
-h<-hist(x, breaks=11, col="red", xlab="vote", yaxt="n",
+title <-"Histogram of Votes"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
   	 main=title) 
-xfit<-seq(min(x),max(x),length=40) 
-yfit<-dnorm(xfit,mean=mean(x),sd=sd(x)) 
-yfit <- yfit*diff(h$mids[1:2])*length(x) 
-lines(xfit, yfit, col="blue", lwd=2)
 dev.off()
+
+native <- read.table("~/Downloads/SpyOrNot/analysis/native.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_histogram.pdf",width=6,height=6,paper='special')
+x <- native$vote
+title <-"Histogram of Votes for Native Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+pre <- read.table("~/Downloads/SpyOrNot/analysis/pre.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_pretest_histogram.pdf",width=6,height=6,paper='special')
+x <- pre$vote
+title <-"Histogram of Votes for Non-Native Speaker Pre-test Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+post <- read.table("~/Downloads/SpyOrNot/analysis/post.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_posttest_histogram.pdf",width=6,height=6,paper='special')
+x <- post$vote
+title <-"Histogram of Votes for Non-Native Speaker Post-test Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+unknown <- read.table("~/Downloads/SpyOrNot/analysis/target.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_unknowntest_histogram.pdf",width=6,height=6,paper='special')
+x <- post$vote
+title <-"Histogram of Votes for Non-Native Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+
+rusnative <- read.table("~/Downloads/SpyOrNot/analysis/nativerussian.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_russian_histogram.pdf",width=6,height=6,paper='special')
+x <- rusnative$vote
+title <-"Histogram of Votes for Native Russian Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+souafrnative <- read.table("~/Downloads/SpyOrNot/analysis/nativesouthafrican.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_southafrican_histogram.pdf",width=6,height=6,paper='special')
+x <- souafrnative$vote
+title <-"Histogram of Votes for Native South African Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+
+sussexnative <- read.table("~/Downloads/SpyOrNot/analysis/nativesussex.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_sussex_histogram.pdf",width=6,height=6,paper='special')
+x <- sussexnative$vote
+title <-"Histogram of Votes for Native Sussex Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+####################################################
+
+
+
 
 #Box plot comparing articulation rate in the two blog drafts
 # http://www.statmethods.net/graphs/boxplot.html

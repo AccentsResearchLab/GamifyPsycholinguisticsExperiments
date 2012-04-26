@@ -1,0 +1,504 @@
+Timestamp,participantID,audioStimuli,vote,reactionTime,voteDetails
+4/11/2012 13:50:06,1334166421271:::South Africa,./../audio_stimuli/recs3/31pre5.mp3,-4,3499,2628:::Played stimuli ./../audio_stimuli/recs3/31pre5.mp3; (0:1334166604960); (-1:1334166604993); (-2:1334166605042); (-3:1334166605076); (-4:1334166605176)
+4/11/2012 13:51:03,1334166421271:::South Africa,./../audio_stimuli/recs3/29pre2.mp3,-3,3985,2844:::Played stimuli ./../audio_stimuli/recs3/29pre2.mp3; (0:1334166660694); (-1:1334166660761); (-2:1334166660912); (-3:1334166661678)
+4/11/2012 13:53:36,1334166421271:::South Africa,./../audio_stimuli/recs2/19pre2.mp3,1,5301,2376:::Played stimuli ./../audio_stimuli/recs2/19pre2.mp3; (0:1334166811850); (-1:1334166811915); (-2:1334166811966); (-3:1334166812616); (-4:1334166812698); (-5:1334166812817); (-4:1334166813250); (-3:1334166813299); (-2:1334166813350); (-1:1334166813383); (0:1334166813416); (1:1334166813448); (2:1334166813465); (3:1334166813515); (4:1334166813566); (3:1334166813931); (2:1334166813999); (1:1334166814332)
+4/11/2012 13:54:18,1334166421271:::South Africa,./../audio_stimuli/recs4/45pre6.mp3,2,3665,5040:::Played stimuli ./../audio_stimuli/recs4/45pre6.mp3; (0:1334166856296); (1:1334166856380); (2:1334166856480)
+4/11/2012 13:58:00,1334166421271:::South Africa,./../audio_stimuli/recs4/39pre6.mp3,-5,-1110,3852:::Played stimuli ./../audio_stimuli/recs4/39pre6.mp3
+4/11/2012 13:58:54,1334166421271:::South Africa,./../audio_stimuli/recs1/01pre6.mp3,-5,1820,3996:::Played stimuli ./../audio_stimuli/recs1/01pre6.mp3
+4/11/2012 13:59:07,1334166421271:::South Africa,./../audio_stimuli/recs2/14pre1.mp3,-5,2035,2520:::Played stimuli ./../audio_stimuli/recs2/14pre1.mp3
+4/11/2012 14:00:37,1334166421271:::South Africa,./../audio_stimuli/recs3/34pre3.mp3,3,3618,2628:::Played stimuli ./../audio_stimuli/recs3/34pre3.mp3; (3:1334167236276)
+4/11/2012 14:03:36,1334167356241:::Sussex,./../audio_stimuli/recs1/03pre5.mp3,-5,3346,2844:::Played stimuli ./../audio_stimuli/recs1/03pre5.mp3; (4:1334167412852); (-5:1334167414949)
+4/11/2012 14:03:59,1334167356241:::Sussex,./../audio_stimuli/recs3/33pre1.mp3,-4,2296,3204:::Played stimuli ./../audio_stimuli/recs3/33pre1.mp3; (-4:1334167438307)
+4/11/2012 14:04:06,1334167356241:::Sussex,./../audio_stimuli/recs3/33pre1.mp3,0,8855,3204:::Played stimuli ./../audio_stimuli/recs3/33pre1.mp3; (-4:1334167438307)
+4/11/2012 14:04:26,1334167356241:::Sussex,./../audio_stimuli/recs1/08pre1.mp3,-5,1320,3060:::Played stimuli ./../audio_stimuli/recs1/08pre1.mp3; (-5:1334167465095)
+4/11/2012 14:04:48,1334167356241:::Sussex,./../audio_stimuli/recs1/11pre5.mp3,-4,2193,2088:::Played stimuli ./../audio_stimuli/recs1/11pre5.mp3
+4/11/2012 14:06:33,1334167356241:::Sussex,./../audio_stimuli/recs3/31pre4.mp3,-5,1188,2916:::Played stimuli ./../audio_stimuli/recs3/31pre4.mp3; (-5:1334167591886)
+4/11/2012 14:08:03,1334167356241:::Sussex,./../audio_stimuli/recs2/18pre2.mp3,-5,1227,3348:::Played stimuli ./../audio_stimuli/recs2/18pre2.mp3; (-5:1334167681778)
+4/11/2012 14:10:01,1334167356241:::Sussex,./../audio_stimuli/recs3/36pre2.mp3,-5,2316,2160:::Played stimuli ./../audio_stimuli/recs3/36pre2.mp3
+4/11/2012 14:11:36,1334167356241:::Sussex,./../audio_stimuli/recs4/40pre6.mp3,-5,1868,4032:::Played stimuli ./../audio_stimuli/recs4/40pre6.mp3; (-5:1334167893867)
+4/11/2012 16:34:08,1334176213242:::Russia,./../audio_stimuli/recs1/03pre2.mp3,-4,1993,2664:::Played stimuli ./../audio_stimuli/recs1/03pre2.mp3; (0:1334176444828); (-1:1334176444878); (-2:1334176444932); (-3:1334176444956); (-4:1334176444988)
+4/11/2012 17:03:44,1334175044851:::South Africa,./../audio_stimuli/recs1/05pre6.mp3,-5,3088,3420:::Played stimuli ./../audio_stimuli/recs1/05pre6.mp3; (0:1334178222501); (-1:1334178222534); (-2:1334178222550); (-3:1334178222568); (-4:1334178222585); (-5:1334178222601)
+4/11/2012 17:03:55,1334175044851:::South Africa,./../audio_stimuli/recs2/23pre2.mp3,-5,1253,3600:::Played stimuli ./../audio_stimuli/recs2/23pre2.mp3; (0:1334178233639); (-1:1334178233657); (-2:1334178233673); (-4:1334178233692); (-5:1334178233711)
+4/11/2012 17:04:05,1334175044851:::South Africa,./../audio_stimuli/recs4/47pre3.mp3,-5,2035,2556:::Played stimuli ./../audio_stimuli/recs4/47pre3.mp3; (0:1334178244030); (-1:1334178244080); (-2:1334178244097); (-3:1334178244112); (-4:1334178244129); (-5:1334178244145)
+4/11/2012 17:37:18,1334179777376:::Russia,./../audio_stimuli/recs1/09pre4.mp3,-4,10635,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3
+4/11/2012 17:37:31,1334179777376:::Russia,./../audio_stimuli/recs1/09pre4.mp3,0,27113,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3
+4/11/2012 17:52:32,1334179777376:::Russia,./../audio_stimuli/recs4/41pre2.mp3,4,6456,3132:::Played stimuli ./../audio_stimuli/recs4/41pre2.mp3; (4:1334181155449)
+4/11/2012 17:53:44,1334179777376:::Russia,./../audio_stimuli/recs1/07pre3.mp3,-5,3648,3852:::Played stimuli ./../audio_stimuli/recs1/07pre3.mp3; (-5:1334181227299)
+4/11/2012 17:53:58,1334179777376:::Russia,./../audio_stimuli/recs1/07pre3.mp3,0,17132,3852:::Played stimuli ./../audio_stimuli/recs1/07pre3.mp3; (-5:1334181227299)
+4/11/2012 17:54:56,1334179777376:::Russia,./../audio_stimuli/recs1/03pre3.mp3,-5,4738,3492:::Played stimuli ./../audio_stimuli/recs1/03pre3.mp3; (-5:1334181298262)
+4/11/2012 18:04:25,1334179777376:::Russia,./../audio_stimuli/recs2/22pre3.mp3,-5,10941,3420:::Played stimuli ./../audio_stimuli/recs2/22pre3.mp3; (-5:1334181865293)
+4/11/2012 18:05:50,1334179777376:::Russia,./../audio_stimuli/recs4/41pre1.mp3,5,2975,3420:::Played stimuli ./../audio_stimuli/recs4/41pre1.mp3; (5:1334181952942)
+4/11/2012 18:06:41,1334179777376:::Russia,./../audio_stimuli/recs2/15pre1.mp3,-5,3631,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (-5:1334182003443)
+4/11/2012 20:00:51,1334188331915:::Russia,./../audio_stimuli/recs1/02pre2.mp3,-5,6910,2448:::Played stimuli ./../audio_stimuli/recs1/02pre2.mp3; (0:1334188844185); (-1:1334188844272); (-2:1334188844291); (-3:1334188844310); (-4:1334188844344); (-5:1334188844411)
+4/11/2012 21:13:42,1334192849800:::Sussex,./../audio_stimuli/recs2/21pre5.mp3,-5,3676,2592:::Played stimuli ./../audio_stimuli/recs2/21pre5.mp3; (0:1334193215552); (-1:1334193215592); (-2:1334193215642); (-4:1334193215672); (-5:1334193215702)
+4/11/2012 21:16:33,1334192849800:::Sussex,./../audio_stimuli/recs1/05pre3.mp3,-5,3583,2772:::Played stimuli ./../audio_stimuli/recs1/05pre3.mp3; (0:1334193386364); (-1:1334193386394); (-3:1334193386424); (-5:1334193386444)
+4/11/2012 21:19:10,1334192849800:::Sussex,./../audio_stimuli/recs4/39pre4.mp3,-5,4388,2808:::Played stimuli ./../audio_stimuli/recs4/39pre4.mp3; (0:1334193542302); (-1:1334193542363); (-2:1334193542404); (-3:1334193542548); (-4:1334193542922); (-5:1334193543034)
+4/11/2012 21:22:56,1334184025685:::Russia,./../audio_stimuli/recs3/28pre1.mp3,-5,3085,3708:::Played stimuli ./../audio_stimuli/recs3/28pre1.mp3; (-5:1334184302918)
+4/11/2012 21:28:35,1334193755482:::South Africa,./../audio_stimuli/recs2/23pre2.mp3,-5,2595,3600:::Played stimuli ./../audio_stimuli/recs2/23pre2.mp3; (-5:1334194112013)
+4/11/2012 21:30:21,1334193755482:::South Africa,./../audio_stimuli/recs2/19pre4.mp3,-2,3931,2520:::Played stimuli ./../audio_stimuli/recs2/19pre4.mp3; (-2:1334194218198)
+4/11/2012 21:31:57,1334193755482:::South Africa,./../audio_stimuli/recs1/03pre4.mp3,-5,3901,2700:::Played stimuli ./../audio_stimuli/recs1/03pre4.mp3; (-5:1334194314262)
+4/11/2012 21:38:16,1334193755482:::South Africa,./../audio_stimuli/recs3/28pre6.mp3,-5,1762,5040:::Played stimuli ./../audio_stimuli/recs3/28pre6.mp3; (-5:1334194692011)
+4/11/2012 21:41:52,1334194837151:::Russia,./../audio_stimuli/recs3/27pre2.mp3,-5,3777,3024:::Played stimuli ./../audio_stimuli/recs3/27pre2.mp3; (-4:1334194908536); (-5:1334194909626)
+4/11/2012 21:50:23,1334195202347:::Sussex,./../audio_stimuli/recs2/24pre6.mp3,-4,3000,4572:::Played stimuli ./../audio_stimuli/recs2/24pre6.mp3; (-4:1334195420177)
+4/11/2012 21:51:14,1334195202347:::Sussex,./../audio_stimuli/recs1/10pre1.mp3,-3,2699,3132:::Played stimuli ./../audio_stimuli/recs1/10pre1.mp3; (-3:1334195471053)
+4/11/2012 21:53:51,1334195202347:::Sussex,./../audio_stimuli/recs4/47pre2.mp3,-5,2265,2376:::Played stimuli ./../audio_stimuli/recs4/47pre2.mp3; (-5:1334195628476)
+4/11/2012 22:51:23,1334198981039:::Sussex,./../audio_stimuli/recs3/26pre3.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs3/26pre3.mp3
+4/11/2012 22:52:59,1334199002283:::South Africa,./../audio_stimuli/recs2/23pre1.mp3,-5,2694,3204:::Played stimuli ./../audio_stimuli/recs2/23pre1.mp3; (-5:1334199188228)
+4/11/2012 22:56:17,1334199002283:::South Africa,./../audio_stimuli/recs2/19pre1.mp3,-5,1245,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (-5:1334199387330)
+4/11/2012 22:56:24,1334199002283:::South Africa,./../audio_stimuli/recs2/19pre1.mp3,0,7436,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (-5:1334199387330)
+4/11/2012 22:57:01,1334199002283:::South Africa,./../audio_stimuli/recs4/43pre4.mp3,-5,1681,2880:::Played stimuli ./../audio_stimuli/recs4/43pre4.mp3
+4/11/2012 22:57:55,1334199002283:::South Africa,./../audio_stimuli/recs3/29pre2.mp3,-5,959,2844:::Played stimuli ./../audio_stimuli/recs3/29pre2.mp3; (-5:1334199483628)
+4/11/2012 22:59:50,1334199002283:::South Africa,./../audio_stimuli/recs1/12pre4.mp3,-5,-288,3528:::Played stimuli ./../audio_stimuli/recs1/12pre4.mp3
+4/11/2012 23:03:00,1334199002283:::South Africa,./../audio_stimuli/recs4/50pre6.mp3,-5,-1152,3888:::Played stimuli ./../audio_stimuli/recs4/50pre6.mp3
+4/11/2012 23:03:11,1334199002283:::South Africa,./../audio_stimuli/recs4/50pre6.mp3,0,9246,3888:::Played stimuli ./../audio_stimuli/recs4/50pre6.mp3
+4/11/2012 23:03:23,1334199002283:::South Africa,./../audio_stimuli/recs4/42pre3.mp3,-5,1940,2520:::Played stimuli ./../audio_stimuli/recs4/42pre3.mp3; (-5:1334199812501)
+4/11/2012 23:03:53,1334199002283:::South Africa,./../audio_stimuli/recs4/40pre4.mp3,-5,1593,2808:::Played stimuli ./../audio_stimuli/recs4/40pre4.mp3
+4/11/2012 23:04:50,1334199002283:::South Africa,./../audio_stimuli/recs2/17pre1.mp3,-5,1572,2124:::Played stimuli ./../audio_stimuli/recs2/17pre1.mp3; (-5:1334199899756)
+4/11/2012 23:05:08,1334199002283:::South Africa,./../audio_stimuli/recs2/17pre1.mp3,0,18695,2124:::Played stimuli ./../audio_stimuli/recs2/17pre1.mp3; (-5:1334199899756)
+4/11/2012 23:06:34,1334199002283:::South Africa,./../audio_stimuli/recs1/06pre6.mp3,-5,1446,4464:::Played stimuli ./../audio_stimuli/recs1/06pre6.mp3
+4/11/2012 23:10:20,1334199002283:::South Africa,./../audio_stimuli/recs4/44pre3.mp3,-5,-39,3384:::Played stimuli ./../audio_stimuli/recs4/44pre3.mp3; (-5:1334200228964)
+4/11/2012 23:14:04,1334199002283:::South Africa,./../audio_stimuli/recs1/08pre1.mp3,-5,1373,3060:::Played stimuli ./../audio_stimuli/recs1/08pre1.mp3
+4/11/2012 23:14:24,1334199002283:::South Africa,./../audio_stimuli/recs2/24pre5.mp3,-5,-94,3240:::Played stimuli ./../audio_stimuli/recs2/24pre5.mp3; (-5:1334200473805)
+4/11/2012 23:16:16,1334199002283:::South Africa,./../audio_stimuli/recs3/35pre5.mp3,-5,1060,4104:::Played stimuli ./../audio_stimuli/recs3/35pre5.mp3; (-5:1334200583527)
+4/11/2012 23:16:32,1334199002283:::South Africa,./../audio_stimuli/recs4/39pre3.mp3,-5,1408,2736:::Played stimuli ./../audio_stimuli/recs4/39pre3.mp3
+4/11/2012 23:21:32,1334199002283:::South Africa,./../audio_stimuli/recs4/41pre3.mp3,-5,1057,3564:::Played stimuli ./../audio_stimuli/recs4/41pre3.mp3
+4/11/2012 23:31:18,1334201355159:::Russia:::Sussex:::Russia:::Russia:::Russia,./../audio_stimuli/recs3/29pre4.mp3,-5,4425,3600:::Played stimuli ./../audio_stimuli/recs3/29pre4.mp3; (-4:1334201472169); (-5:1334201472439)
+4/11/2012 23:36:27,1334201355159:::Russia:::Sussex:::Russia:::Russia:::Russia:::Russia:::Russia,./../audio_stimuli/recs4/38pre3.mp3,3,6761,3240:::Played stimuli ./../audio_stimuli/recs4/38pre3.mp3; (3:1334201781171)
+4/11/2012 23:38:02,1334201355159:::Russia:::Sussex:::Russia:::Russia:::Russia:::Russia:::Russia,./../audio_stimuli/recs2/19pre1.mp3,-5,1449,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (-5:1334201876080)
+4/12/2012 0:16:59,1334203726865:::Russia,./../audio_stimuli/recs1/11pre4.mp3,-5,7673,2304:::Played stimuli ./../audio_stimuli/recs1/11pre4.mp3
+4/12/2012 0:20:02,1334203726865:::Russia,./../audio_stimuli/recs4/50pre3.mp3,-5,2338,2736:::Played stimuli ./../audio_stimuli/recs4/50pre3.mp3; (-5:1334204400949)
+4/12/2012 0:22:39,1334203726865:::Russia,./../audio_stimuli/recs3/28pre5.mp3,5,2650,3024:::Played stimuli ./../audio_stimuli/recs3/28pre5.mp3
+4/12/2012 0:27:15,1334203726865:::Russia,./../audio_stimuli/recs3/30pre3.mp3,-5,1747,2772:::Played stimuli ./../audio_stimuli/recs3/30pre3.mp3
+4/12/2012 0:28:29,1334203726865:::Russia,./../audio_stimuli/recs1/09pre1.mp3,-5,5100,2484:::Played stimuli ./../audio_stimuli/recs1/09pre1.mp3; (-5:1334204907740)
+4/12/2012 0:30:24,1334203726865:::Russia,./../audio_stimuli/recs4/50pre6.mp3,-5,1011,3888:::Played stimuli ./../audio_stimuli/recs4/50pre6.mp3; (-5:1334205022752)
+4/12/2012 0:32:17,1334203726865:::Russia,./../audio_stimuli/recs2/13pre1.mp3,-5,1703,2808:::Played stimuli ./../audio_stimuli/recs2/13pre1.mp3
+4/12/2012 0:33:08,1334203726865:::Russia,./../audio_stimuli/recs4/39pre5.mp3,-5,1784,3276:::Played stimuli ./../audio_stimuli/recs4/39pre5.mp3
+4/12/2012 0:33:22,1334203726865:::Russia,./../audio_stimuli/recs4/39pre5.mp3,0,15588,3276:::Played stimuli ./../audio_stimuli/recs4/39pre5.mp3
+4/12/2012 0:33:38,1334203726865:::Russia,./../audio_stimuli/recs4/43pre1.mp3,5,5740,3420:::Played stimuli ./../audio_stimuli/recs4/43pre1.mp3
+4/12/2012 0:34:08,1334203726865:::Russia,./../audio_stimuli/recs4/42pre4.mp3,-5,1908,2448:::Played stimuli ./../audio_stimuli/recs4/42pre4.mp3
+4/12/2012 0:34:47,1334203726865:::Russia,./../audio_stimuli/recs1/07pre4.mp3,-5,1782,4608:::Played stimuli ./../audio_stimuli/recs1/07pre4.mp3; (-5:1334205286716)
+4/12/2012 0:35:16,1334203726865:::Russia,./../audio_stimuli/recs2/25pre4.mp3,-5,1748,3312:::Played stimuli ./../audio_stimuli/recs2/25pre4.mp3; (-5:1334205314268)
+4/12/2012 0:38:05,1334203726865:::Russia,./../audio_stimuli/recs4/50pre4.mp3,-5,3931,2736:::Played stimuli ./../audio_stimuli/recs4/50pre4.mp3
+4/12/2012 11:02:14,1334176680498:::Russia:::Russia:::Russia,./../audio_stimuli/recs2/17pre3.mp3,-4,1985,2556:::Played stimuli ./../audio_stimuli/recs2/17pre3.mp3; (0:1334242930626); (-1:1334242930703); (-2:1334242930755); (-3:1334242930787); (-4:1334242930818)
+4/12/2012 11:02:19,1334176680498:::Russia:::Russia:::Russia,./../audio_stimuli/recs2/19pre1.mp3,-5,2478,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (-1:1334242935755); (-2:1334242936382); (-3:1334242936412); (-4:1334242936446); (-5:1334242936476)
+4/12/2012 11:19:37,1334241715886:::Russia,./../audio_stimuli/recs3/27pre3.mp3,-2,8062,3888:::Played stimuli ./../audio_stimuli/recs3/27pre3.mp3; (0:1334243981899); (-1:1334243982045); (-2:1334243982828)
+4/12/2012 11:20:59,1334241715886:::Russia,./../audio_stimuli/recs4/46pre5.mp3,0,6844,2052:::Played stimuli ./../audio_stimuli/recs4/46pre5.mp3
+4/12/2012 11:23:10,1334241715886:::Russia,./../audio_stimuli/recs3/34pre6.mp3,-5,4516,4140:::Played stimuli ./../audio_stimuli/recs3/34pre6.mp3; (0:1334244194946); (-1:1334244194978); (-2:1334244194995); (-3:1334244195010); (-4:1334244195028); (-5:1334244195044)
+4/12/2012 11:24:35,1334241715886:::Russia,./../audio_stimuli/recs4/45pre6.mp3,3,5634,5040:::Played stimuli ./../audio_stimuli/recs4/45pre6.mp3; (0:1334244276611); (1:1334244276676); (2:1334244277741); (3:1334244277839); (4:1334244279361); (5:1334244279591); (4:1334244280000); (3:1334244280280)
+4/12/2012 11:28:09,1334241715886:::Russia,./../audio_stimuli/recs1/01pre2.mp3,-5,2361,2628:::Played stimuli ./../audio_stimuli/recs1/01pre2.mp3; (0:1334244495082); (-1:1334244495114); (-2:1334244495131); (-4:1334244495147); (-5:1334244495163)
+4/12/2012 11:29:13,1334241715886:::Russia,./../audio_stimuli/recs4/45pre3.mp3,-5,3847,2988:::Played stimuli ./../audio_stimuli/recs4/45pre3.mp3; (0:1334244558889); (-1:1334244559324); (-2:1334244559357); (-3:1334244559373); (-4:1334244559388); (-5:1334244559406)
+4/12/2012 11:32:11,1334241715886:::Russia,./../audio_stimuli/recs4/50pre3.mp3,-5,2663,2736:::Played stimuli ./../audio_stimuli/recs4/50pre3.mp3; (0:1334244736845); (-1:1334244736862); (-2:1334244736877); (-4:1334244736893); (-5:1334244736910)
+4/12/2012 13:21:35,1334251165810:::South Africa,./../audio_stimuli/recs3/35pre5.mp3,-5,2412,4104:::Played stimuli ./../audio_stimuli/recs3/35pre5.mp3; (-5:1334251293756)
+4/12/2012 13:48:24,1334251921727:::Russia,./../audio_stimuli/recs2/14pre6.mp3,-3,577226,3492:::Played stimuli ./../audio_stimuli/recs2/14pre6.mp3; (2:1334252332685); (3:1334252335002); (2:1334252336005); (3:1334252336513); (2:1334252338407); (1:1334252338450); (0:1334252338515); (-1:1334252338853); (-2:1334252339112); (-3:1334252342086)
+4/12/2012 13:54:28,1334253246483:::Russia,./../audio_stimuli/recs3/27pre5.mp3,2,6698,2988:::Played stimuli ./../audio_stimuli/recs3/27pre5.mp3; (-3:1334253260222); (2:1334253262763)
+4/12/2012 13:57:04,1334253246483:::Russia,./../audio_stimuli/recs3/31pre5.mp3,-5,6119,2628:::Played stimuli ./../audio_stimuli/recs3/31pre5.mp3; (0:1334253418808); (-1:1334253418848); (-2:1334253418883); (-3:1334253418933); (-4:1334253418965); (-5:1334253419013)
+4/12/2012 14:02:54,1334253246483:::Russia,./../audio_stimuli/recs3/30pre4.mp3,-5,4589,3564:::Played stimuli ./../audio_stimuli/recs3/30pre4.mp3; (-5:1334253767221)
+4/12/2012 14:34:58,1334255530308:::Russia,./../audio_stimuli/recs2/14pre4.mp3,-5,2226,2628:::Played stimuli ./../audio_stimuli/recs2/14pre4.mp3; (-5:1334255693302)
+4/12/2012 14:36:12,1334255530308:::Russia,./../audio_stimuli/recs1/01pre2.mp3,-5,1737,2628:::Played stimuli ./../audio_stimuli/recs1/01pre2.mp3
+4/12/2012 17:15:20,1334265019910:::Russia,./../audio_stimuli/recs1/07pre6.mp3,1,5627,7272:::Played stimuli ./../audio_stimuli/recs1/07pre6.mp3; (1:1334265131146)
+4/12/2012 17:16:10,1334265019910:::Russia,./../audio_stimuli/recs1/06pre3.mp3,-3,2962,3492:::Played stimuli ./../audio_stimuli/recs1/06pre3.mp3; (-3:1334265180909)
+4/12/2012 17:18:53,1334264983275:::Sussex,./../audio_stimuli/recs3/29pre1.mp3,-5,7686,2880:::Played stimuli ./../audio_stimuli/recs3/29pre1.mp3; (-1:1334265313904); (-2:1334265313936); (-3:1334265313970); (-4:1334265314021); (-5:1334265314270)
+4/12/2012 17:19:15,1334264983275:::Sussex,./../audio_stimuli/recs4/50pre2.mp3,-5,3607,2448:::Played stimuli ./../audio_stimuli/recs4/50pre2.mp3; (0:1334265338725); (-1:1334265338857); (-2:1334265338875); (-3:1334265338891); (-4:1334265338924); (-5:1334265338940)
+4/12/2012 17:19:16,1334265019910:::Russia,./../audio_stimuli/recs4/42pre5.mp3,-4,6332,2304:::Played stimuli ./../audio_stimuli/recs4/42pre5.mp3; (-4:1334265367537)
+4/12/2012 17:19:57,1334264983275:::Sussex,./../audio_stimuli/recs2/22pre3.mp3,-5,2687,3420:::Played stimuli ./../audio_stimuli/recs2/22pre3.mp3; (0:1334265382456); (-1:1334265382472); (-3:1334265382488); (-4:1334265382506); (-5:1334265382521)
+4/12/2012 17:21:14,1334265019910:::Russia,./../audio_stimuli/recs2/16pre6.mp3,-5,1622,4500:::Played stimuli ./../audio_stimuli/recs2/16pre6.mp3; (-5:1334265484758)
+4/12/2012 17:21:33,1334265019910:::Russia,./../audio_stimuli/recs1/12pre2.mp3,4,3068,2844:::Played stimuli ./../audio_stimuli/recs1/12pre2.mp3; (4:1334265504935)
+4/12/2012 17:22:29,1334265019910:::Russia,./../audio_stimuli/recs3/34pre1.mp3,-5,2255,2628:::Played stimuli ./../audio_stimuli/recs3/34pre1.mp3; (-5:1334265560083)
+4/12/2012 17:26:13,1334265019910:::Russia,./../audio_stimuli/recs2/17pre4.mp3,4,2744,2664:::Played stimuli ./../audio_stimuli/recs2/17pre4.mp3; (4:1334265784723)
+4/12/2012 17:27:07,1334265019910:::Russia,./../audio_stimuli/recs2/19pre5.mp3,-3,2295,2664:::Played stimuli ./../audio_stimuli/recs2/19pre5.mp3; (-3:1334265837907)
+4/12/2012 17:27:23,1334265019910:::Russia,./../audio_stimuli/recs4/47pre1.mp3,-4,1916,2484:::Played stimuli ./../audio_stimuli/recs4/47pre1.mp3; (-4:1334265853564)
+4/12/2012 17:27:48,1334265019910:::Russia,./../audio_stimuli/recs4/39pre5.mp3,-5,2994,3276:::Played stimuli ./../audio_stimuli/recs4/39pre5.mp3; (-5:1334265878831)
+4/12/2012 17:28:11,1334264983275:::Sussex,./../audio_stimuli/recs4/49pre1.mp3,-5,1621,2772:::Played stimuli ./../audio_stimuli/recs4/49pre1.mp3; (-5:1334265875681)
+4/12/2012 17:29:23,1334264983275:::Sussex,./../audio_stimuli/recs3/30pre3.mp3,-5,1545,2772:::Played stimuli ./../audio_stimuli/recs3/30pre3.mp3
+4/12/2012 17:30:24,1334265019910:::Russia,./../audio_stimuli/recs4/49pre6.mp3,-4,1698,3852:::Played stimuli ./../audio_stimuli/recs4/49pre6.mp3; (-4:1334266034774)
+4/12/2012 17:30:35,1334265019910:::Russia,./../audio_stimuli/recs2/21pre6.mp3,-4,1750,3996:::Played stimuli ./../audio_stimuli/recs2/21pre6.mp3; (-4:1334266046388)
+4/12/2012 17:30:54,1334264983275:::Sussex,./../audio_stimuli/recs2/18pre3.mp3,-5,1603,3852:::Played stimuli ./../audio_stimuli/recs2/18pre3.mp3
+4/12/2012 17:31:36,1334264983275:::Sussex,./../audio_stimuli/recs2/18pre3.mp3,0,44164,3852:::Played stimuli ./../audio_stimuli/recs2/18pre3.mp3
+4/12/2012 17:32:12,1334264983275:::Sussex,./../audio_stimuli/recs4/39pre3.mp3,-4,2787,2736:::Played stimuli ./../audio_stimuli/recs4/39pre3.mp3; (-4:1334266117322)
+4/12/2012 17:35:00,1334264983275:::Sussex,./../audio_stimuli/recs4/44pre2.mp3,-5,2607,2736:::Played stimuli ./../audio_stimuli/recs4/44pre2.mp3
+4/12/2012 17:39:04,1334264983275:::Sussex,./../audio_stimuli/recs1/10pre4.mp3,-5,1840,3492:::Played stimuli ./../audio_stimuli/recs1/10pre4.mp3; (-5:1334266528793)
+4/12/2012 17:39:50,1334264983275:::Sussex,./../audio_stimuli/recs4/44pre6.mp3,-5,3010,4104:::Played stimuli ./../audio_stimuli/recs4/44pre6.mp3; (-5:1334266575317)
+4/12/2012 17:40:09,1334264983275:::Sussex,./../audio_stimuli/recs4/44pre6.mp3,0,22181,4104:::Played stimuli ./../audio_stimuli/recs4/44pre6.mp3; (-5:1334266575317)
+4/12/2012 19:18:47,1334269397682:::Russia,./../audio_stimuli/recs1/07pre2.mp3,-2,4132,4140:::Played stimuli ./../audio_stimuli/recs1/07pre2.mp3; (-2:1334272726190)
+4/12/2012 23:15:44,1334264983275:::Sussex,./../audio_stimuli/recs4/43pre4.mp3,-5,1830,2880:::Played stimuli ./../audio_stimuli/recs4/43pre4.mp3; (-5:1334286729951)
+4/13/2012 14:03:07,1334339728969:::South Africa,./../audio_stimuli/recs4/45pre1.mp3,-5,1505,2664:::Played stimuli ./../audio_stimuli/recs4/45pre1.mp3; (0:1334340186591); (-1:1334340186607); (-2:1334340186639); (-3:1334340186687); (-4:1334340186735); (-5:1334340186857)
+4/13/2012 14:08:00,1334339728969:::South Africa,./../audio_stimuli/recs4/49pre4.mp3,-5,4215,2844:::Played stimuli ./../audio_stimuli/recs4/49pre4.mp3; (0:1334340480115); (-1:1334340480130); (-2:1334340480147); (-3:1334340480178); (-4:1334340480194); (-5:1334340480211)
+4/13/2012 15:55:33,1334346757946,./../audio_stimuli/recs2/16pre2.mp3,-5,1458,3132:::Played stimuli ./../audio_stimuli/recs2/16pre2.mp3; (0:1334346942465); (-1:1334346942515); (-2:1334346942549); (-3:1334346942565); (-4:1334346942582); (-5:1334346942598)
+4/13/2012 15:56:34,1334346757946,./../audio_stimuli/recs4/43pre1.mp3,-5,1574,3420:::Played stimuli ./../audio_stimuli/recs4/43pre1.mp3; (0:1334347003830); (-1:1334347003880); (-2:1334347003913); (-3:1334347003946); (-4:1334347003964); (-5:1334347003980)
+4/13/2012 15:56:41,1334346757946,./../audio_stimuli/recs4/43pre1.mp3,0,8133,3420:::Played stimuli ./../audio_stimuli/recs4/43pre1.mp3; (0:1334347003830); (-1:1334347003880); (-2:1334347003913); (-3:1334347003946); (-4:1334347003964); (-5:1334347003980)
+4/13/2012 15:58:27,1334346757946,./../audio_stimuli/recs2/20pre6.mp3,-5,1603,6012:::Played stimuli ./../audio_stimuli/recs2/20pre6.mp3; (0:1334347116414); (-1:1334347116446); (-2:1334347116479); (-3:1334347116513); (-4:1334347116546); (-5:1334347116847)
+4/13/2012 15:58:57,1334346757946,./../audio_stimuli/recs2/14pre5.mp3,-5,1937,2484:::Played stimuli ./../audio_stimuli/recs2/14pre5.mp3; (0:1334347146134); (-1:1334347146201); (-2:1334347146234); (-3:1334347146251); (-4:1334347146267); (-5:1334347146284)
+4/13/2012 16:00:08,1334346757946,./../audio_stimuli/recs4/48pre1.mp3,-5,-491,3708:::Played stimuli ./../audio_stimuli/recs4/48pre1.mp3; (0:1334347217596); (-1:1334347217629); (-2:1334347217645); (-3:1334347217663); (-4:1334347217679); (-5:1334347217695)
+4/13/2012 16:00:29,1334346757946,./../audio_stimuli/recs4/45pre3.mp3,-5,646,2988:::Played stimuli ./../audio_stimuli/recs4/45pre3.mp3; (0:1334347238975); (-1:1334347238992); (-2:1334347239026); (-3:1334347239042); (-4:1334347239076); (-5:1334347239092)
+4/13/2012 16:01:20,1334346757946,./../audio_stimuli/recs2/18pre6.mp3,-5,1132,4752:::Played stimuli ./../audio_stimuli/recs2/18pre6.mp3; (0:1334347289860); (-1:1334347289892); (-2:1334347289910); (-3:1334347289926); (-5:1334347289943)
+4/13/2012 16:01:49,1334346757946,./../audio_stimuli/recs2/19pre1.mp3,-5,634,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (0:1334347318544); (-1:1334347318577); (-2:1334347318610); (-3:1334347318628); (-4:1334347318644); (-5:1334347318711)
+4/13/2012 16:02:37,1334346757946,./../audio_stimuli/recs1/09pre6.mp3,-5,173,4428:::Played stimuli ./../audio_stimuli/recs1/09pre6.mp3; (0:1334347366620); (-1:1334347366637); (-2:1334347366670); (-3:1334347366686); (-4:1334347366704); (-5:1334347366719)
+4/14/2012 1:03:31,1334379749053:::Russia,./../audio_stimuli/recs1/04pre5.mp3,-5,2708,2735:::Played stimuli ./../audio_stimuli/recs1/04pre5.mp3; (0:1334379823119); (-1:1334379823183); (-2:1334379823224); (-3:1334379823247); (-4:1334379823255); (-5:1334379823295)
+4/14/2012 1:05:53,1334379749053:::Russia,./../audio_stimuli/recs4/40pre1.mp3,-4,2055,2555:::Played stimuli ./../audio_stimuli/recs4/40pre1.mp3; (0:1334379965503); (-1:1334379965552); (-2:1334379965583); (-3:1334379965607); (-4:1334379965639)
+4/14/2012 1:06:20,1334379749053:::Russia,./../audio_stimuli/recs3/27pre2.mp3,-5,2564,3023:::Played stimuli ./../audio_stimuli/recs3/27pre2.mp3; (0:1334379991863); (-1:1334379991895); (-2:1334379991928); (-3:1334379991935); (-4:1334379991959); (-5:1334379991983)
+4/14/2012 1:06:23,1334379749053:::Russia,./../audio_stimuli/recs3/27pre2.mp3,0,6387,3023:::Played stimuli ./../audio_stimuli/recs3/27pre2.mp3; (0:1334379991863); (-1:1334379991895); (-2:1334379991928); (-3:1334379991935); (-4:1334379991959); (-5:1334379991983)
+4/14/2012 1:09:28,1334379749053:::Russia,./../audio_stimuli/recs4/49pre1.mp3,-5,224,2772:::Played stimuli ./../audio_stimuli/recs4/49pre1.mp3; (0:1334380180879); (-1:1334380180911); (-2:1334380180935); (-3:1334380180959); (-4:1334380180975); (-5:1334380180999)
+4/14/2012 9:22:55,1334409111130:::Russia,./../audio_stimuli/recs1/01pre6.mp3,-5,2080,3996:::Played stimuli ./../audio_stimuli/recs1/01pre6.mp3; (0:1334409517638); (-1:1334409517664); (-2:1334409517701); (-3:1334409517728); (-4:1334409517762); (-5:1334409517785)
+4/14/2012 9:25:35,1334409111130:::Russia,./../audio_stimuli/recs4/38pre4.mp3,-5,1902,3312:::Played stimuli ./../audio_stimuli/recs4/38pre4.mp3; (0:1334409676095); (1:1334409676110); (2:1334409676121); (3:1334409676132); (4:1334409676144); (5:1334409676155); (4:1334409678146); (3:1334409678157); (1:1334409678169); (0:1334409678181); (-2:1334409678193); (-3:1334409678205); (-4:1334409678220); (-5:1334409678229)
+4/14/2012 9:27:47,1334409111130:::Russia,./../audio_stimuli/recs4/47pre5.mp3,5,2118,2664:::Played stimuli ./../audio_stimuli/recs4/47pre5.mp3
+4/14/2012 9:29:54,1334409111130:::Russia,./../audio_stimuli/recs1/06pre1.mp3,5,-861,3060:::Played stimuli ./../audio_stimuli/recs1/06pre1.mp3
+4/14/2012 9:30:33,1334409111130:::Russia,./../audio_stimuli/recs2/17pre6.mp3,-5,3043,4284:::Played stimuli ./../audio_stimuli/recs2/17pre6.mp3; (-5:1334409976491)
+4/14/2012 9:30:49,1334409111130:::Russia,./../audio_stimuli/recs2/17pre6.mp3,5,19047,4284:::Played stimuli ./../audio_stimuli/recs2/17pre6.mp3; (-5:1334409976491); (5:1334409991668)
+4/14/2012 13:06:20,1334422991856:::South Africa,./../audio_stimuli/recs4/46pre1.mp3,-5,3084,2628:::Played stimuli ./../audio_stimuli/recs4/46pre1.mp3; (0:1334423167233); (-1:1334423167269); (-2:1334423167302); (-3:1334423167331); (-4:1334423167354); (-5:1334423167390)
+4/14/2012 13:08:06,1334422991856:::South Africa,./../audio_stimuli/recs1/06pre6.mp3,5,3175,4464:::Played stimuli ./../audio_stimuli/recs1/06pre6.mp3; (0:1334423271784); (1:1334423271850); (2:1334423271925); (3:1334423272025); (4:1334423272126); (5:1334423272355)
+4/14/2012 13:09:12,1334422991856:::South Africa,./../audio_stimuli/recs2/15pre1.mp3,-5,2404,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (0:1334423336931); (-1:1334423338734); (-2:1334423338768); (-3:1334423338817); (-4:1334423338891); (-5:1334423339206)
+4/14/2012 13:11:16,1334422991856:::South Africa,./../audio_stimuli/recs4/46pre5.mp3,0,3427,2052:::Played stimuli ./../audio_stimuli/recs4/46pre5.mp3
+4/14/2012 13:11:32,1334422991856:::South Africa,./../audio_stimuli/recs2/22pre5.mp3,-5,3096,2916:::Played stimuli ./../audio_stimuli/recs2/22pre5.mp3
+4/14/2012 13:12:31,1334422991856:::South Africa,./../audio_stimuli/recs2/19pre6.mp3,-5,703,3240:::Played stimuli ./../audio_stimuli/recs2/19pre6.mp3; (-5:1334423537490)
+4/14/2012 13:13:55,1334422991856:::South Africa,./../audio_stimuli/recs1/01pre3.mp3,-5,1967,3060:::Played stimuli ./../audio_stimuli/recs1/01pre3.mp3; (-5:1334423621790)
+4/14/2012 13:14:28,1334422991856:::South Africa,./../audio_stimuli/recs3/36pre2.mp3,-5,1014,2160:::Played stimuli ./../audio_stimuli/recs3/36pre2.mp3
+4/14/2012 13:16:54,1334422991856:::South Africa,./../audio_stimuli/recs4/40pre1.mp3,-5,1354,2556:::Played stimuli ./../audio_stimuli/recs4/40pre1.mp3
+4/14/2012 13:22:07,1334424086472:::Russia,./../audio_stimuli/recs4/41pre1.mp3,5,926,3420:::Played stimuli ./../audio_stimuli/recs4/41pre1.mp3; (5:1334424113918)
+4/14/2012 13:22:22,1334424086472:::Russia,./../audio_stimuli/recs1/05pre5.mp3,-5,898,2664:::Played stimuli ./../audio_stimuli/recs1/05pre5.mp3; (-5:1334424128457)
+4/14/2012 13:22:27,1334424086472:::Russia,./../audio_stimuli/recs2/13pre5.mp3,-5,954,2880:::Played stimuli ./../audio_stimuli/recs2/13pre5.mp3
+4/14/2012 13:30:28,1334424086472:::Russia,./../audio_stimuli/recs1/02pre6.mp3,-5,1113,3204:::Played stimuli ./../audio_stimuli/recs1/02pre6.mp3
+4/14/2012 13:31:24,1334424086472:::Russia,./../audio_stimuli/recs1/02pre6.mp3,0,56852,3204:::Played stimuli ./../audio_stimuli/recs1/02pre6.mp3
+4/14/2012 13:32:44,1334424086472:::Russia,./../audio_stimuli/recs3/28pre6.mp3,-5,465,5040:::Played stimuli ./../audio_stimuli/recs3/28pre6.mp3; (-5:1334424749608)
+4/14/2012 13:33:05,1334424086472:::Russia,./../audio_stimuli/recs1/04pre1.mp3,5,4305,2340:::Played stimuli ./../audio_stimuli/recs1/04pre1.mp3
+4/14/2012 13:35:47,1334424086472:::Russia,./../audio_stimuli/recs1/07pre3.mp3,-5,3468,3852:::Played stimuli ./../audio_stimuli/recs1/07pre3.mp3; (5:1334424931576); (-5:1334424932864)
+4/14/2012 13:36:34,1334424086472:::Russia,./../audio_stimuli/recs4/42pre4.mp3,-4,3600,2448:::Played stimuli ./../audio_stimuli/recs4/42pre4.mp3 User clicked Next too fast: 640 or 1656; (-4:1334424979088); (-3:1334424979113); (-2:1334424979136); (-1:1334424979145); (0:1334424979155); (1:1334424979179); (-4:1334424980334)
+4/14/2012 13:36:47,1334424086472:::Russia,./../audio_stimuli/recs3/26pre3.mp3,-5,-1027,3708:::Played stimuli ./../audio_stimuli/recs3/26pre3.mp3
+4/14/2012 13:38:16,1334424086472:::Russia,./../audio_stimuli/recs2/22pre6.mp3,-5,-1490,5076:::Played stimuli ./../audio_stimuli/recs2/22pre6.mp3; (-5:1334425082381)
+4/14/2012 13:38:32,1334424086472:::Russia,./../audio_stimuli/recs3/34pre6.mp3,-5,7473,4140:::Played stimuli ./../audio_stimuli/recs3/34pre6.mp3; (-5:1334425095755); (-4:1334425095918); (-3:1334425095943); (-2:1334425095950); (-1:1334425095972); (0:1334425095988); (1:1334425096023); (-5:1334425097372)
+4/14/2012 13:41:39,1334424086472:::Russia,./../audio_stimuli/recs2/19pre1.mp3,-5,4491,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3
+4/14/2012 21:26:39,1334452945871:::Russia,./../audio_stimuli/recs2/25pre6.mp3,-5,-764,4140:::Played stimuli ./../audio_stimuli/recs2/25pre6.mp3; (0:1334453195999); (-1:1334453196030); (-2:1334453196047); (-3:1334453196064); (-4:1334453196087); (-5:1334453196102)
+4/14/2012 21:29:10,1334453263890:::Sussex,./../audio_stimuli/recs3/35pre1.mp3,-5,-747,3996:::Played stimuli ./../audio_stimuli/recs3/35pre1.mp3; (0:1334453347229); (-1:1334453347247); (-2:1334453347277); (-3:1334453347293); (-4:1334453347308); (-5:1334453347325)
+4/14/2012 21:30:20,1334453263890:::Sussex,./../audio_stimuli/recs4/46pre5.mp3,0,6147,2052:::Played stimuli ./../audio_stimuli/recs4/46pre5.mp3
+4/14/2012 23:18:08,1334459757200:::Russia:::Russia,./../audio_stimuli/recs3/35pre1.mp3,-5,1721,3996:::Played stimuli ./../audio_stimuli/recs3/35pre1.mp3; (0:1334459886939); (-1:1334459886955); (-2:1334459886972); (-3:1334459886989); (-5:1334459887005)
+4/15/2012 0:37:52,1334464655592:::Russia,./../audio_stimuli/recs2/17pre4.mp3,4,null,NaN:::Played stimuli ./../audio_stimuli/recs2/17pre4.mp3; (4:1334464670896)
+4/15/2012 1:29:35,1334467658689,./../audio_stimuli/recs4/39pre5.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs4/39pre5.mp3
+4/15/2012 1:55:55,1334469338012:::South Africa,./../audio_stimuli/recs1/04pre3.mp3,3,null,NaN:::Played stimuli ./../audio_stimuli/recs1/04pre3.mp3; (3:1334469353006)
+4/15/2012 2:13:33,1334470366990:::Russia,./../audio_stimuli/recs1/12pre2.mp3,-4,2059,2844:::Played stimuli ./../audio_stimuli/recs1/12pre2.mp3; (-4:1334470411978)
+4/15/2012 12:23:12,1334506609217:::Sussex,./../audio_stimuli/recs4/43pre3.mp3,-5,3982,3132:::Played stimuli ./../audio_stimuli/recs4/43pre3.mp3; (0:1334506980379); (-1:1334506980419); (-2:1334506980519); (-3:1334506980579); (-4:1334506980639); (-5:1334506980679)
+4/15/2012 12:24:09,1334506609217:::Sussex,./../audio_stimuli/recs4/47pre2.mp3,-5,3436,2376:::Played stimuli ./../audio_stimuli/recs4/47pre2.mp3; (0:1334507038118); (-1:1334507038178); (-2:1334507038208); (-3:1334507038248); (-4:1334507038258); (-5:1334507038278)
+4/15/2012 12:25:16,1334506609217:::Sussex,./../audio_stimuli/recs2/17pre6.mp3,5,6518,4284:::Played stimuli ./../audio_stimuli/recs2/17pre6.mp3; (0:1334507105240); (1:1334507105280); (2:1334507105320); (3:1334507105340); (4:1334507105380); (5:1334507105390)
+4/15/2012 12:26:08,1334506609217:::Sussex,./../audio_stimuli/recs3/34pre5.mp3,-5,4654,2736:::Played stimuli ./../audio_stimuli/recs3/34pre5.mp3; (0:1334507156544); (-1:1334507156594); (-2:1334507156614); (-3:1334507156644); (-4:1334507156674); (-5:1334507156684)
+4/15/2012 12:27:25,1334506609217:::Sussex,./../audio_stimuli/recs3/32pre4.mp3,-5,19888,3456:::Played stimuli ./../audio_stimuli/recs3/32pre4.mp3; (0:1334507234107); (-1:1334507234169); (-2:1334507234185); (-3:1334507234216); (-4:1334507234232); (-5:1334507234278)
+4/15/2012 13:17:05,1334509807886:::Sussex,./../audio_stimuli/recs4/47pre2.mp3,-2,5659,2376:::Played stimuli ./../audio_stimuli/recs4/47pre2.mp3; (-2:1334510222635)
+4/15/2012 13:19:18,1334509807886:::Sussex,./../audio_stimuli/recs2/20pre5.mp3,-3,3587,2268:::Played stimuli ./../audio_stimuli/recs2/20pre5.mp3
+4/15/2012 13:19:56,1334509807886:::Sussex,./../audio_stimuli/recs3/32pre5.mp3,-3,4443,2880:::Played stimuli ./../audio_stimuli/recs3/32pre5.mp3; (-3:1334510393808)
+4/15/2012 13:26:22,1334509807886:::Sussex,./../audio_stimuli/recs1/12pre1.mp3,-5,2515,3096:::Played stimuli ./../audio_stimuli/recs1/12pre1.mp3; (-5:1334510780067)
+4/15/2012 13:27:12,1334509807886:::Sussex,./../audio_stimuli/recs2/14pre1.mp3,-4,2605,2520:::Played stimuli ./../audio_stimuli/recs2/14pre1.mp3; (-4:1334510830847)
+4/15/2012 13:28:07,1334509807886:::Sussex,./../audio_stimuli/recs4/41pre2.mp3,-5,3998,3132:::Played stimuli ./../audio_stimuli/recs4/41pre2.mp3; (-3:1334510884910); (-5:1334510885687)
+4/15/2012 20:32:37,1334536226090:::Sussex,./../audio_stimuli/recs3/34pre5.mp3,-5,3881,2736:::Played stimuli ./../audio_stimuli/recs3/34pre5.mp3; (-5:1334536358150)
+4/15/2012 20:32:45,1334536226090:::Sussex,./../audio_stimuli/recs4/49pre6.mp3,2,3075,3852:::Played stimuli ./../audio_stimuli/recs4/49pre6.mp3; (2:1334536366975)
+4/15/2012 20:40:11,1334536226090:::Sussex,./../audio_stimuli/recs2/21pre1.mp3,-5,1883,2700:::Played stimuli ./../audio_stimuli/recs2/21pre1.mp3; (-5:1334536813595)
+4/15/2012 20:41:01,1334536226090:::Sussex,./../audio_stimuli/recs1/08pre6.mp3,-5,2134,4248:::Played stimuli ./../audio_stimuli/recs1/08pre6.mp3; (-5:1334536863603)
+4/15/2012 20:41:13,1334536226090:::Sussex,./../audio_stimuli/recs1/08pre6.mp3,0,14271,4248:::Played stimuli ./../audio_stimuli/recs1/08pre6.mp3; (-5:1334536863603)
+4/15/2012 20:41:35,1334536226090:::Sussex,./../audio_stimuli/recs1/09pre4.mp3,-5,1403,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3; (-5:1334536897394)
+4/15/2012 20:42:07,1334536226090:::Sussex,./../audio_stimuli/recs2/21pre4.mp3,-5,1554,2772:::Played stimuli ./../audio_stimuli/recs2/21pre4.mp3
+4/15/2012 20:43:04,1334536226090:::Sussex,./../audio_stimuli/recs4/50pre4.mp3,-5,1403,2736:::Played stimuli ./../audio_stimuli/recs4/50pre4.mp3; (-5:1334536986294)
+4/15/2012 20:44:06,1334536226090:::Sussex,./../audio_stimuli/recs2/13pre5.mp3,-5,3211,2880:::Played stimuli ./../audio_stimuli/recs2/13pre5.mp3 User played audio too fast. 7; (-5:1334537047931)
+4/15/2012 20:44:21,1334536226090:::Sussex,./../audio_stimuli/recs2/13pre5.mp3,0,17891,2880:::Played stimuli ./../audio_stimuli/recs2/13pre5.mp3 User played audio too fast. 7; (-5:1334537047931)
+4/15/2012 20:46:19,1334536226090:::Sussex,./../audio_stimuli/recs2/25pre5.mp3,-5,1316,2880:::Played stimuli ./../audio_stimuli/recs2/25pre5.mp3; (-5:1334537181830)
+4/15/2012 20:47:26,1334536226090:::Sussex,./../audio_stimuli/recs3/26pre5.mp3,-5,2055,3204:::Played stimuli ./../audio_stimuli/recs3/26pre5.mp3; (-5:1334537248286)
+4/15/2012 20:47:31,1334536226090:::Sussex,./../audio_stimuli/recs4/47pre2.mp3,-5,1927,2376:::Played stimuli ./../audio_stimuli/recs4/47pre2.mp3
+4/15/2012 22:00:50,1334541520310:::Sussex,./../audio_stimuli/recs3/36pre3.mp3,-5,3472,2735:::Played stimuli ./../audio_stimuli/recs3/36pre3.mp3; (0:1334541648044); (0:1334541648060); (0:1334541648077); (-1:1334541648094); (-1:1334541648111); (-2:1334541648127); (-2:1334541648144); (-3:1334541648161); (-3:1334541648177); (-4:1334541648194); (-4:1334541648211); (-4:1334541648228); (-5:1334541648244); (-5:1334541648261); (-5:1334541648278); (-5:1334541648295)
+4/15/2012 22:02:31,1334541520310:::Sussex,./../audio_stimuli/recs1/10pre2.mp3,-4,2643,3347:::Played stimuli ./../audio_stimuli/recs1/10pre2.mp3; (0:1334541748800); (0:1334541748851); (0:1334541748884); (0:1334541748901); (0:1334541748918); (0:1334541748934); (0:1334541748951); (0:1334541748968); (-1:1334541748985); (-1:1334541749002); (-1:1334541749019); (-1:1334541749035); (-1:1334541749053); (-1:1334541749069); (-1:1334541749086); (-1:1334541749102); (-1:1334541749119); (-2:1334541749136); (-2:1334541749152); (-2:1334541749169); (-2:1334541749186); (-3:1334541749203); (-3:1334541749220); (-3:1334541749237); (-3:1334541749270); (-3:1334541749304); (-3:1334541749338); (-3:1334541749371); (-3:1334541749421); (-3:1334541749455); (-3:1334541749472); (-3:1334541749506); (-4:1334541749538); (-4:1334541749555); (-4:1334541749572); (-4:1334541749606); (-4:1334541749623); (-4:1334541749640); (-4:1334541749656); (-4:1334541749673); (-4:1334541749689)
+4/15/2012 22:03:17,1334541520310:::Sussex,./../audio_stimuli/recs4/40pre5.mp3,-5,2014,3060:::Played stimuli ./../audio_stimuli/recs4/40pre5.mp3; (0:1334541795279); (0:1334541795296); (0:1334541795329); (0:1334541795347); (0:1334541795364); (0:1334541795380); (-1:1334541795396); (-1:1334541795413); (-1:1334541795447); (-2:1334541795464); (-2:1334541795480); (-2:1334541795497); (-3:1334541795514); (-3:1334541795531); (-4:1334541795548); (-4:1334541795564); (-4:1334541795581); (-4:1334541795597); (-4:1334541795614); (-5:1334541795632); (-5:1334541795648); (-5:1334541795664); (-5:1334541795681)
+4/15/2012 22:05:26,1334541520310:::Sussex,./../audio_stimuli/recs1/10pre3.mp3,-2,8621,3815:::Played stimuli ./../audio_stimuli/recs1/10pre3.mp3; (0:1334541922085); (0:1334541922102); (0:1334541922119); (0:1334541922135); (0:1334541922152); (-1:1334541922169); (-1:1334541922186); (-1:1334541922202); (-1:1334541922219); (-1:1334541922236); (-1:1334541922253); (-2:1334541922270); (-2:1334541922286); (-2:1334541922303); (-2:1334541922320); (-2:1334541922337); (2:1334541923103); (-2:1334541924543)
+4/15/2012 22:06:59,1334541520310:::Sussex,./../audio_stimuli/recs3/32pre5.mp3,2,3374,2880:::Played stimuli ./../audio_stimuli/recs3/32pre5.mp3; (2:1334542017211)
+4/15/2012 22:09:31,1334541520310:::Sussex,./../audio_stimuli/recs3/28pre4.mp3,-4,1786,3347:::Played stimuli ./../audio_stimuli/recs3/28pre4.mp3; (-4:1334542169610)
+4/15/2012 22:11:15,1334541520310:::Sussex,./../audio_stimuli/recs2/24pre1.mp3,4,1950,3672:::Played stimuli ./../audio_stimuli/recs2/24pre1.mp3; (4:1334542273707)
+4/15/2012 22:12:07,1334541520310:::Sussex,./../audio_stimuli/recs3/34pre2.mp3,2,2529,2592:::Played stimuli ./../audio_stimuli/recs3/34pre2.mp3; (2:1334542325195)
+4/15/2012 23:57:20,1334548241877:::Sussex,./../audio_stimuli/recs4/42pre1.mp3,-5,3838,2268:::Played stimuli ./../audio_stimuli/recs4/42pre1.mp3
+4/15/2012 23:58:26,1334548241877:::Sussex,./../audio_stimuli/recs4/50pre1.mp3,-5,3256,2520:::Played stimuli ./../audio_stimuli/recs4/50pre1.mp3; (-5:1334548671841)
+4/15/2012 23:59:11,1334548241877:::Sussex,./../audio_stimuli/recs3/31pre5.mp3,-5,3388,2628:::Played stimuli ./../audio_stimuli/recs3/31pre5.mp3
+4/16/2012 0:01:05,1334548241877:::Sussex,./../audio_stimuli/recs2/15pre1.mp3,-3,3080,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (-3:1334548830100)
+4/16/2012 0:01:21,1334548241877:::Sussex,./../audio_stimuli/recs2/15pre1.mp3,0,20112,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (-3:1334548830100)
+4/16/2012 0:03:29,1334548241877:::Sussex,./../audio_stimuli/recs1/01pre6.mp3,-5,2957,3996:::Played stimuli ./../audio_stimuli/recs1/01pre6.mp3; (-5:1334548974513)
+4/16/2012 0:06:47,1334548241877:::Sussex,./../audio_stimuli/recs3/37pre5.mp3,-5,3203,3924:::Played stimuli ./../audio_stimuli/recs3/37pre5.mp3; (-5:1334549173190)
+4/16/2012 0:07:31,1334548241877:::Sussex,./../audio_stimuli/recs4/44pre5.mp3,2,6757,2772:::Played stimuli ./../audio_stimuli/recs4/44pre5.mp3; (2:1334549217078)
+4/16/2012 9:53:49,1334584264317:::Sussex,./../audio_stimuli/recs4/48pre2.mp3,-5,28936,3276:::Played stimuli ./../audio_stimuli/recs4/48pre2.mp3; (-5:1334584400782)
+4/16/2012 10:03:24,1334584264317:::Sussex,./../audio_stimuli/recs3/26pre6.mp3,-5,3202,4104:::Played stimuli ./../audio_stimuli/recs3/26pre6.mp3
+4/16/2012 10:27:23,1334584264317:::Sussex,./../audio_stimuli/recs1/08pre2.mp3,-5,3223,3312:::Played stimuli ./../audio_stimuli/recs1/08pre2.mp3; (-4:1334586439764); (-5:1334586441660)
+4/16/2012 10:58:32,1334584264317:::Sussex,./../audio_stimuli/recs4/50pre1.mp3,-5,1441,2520:::Played stimuli ./../audio_stimuli/recs4/50pre1.mp3; (-5:1334588311844)
+4/16/2012 10:59:46,1334584264317:::Sussex,./../audio_stimuli/recs2/15pre2.mp3,-5,3938,3780:::Played stimuli ./../audio_stimuli/recs2/15pre2.mp3; (-4:1334588383483); (-5:1334588385235)
+4/16/2012 11:00:04,1334584264317:::Sussex,./../audio_stimuli/recs2/15pre2.mp3,0,21523,3780:::Played stimuli ./../audio_stimuli/recs2/15pre2.mp3; (-4:1334588383483); (-5:1334588385235)
+4/16/2012 11:00:36,1334587283305:::Sussex,./../audio_stimuli/recs1/10pre4.mp3,-5,1916,3492:::Played stimuli ./../audio_stimuli/recs1/10pre4.mp3; (0:1334588442919); (-1:1334588442986); (-3:1334588443003); (-4:1334588443019); (-5:1334588443036)
+4/16/2012 11:04:25,1334587283305:::Sussex,./../audio_stimuli/recs2/22pre5.mp3,2,5222,2916:::Played stimuli ./../audio_stimuli/recs2/22pre5.mp3; (2:1334588671675)
+4/16/2012 11:07:28,1334587283305:::Sussex,./../audio_stimuli/recs2/15pre5.mp3,-5,7477,4968:::Played stimuli ./../audio_stimuli/recs2/15pre5.mp3; (-5:1334588854650)
+4/16/2012 11:08:04,1334587283305:::Sussex,./../audio_stimuli/recs4/40pre3.mp3,-2,7084,2772:::Played stimuli ./../audio_stimuli/recs4/40pre3.mp3; (-2:1334588891168)
+4/16/2012 11:08:10,1334587283305:::Sussex,./../audio_stimuli/recs3/36pre2.mp3,-5,2974,2160:::Played stimuli ./../audio_stimuli/recs3/36pre2.mp3; (-5:1334588897144)
+4/16/2012 11:08:22,1334587283305:::Sussex,./../audio_stimuli/recs1/06pre1.mp3,-5,1944,3060:::Played stimuli ./../audio_stimuli/recs1/06pre1.mp3; (0:1334588908528); (-1:1334588908561); (-2:1334588908578); (-4:1334588908597); (-5:1334588908613)
+4/16/2012 11:08:38,1334587283305:::Sussex,./../audio_stimuli/recs2/20pre3.mp3,-5,1491,2376:::Played stimuli ./../audio_stimuli/recs2/20pre3.mp3; (0:1334588925427); (-1:1334588925460); (-2:1334588925477); (-4:1334588925494); (-5:1334588925511)
+4/16/2012 11:09:00,1334587283305:::Sussex,./../audio_stimuli/recs2/13pre6.mp3,-5,2134,4032:::Played stimuli ./../audio_stimuli/recs2/13pre6.mp3; (0:1334588946476); (-1:1334588946492); (-2:1334588946509); (-3:1334588946543); (-4:1334588946559); (-5:1334588946576)
+4/16/2012 11:09:11,1334587283305:::Sussex,./../audio_stimuli/recs2/13pre6.mp3,0,12966,4032:::Played stimuli ./../audio_stimuli/recs2/13pre6.mp3; (0:1334588946476); (-1:1334588946492); (-2:1334588946509); (-3:1334588946543); (-4:1334588946559); (-5:1334588946576)
+4/16/2012 11:14:20,1334587283305:::Sussex,./../audio_stimuli/recs2/19pre3.mp3,-5,736,2628:::Played stimuli ./../audio_stimuli/recs2/19pre3.mp3; (-5:1334589267148)
+4/16/2012 11:20:54,1334584264317:::Sussex,./../audio_stimuli/recs3/36pre1.mp3,-5,1738,2556:::Played stimuli ./../audio_stimuli/recs3/36pre1.mp3; (-5:1334589653044)
+4/16/2012 12:23:34,1334593254937,./../audio_stimuli/recs3/29pre2.mp3,-3,3580,2844:::Played stimuli ./../audio_stimuli/recs3/29pre2.mp3; (-3:1334593409545)
+4/16/2012 12:29:18,1334593579311:::Sussex,./../audio_stimuli/recs4/43pre5.mp3,-5,2742,3023:::Played stimuli ./../audio_stimuli/recs4/43pre5.mp3; (-5:1334593753796)
+4/16/2012 12:33:01,1334593579311:::Sussex,./../audio_stimuli/recs4/44pre5.mp3,-5,2458,2772:::Played stimuli ./../audio_stimuli/recs4/44pre5.mp3; (-5:1334593976461)
+4/16/2012 12:33:44,1334593579311:::Sussex,./../audio_stimuli/recs1/02pre1.mp3,-3,3474,2520:::Played stimuli ./../audio_stimuli/recs1/02pre1.mp3; (-3:1334594019758)
+4/16/2012 12:33:52,1334593579311:::Sussex,./../audio_stimuli/recs3/34pre1.mp3,-3,3308,2627:::Played stimuli ./../audio_stimuli/recs3/34pre1.mp3; (-3:1334594027582)
+4/16/2012 12:35:10,1334593579311:::Sussex,./../audio_stimuli/recs1/12pre5.mp3,-3,3458,3600:::Played stimuli ./../audio_stimuli/recs1/12pre5.mp3; (-3:1334594105431)
+4/16/2012 12:35:35,1334593579311:::Sussex,./../audio_stimuli/recs3/33pre3.mp3,-4,5455,3600:::Played stimuli ./../audio_stimuli/recs3/33pre3.mp3; (-3:1334594128403); (-3:1334594129773); (-3:1334594129786); (-4:1334594130323)
+4/16/2012 12:37:03,1334593579311:::Sussex,./../audio_stimuli/recs3/28pre2.mp3,-4,3656,3132:::Played stimuli ./../audio_stimuli/recs3/28pre2.mp3; (-3:1334594217964); (-4:1334594218761); (-4:1334594218847)
+4/16/2012 12:42:17,1334593579311:::Sussex,./../audio_stimuli/recs2/15pre1.mp3,-4,3287,3563:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (-4:1334594532484)
+4/16/2012 16:39:27,1334608568686:::Sussex,./../audio_stimuli/recs2/16pre5.mp3,0,3414,3348:::Played stimuli ./../audio_stimuli/recs2/16pre5.mp3
+4/16/2012 16:41:37,1334608568686:::Sussex,./../audio_stimuli/recs2/18pre6.mp3,-5,2259,4752:::Played stimuli ./../audio_stimuli/recs2/18pre6.mp3; (0:1334608895484); (-1:1334608895501); (-2:1334608895534); (-3:1334608895567); (-4:1334608895601); (-5:1334608895617)
+4/16/2012 16:55:52,1334608568686:::Sussex,./../audio_stimuli/recs2/22pre4.mp3,-5,13108,3276:::Played stimuli ./../audio_stimuli/recs2/22pre4.mp3; (0:1334609750782); (-1:1334609750832); (-2:1334609750882); (-3:1334609750899); (-5:1334609750915)
+4/16/2012 16:57:25,1334608568686:::Sussex,./../audio_stimuli/recs3/26pre5.mp3,5,29924,3204:::Played stimuli ./../audio_stimuli/recs3/26pre5.mp3; (0:1334609843102); (1:1334609843436); (2:1334609843702); (3:1334609843753); (4:1334609843786); (5:1334609843819)
+4/16/2012 16:58:06,1334608568686:::Sussex,./../audio_stimuli/recs2/14pre6.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs2/14pre6.mp3
+4/16/2012 17:02:37,1334608568686:::Sussex,./../audio_stimuli/recs2/20pre4.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs2/20pre4.mp3
+4/16/2012 17:02:56,1334608568686:::Sussex,./../audio_stimuli/recs1/04pre2.mp3,-5,2344,2232:::Played stimuli ./../audio_stimuli/recs1/04pre2.mp3; (0:1334610175226); (-1:1334610175243); (-2:1334610175293); (-3:1334610175309); (-4:1334610175326); (-5:1334610175343)
+4/16/2012 17:06:52,1334608568686:::Sussex,./../audio_stimuli/recs1/06pre5.mp3,-5,2700,3060:::Played stimuli ./../audio_stimuli/recs1/06pre5.mp3; (0:1334610410257); (1:1334610410774); (2:1334610410825); (3:1334610410874); (4:1334610410908); (3:1334610411242); (2:1334610411275); (1:1334610411292); (0:1334610411309); (-1:1334610411325); (-3:1334610411342); (-4:1334610411375); (-5:1334610411392)
+4/16/2012 17:44:10,1334612464484:::South Africa,./../audio_stimuli/recs2/23pre4.mp3,1,9097,3348:::Played stimuli ./../audio_stimuli/recs2/23pre4.mp3; (0:1334612648834); (1:1334612648950); (2:1334612649367); (1:1334612649467)
+4/16/2012 17:51:30,1334612464484:::South Africa,./../audio_stimuli/recs4/43pre3.mp3,-5,3390,3132:::Played stimuli ./../audio_stimuli/recs4/43pre3.mp3; (-5:1334613088900)
+4/16/2012 17:54:14,1334612464484:::South Africa,./../audio_stimuli/recs2/13pre5.mp3,-5,2580,2880:::Played stimuli ./../audio_stimuli/recs2/13pre5.mp3; (-5:1334613253172)
+4/16/2012 17:55:25,1334612464484:::South Africa,./../audio_stimuli/recs4/40pre2.mp3,-4,2345,2628:::Played stimuli ./../audio_stimuli/recs4/40pre2.mp3; (-4:1334613324365)
+4/16/2012 19:19:03,1334618072674:::Russia,./../audio_stimuli/recs3/36pre2.mp3,-5,437,2160:::Played stimuli ./../audio_stimuli/recs3/36pre2.mp3
+4/16/2012 19:21:26,1334618072674:::Russia,./../audio_stimuli/recs3/34pre5.mp3,-5,1165,2736:::Played stimuli ./../audio_stimuli/recs3/34pre5.mp3
+4/16/2012 19:32:14,1334618985472,./../audio_stimuli/recs2/24pre5.mp3,-5,2423,3240:::Played stimuli ./../audio_stimuli/recs2/24pre5.mp3; (0:1334619132467); (-1:1334619132500); (-2:1334619132517); (-3:1334619132533); (-4:1334619132550); (-5:1334619132566)
+4/16/2012 19:32:20,1334618985472,./../audio_stimuli/recs4/49pre3.mp3,-5,2456,3096:::Played stimuli ./../audio_stimuli/recs4/49pre3.mp3; (0:1334619138801); (-1:1334619138818); (-2:1334619138835); (-3:1334619138852); (-4:1334619138868); (-5:1334619138885)
+4/16/2012 19:33:46,1334618985472,./../audio_stimuli/recs3/26pre5.mp3,-5,1470,3204:::Played stimuli ./../audio_stimuli/recs3/26pre5.mp3; (0:1334619225116); (-1:1334619225133); (-2:1334619225200); (-3:1334619225301); (-4:1334619225317); (-5:1334619225368)
+4/16/2012 19:36:12,1334619310621:::Sussex,./../audio_stimuli/recs4/48pre2.mp3,-2,4783,3276:::Played stimuli ./../audio_stimuli/recs4/48pre2.mp3; (0:1334619370968); (-1:1334619371034); (-2:1334619371083)
+4/16/2012 19:40:34,1334618985472,./../audio_stimuli/recs1/09pre4.mp3,-5,1027,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3; (0:1334619632290); (-1:1334619632306); (-2:1334619632340); (-3:1334619632390); (-4:1334619632440); (-5:1334619632557)
+4/16/2012 19:44:09,1334618985472,./../audio_stimuli/recs2/24pre4.mp3,-5,1458,3600:::Played stimuli ./../audio_stimuli/recs2/24pre4.mp3; (0:1334619846857); (-1:1334619846891); (-2:1334619846924); (-3:1334619846974); (-4:1334619847024); (-5:1334619847158)
+4/16/2012 19:49:14,1334620119344:::Sussex,./../audio_stimuli/recs4/41pre3.mp3,-5,9270,3564:::Played stimuli ./../audio_stimuli/recs4/41pre3.mp3; (-1:1334620150843); (-2:1334620150909); (-3:1334620151374); (-4:1334620151440); (-5:1334620151540)
+4/16/2012 19:49:18,1334619850212:::Russia,./../audio_stimuli/recs3/31pre6.mp3,-4,1986,3636:::Played stimuli ./../audio_stimuli/recs3/31pre6.mp3
+4/16/2012 19:50:07,1334620119344:::Sussex,./../audio_stimuli/recs2/24pre1.mp3,-5,2967,3672:::Played stimuli ./../audio_stimuli/recs2/24pre1.mp3; (-5:1334620205683)
+4/16/2012 19:50:08,1334619850212:::Russia,./../audio_stimuli/recs4/39pre6.mp3,-3,1919,3852:::Played stimuli ./../audio_stimuli/recs4/39pre6.mp3; (-3:1334620243191)
+4/16/2012 19:50:15,1334619850212:::Russia,./../audio_stimuli/recs2/14pre4.mp3,-5,2832,2628:::Played stimuli ./../audio_stimuli/recs2/14pre4.mp3; (-5:1334620250149)
+4/16/2012 19:50:33,1334619850212:::Russia,./../audio_stimuli/recs4/43pre3.mp3,-5,2313,3132:::Played stimuli ./../audio_stimuli/recs4/43pre3.mp3; (-5:1334620268235)
+4/16/2012 19:51:12,1334620119344:::Sussex,./../audio_stimuli/recs4/38pre2.mp3,-5,2458,4104:::Played stimuli ./../audio_stimuli/recs4/38pre2.mp3
+4/16/2012 19:51:29,1334619850212:::Russia,./../audio_stimuli/recs4/39pre3.mp3,-5,1527,2736:::Played stimuli ./../audio_stimuli/recs4/39pre3.mp3
+4/16/2012 19:53:19,1334619850212:::Russia,./../audio_stimuli/recs4/40pre6.mp3,-4,2014,4032:::Played stimuli ./../audio_stimuli/recs4/40pre6.mp3; (-4:1334620434072)
+4/16/2012 19:54:27,1334619850212:::Russia,./../audio_stimuli/recs4/44pre1.mp3,-5,2814,2880:::Played stimuli ./../audio_stimuli/recs4/44pre1.mp3; (-4:1334620500721); (-5:1334620502406)
+4/16/2012 19:55:07,1334620119344:::Sussex,./../audio_stimuli/recs3/34pre2.mp3,-3,1965,2592:::Played stimuli ./../audio_stimuli/recs3/34pre2.mp3; (-3:1334620506106)
+4/16/2012 19:55:11,1334619850212:::Russia,./../audio_stimuli/recs2/15pre1.mp3,4,3408,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (4:1334620544558)
+4/16/2012 19:55:25,1334619850212:::Russia,./../audio_stimuli/recs2/15pre1.mp3,0,17845,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (4:1334620544558)
+4/16/2012 19:58:26,1334620119344:::Sussex,./../audio_stimuli/recs4/50pre3.mp3,-5,1581,2736:::Played stimuli ./../audio_stimuli/recs4/50pre3.mp3; (-5:1334620704954)
+4/16/2012 19:58:44,1334619850212:::Russia,./../audio_stimuli/recs4/38pre1.mp3,-4,2453,2988:::Played stimuli ./../audio_stimuli/recs4/38pre1.mp3
+4/16/2012 19:58:44,1334620119344:::Sussex,./../audio_stimuli/recs1/11pre1.mp3,-4,3175,2412:::Played stimuli ./../audio_stimuli/recs1/11pre1.mp3; (-4:1334620723143)
+4/16/2012 19:58:56,1334620119344:::Sussex,./../audio_stimuli/recs1/11pre1.mp3,0,15556,2412:::Played stimuli ./../audio_stimuli/recs1/11pre1.mp3; (-4:1334620723143)
+4/16/2012 19:59:49,1334620119344:::Sussex,./../audio_stimuli/recs4/42pre4.mp3,-5,1747,2448:::Played stimuli ./../audio_stimuli/recs4/42pre4.mp3; (-5:1334620787510)
+4/16/2012 20:00:34,1334620119344:::Sussex,./../audio_stimuli/recs2/14pre1.mp3,-4,2115,2520:::Played stimuli ./../audio_stimuli/recs2/14pre1.mp3
+4/16/2012 20:02:47,1334618072674:::Russia,./../audio_stimuli/recs1/08pre5.mp3,-5,1155,3096:::Played stimuli ./../audio_stimuli/recs1/08pre5.mp3
+4/16/2012 20:03:34,1334620119344:::Sussex,./../audio_stimuli/recs1/10pre1.mp3,-5,1168,3132:::Played stimuli ./../audio_stimuli/recs1/10pre1.mp3; (-5:1334621013352)
+4/16/2012 20:03:39,1334620119344:::Sussex,./../audio_stimuli/recs1/02pre1.mp3,-5,1472,2520:::Played stimuli ./../audio_stimuli/recs1/02pre1.mp3
+4/16/2012 20:05:24,1334618072674:::Russia,./../audio_stimuli/recs4/46pre4.mp3,-5,1081,2484:::Played stimuli ./../audio_stimuli/recs4/46pre4.mp3; (-5:1334621107866)
+4/16/2012 20:05:41,1334620119344:::Sussex,./../audio_stimuli/recs2/15pre3.mp3,-5,-40,4932:::Played stimuli ./../audio_stimuli/recs2/15pre3.mp3; (-5:1334621140394)
+4/16/2012 20:06:55,1334618072674:::Russia,./../audio_stimuli/recs3/26pre6.mp3,-5,884,4104:::Played stimuli ./../audio_stimuli/recs3/26pre6.mp3
+4/16/2012 20:08:03,1334618072674:::Russia,./../audio_stimuli/recs2/16pre5.mp3,-5,1185,3348:::Played stimuli ./../audio_stimuli/recs2/16pre5.mp3; (-5:1334621266430)
+4/16/2012 20:11:03,1334618072674:::Russia,./../audio_stimuli/recs3/32pre6.mp3,5,1192,4356:::Played stimuli ./../audio_stimuli/recs3/32pre6.mp3; (5:1334621443153)
+4/16/2012 22:26:32,1334629473659:::South Africa:::South Africa,./../audio_stimuli/recs3/29pre2.mp3,0,149,1383:::Played stimuli ./../audio_stimuli/recs3/29pre2.mp3
+4/17/2012 0:16:34,1334635572173:::South Africa,./../audio_stimuli/recs3/30pre5.mp3,-4,4948,2375:::Played stimuli ./../audio_stimuli/recs3/30pre5.mp3; (0:1334636191123); (-1:1334636191206); (-2:1334636191256); (-4:1334636191484)
+4/17/2012 0:17:57,1334635572173:::South Africa,./../audio_stimuli/recs4/45pre5.mp3,-1,4246,3275:::Played stimuli ./../audio_stimuli/recs4/45pre5.mp3; (0:1334636274410); (-1:1334636274544)
+4/17/2012 0:19:16,1334635572173:::South Africa,./../audio_stimuli/recs2/18pre5.mp3,0,9167,3600:::Played stimuli ./../audio_stimuli/recs2/18pre5.mp3; (0:1334636350774); (-1:1334636352381); (0:1334636353019)
+4/17/2012 0:19:31,1334635572173:::South Africa,./../audio_stimuli/recs1/03pre3.mp3,3,2935,3492:::Played stimuli ./../audio_stimuli/recs1/03pre3.mp3; (0:1334636368144); (1:1334636368209); (2:1334636368280); (3:1334636368429)
+4/17/2012 0:22:40,1334635572173:::South Africa,./../audio_stimuli/recs3/28pre1.mp3,-5,3398,3707:::Played stimuli ./../audio_stimuli/recs3/28pre1.mp3; (0:1334636557692); (-1:1334636557708); (-2:1334636557758); (-3:1334636557792); (-4:1334636557811); (-5:1334636557843)
+4/17/2012 0:24:24,1334635572173:::South Africa,./../audio_stimuli/recs2/23pre2.mp3,-2,2937,3600:::Played stimuli ./../audio_stimuli/recs2/23pre2.mp3; (0:1334636662141); (-1:1334636662176); (-2:1334636662292)
+4/17/2012 0:28:06,1334635572173:::South Africa,./../audio_stimuli/recs1/02pre5.mp3,-5,2836,2483:::Played stimuli ./../audio_stimuli/recs1/02pre5.mp3; (0:1334636884389); (-1:1334636884434); (-3:1334636884472); (-5:1334636884487)
+4/17/2012 0:31:25,1334635572173:::South Africa,./../audio_stimuli/recs2/13pre5.mp3,-5,2547,2880:::Played stimuli ./../audio_stimuli/recs2/13pre5.mp3; (-5:1334637083831)
+4/17/2012 0:31:32,1334635572173:::South Africa,./../audio_stimuli/recs1/03pre2.mp3,-2,2606,2663:::Played stimuli ./../audio_stimuli/recs1/03pre2.mp3; (-2:1334637090368)
+4/17/2012 0:33:06,1334635572173:::South Africa,./../audio_stimuli/recs3/35pre1.mp3,-5,3171,3995:::Played stimuli ./../audio_stimuli/recs3/35pre1.mp3; (-4:1334637182857); (-5:1334637183952)
+4/17/2012 2:19:21,1334642670704:::South Africa,./../audio_stimuli/recs4/41pre4.mp3,5,4723,3672:::Played stimuli ./../audio_stimuli/recs4/41pre4.mp3; (0:1334643557658); (1:1334643557709); (2:1334643557736); (3:1334643557814); (4:1334643557915); (5:1334643558008)
+4/17/2012 2:23:52,1334642670704:::South Africa,./../audio_stimuli/recs2/24pre3.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs2/24pre3.mp3
+4/17/2012 2:26:47,1334642670704:::South Africa,./../audio_stimuli/recs4/48pre2.mp3,-5,null,NaN:::Played stimuli ./../audio_stimuli/recs4/48pre2.mp3; (0:1334644003964); (-1:1334644003991); (-2:1334644004028); (-3:1334644004091); (-4:1334644004155); (-5:1334644004224)
+4/17/2012 2:27:15,1334642670704:::South Africa,./../audio_stimuli/recs2/16pre1.mp3,-5,4760,3348:::Played stimuli ./../audio_stimuli/recs2/16pre1.mp3; (0:1334644032213); (-1:1334644032272); (-2:1334644032338); (-3:1334644032404); (-4:1334644032440); (-5:1334644032505)
+4/17/2012 2:27:35,1334642670704:::South Africa,./../audio_stimuli/recs4/42pre6.mp3,-5,4640,3204:::Played stimuli ./../audio_stimuli/recs4/42pre6.mp3; (-1:1334644051956); (-2:1334644052045); (-3:1334644052143); (-4:1334644052161); (-5:1334644052216)
+4/17/2012 8:59:48,1334667293055:::Russia,./../audio_stimuli/recs3/34pre6.mp3,-3,4770,4140:::Played stimuli ./../audio_stimuli/recs3/34pre6.mp3; (-3:1334667586329)
+4/17/2012 9:03:19,1334667293055:::Russia,./../audio_stimuli/recs3/29pre3.mp3,-2,3020,3420:::Played stimuli ./../audio_stimuli/recs3/29pre3.mp3; (-2:1334667798514)
+4/17/2012 9:05:42,1334667293055:::Russia,./../audio_stimuli/recs3/31pre4.mp3,-5,1241,2916:::Played stimuli ./../audio_stimuli/recs3/31pre4.mp3; (-5:1334667941269)
+4/17/2012 9:07:23,1334667293055:::Russia,./../audio_stimuli/recs1/11pre6.mp3,-5,2370,3132:::Played stimuli ./../audio_stimuli/recs1/11pre6.mp3
+4/17/2012 9:07:54,1334667293055:::Russia,./../audio_stimuli/recs4/41pre5.mp3,-1,2223,3672:::Played stimuli ./../audio_stimuli/recs4/41pre5.mp3; (-1:1334668073566)
+4/17/2012 9:08:17,1334667293055:::Russia,./../audio_stimuli/recs3/28pre4.mp3,-4,1686,3348:::Played stimuli ./../audio_stimuli/recs3/28pre4.mp3
+4/17/2012 9:11:02,1334667293055:::Russia,./../audio_stimuli/recs1/01pre5.mp3,-3,1764,2628:::Played stimuli ./../audio_stimuli/recs1/01pre5.mp3; (-3:1334668261118)
+4/17/2012 9:12:12,1334667293055:::Russia,./../audio_stimuli/recs3/33pre2.mp3,-5,1460,3132:::Played stimuli ./../audio_stimuli/recs3/33pre2.mp3; (-5:1334668329617)
+4/17/2012 9:14:00,1334667293055:::Russia,./../audio_stimuli/recs4/49pre6.mp3,-5,1805,3852:::Played stimuli ./../audio_stimuli/recs4/49pre6.mp3
+4/17/2012 9:15:42,1334667293055:::Russia,./../audio_stimuli/recs2/25pre3.mp3,-5,23630,3780:::Played stimuli ./../audio_stimuli/recs2/25pre3.mp3; (-5:1334668517615)
+4/17/2012 12:25:10,1334678496359,./../audio_stimuli/recs3/28pre4.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs3/28pre4.mp3
+4/17/2012 12:25:24,1334678496359,./../audio_stimuli/recs3/28pre4.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs3/28pre4.mp3
+4/17/2012 12:26:23,1334678496359,./../audio_stimuli/recs4/47pre2.mp3,-4,15368,2376:::Played stimuli ./../audio_stimuli/recs4/47pre2.mp3; (0:1334679980359); (-1:1334679980442); (-2:1334679980891); (-3:1334679981374); (-4:1334679981509)
+4/17/2012 12:28:28,1334678496359,./../audio_stimuli/recs3/30pre6.mp3,3,1231,3708:::Played stimuli ./../audio_stimuli/recs3/30pre6.mp3; (0:1334680105927); (1:1334680106111); (2:1334680106261); (3:1334680106494)
+4/17/2012 12:28:49,1334678496359,./../audio_stimuli/recs3/35pre5.mp3,-2,4193,4104:::Played stimuli ./../audio_stimuli/recs3/35pre5.mp3; (0:1334680125953); (-1:1334680126004); (-2:1334680126187)
+4/17/2012 12:29:19,1334678496359,./../audio_stimuli/recs1/02pre2.mp3,2,3391,2448:::Played stimuli ./../audio_stimuli/recs1/02pre2.mp3; (0:1334680156219); (-1:1334680156268); (0:1334680156485); (1:1334680156519); (2:1334680156568)
+4/17/2012 12:36:26,1334678496359,./../audio_stimuli/recs2/24pre5.mp3,-5,137,3240:::Played stimuli ./../audio_stimuli/recs2/24pre5.mp3; (0:1334680585177); (-1:1334680585210); (-2:1334680585260); (-3:1334680585295); (-4:1334680585327); (-5:1334680585360)
+4/17/2012 12:39:31,1334678496359,./../audio_stimuli/recs3/34pre5.mp3,1,null,NaN:::Played stimuli ./../audio_stimuli/recs3/34pre5.mp3; (0:1334680769097); (1:1334680769196)
+4/17/2012 12:59:30,1334681926473:::Sussex,./../audio_stimuli/recs3/32pre1.mp3,-5,4506,3024:::Played stimuli ./../audio_stimuli/recs3/32pre1.mp3; (-1:1334681956065); (-2:1334681956114); (-3:1334681956194); (-4:1334681956356); (-5:1334681956479)
+4/17/2012 13:01:49,1334681926473:::Sussex,./../audio_stimuli/recs4/47pre3.mp3,-5,2969,2556:::Played stimuli ./../audio_stimuli/recs4/47pre3.mp3; (0:1334682095203); (-1:1334682095251); (-2:1334682095278); (-3:1334682095304); (-4:1334682095353); (-5:1334682095402)
+4/17/2012 13:01:56,1334681926473:::Sussex,./../audio_stimuli/recs2/25pre5.mp3,-4,4120,2880:::Played stimuli ./../audio_stimuli/recs2/25pre5.mp3; (0:1334682103108); (-1:1334682103137); (-2:1334682103186); (-3:1334682103267); (-4:1334682103369)
+4/17/2012 13:03:34,1334681926473:::Sussex,./../audio_stimuli/recs4/39pre4.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs4/39pre4.mp3
+4/17/2012 13:05:41,1334681926473:::Sussex,./../audio_stimuli/recs2/17pre1.mp3,-5,3852,2124:::Played stimuli ./../audio_stimuli/recs2/17pre1.mp3; (0:1334682327585); (-1:1334682327665); (-2:1334682327720); (-3:1334682327775); (-4:1334682327932); (-5:1334682328589)
+4/17/2012 13:06:02,1334681926473:::Sussex,./../audio_stimuli/recs2/17pre1.mp3,0,20885,2124:::Played stimuli ./../audio_stimuli/recs2/17pre1.mp3; (0:1334682327585); (-1:1334682327665); (-2:1334682327720); (-3:1334682327775); (-4:1334682327932); (-5:1334682328589)
+4/17/2012 13:06:08,1334681926473:::Sussex,./../audio_stimuli/recs4/49pre2.mp3,-5,6302,2844:::Played stimuli ./../audio_stimuli/recs4/49pre2.mp3; (0:1334682354853); (-1:1334682354904); (-2:1334682354932); (-3:1334682354954); (-4:1334682355007); (-5:1334682355060)
+4/17/2012 13:16:14,1334681926473:::Sussex,./../audio_stimuli/recs4/43pre5.mp3,-5,4259,3024:::Played stimuli ./../audio_stimuli/recs4/43pre5.mp3; (0:1334682959404); (-1:1334682959456); (-2:1334682959481); (-3:1334682959535); (-4:1334682959639); (-5:1334682960377)
+4/17/2012 13:17:23,1334681926473:::Sussex,./../audio_stimuli/recs2/15pre1.mp3,-5,12095,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (0:1334683029651); (-1:1334683029708); (-2:1334683029764); (-3:1334683029816); (-4:1334683029976); (-5:1334683030730)
+4/17/2012 13:18:02,1334681926473:::Sussex,./../audio_stimuli/recs2/17pre5.mp3,-4,13674,2700:::Played stimuli ./../audio_stimuli/recs2/17pre5.mp3; (0:1334683068252); (-1:1334683068572); (-2:1334683068677); (-3:1334683069074); (-4:1334683069227)
+4/17/2012 13:21:40,1334681926473:::Sussex,./../audio_stimuli/recs2/17pre5.mp3,0,231076,2700:::Played stimuli ./../audio_stimuli/recs2/17pre5.mp3; (0:1334683068252); (-1:1334683068572); (-2:1334683068677); (-3:1334683069074); (-4:1334683069227)
+4/17/2012 13:23:14,1334681926473:::Sussex,./../audio_stimuli/recs3/34pre1.mp3,-5,1897,2628:::Played stimuli ./../audio_stimuli/recs3/34pre1.mp3; (-5:1334683381344)
+4/17/2012 13:23:31,1334681926473:::Sussex,./../audio_stimuli/recs4/42pre6.mp3,-5,12759,3204:::Played stimuli ./../audio_stimuli/recs4/42pre6.mp3
+4/17/2012 13:23:55,1334681926473:::Sussex,./../audio_stimuli/recs3/30pre2.mp3,-5,2220,2736:::Played stimuli ./../audio_stimuli/recs3/30pre2.mp3; (-5:1334683423037)
+4/17/2012 13:24:27,1334681926473:::Sussex,./../audio_stimuli/recs3/27pre4.mp3,-5,2336,3276:::Played stimuli ./../audio_stimuli/recs3/27pre4.mp3; (-5:1334683454481)
+4/17/2012 13:26:21,1334681926473:::Sussex,./../audio_stimuli/recs2/23pre1.mp3,-5,2094,3204:::Played stimuli ./../audio_stimuli/recs2/23pre1.mp3; (-5:1334683568380)
+4/17/2012 13:27:23,1334681926473:::Sussex,./../audio_stimuli/recs3/36pre4.mp3,-5,5734,2664:::Played stimuli ./../audio_stimuli/recs3/36pre4.mp3; (-4:1334683627761); (-5:1334683629430)
+4/17/2012 13:28:27,1334681926473:::Sussex,./../audio_stimuli/recs1/05pre5.mp3,-5,6337,2664:::Played stimuli ./../audio_stimuli/recs1/05pre5.mp3; (-5:1334683694294)
+4/17/2012 13:29:07,1334681926473:::Sussex,./../audio_stimuli/recs1/04pre2.mp3,0,null,NaN:::Played stimuli ./../audio_stimuli/recs1/04pre2.mp3
+4/17/2012 13:29:46,1334683471046:::South Africa,./../audio_stimuli/recs3/33pre1.mp3,5,2846,3204:::Played stimuli ./../audio_stimuli/recs3/33pre1.mp3; (5:1334683797539)
+4/17/2012 13:31:55,1334683471046:::South Africa,./../audio_stimuli/recs1/04pre2.mp3,0,2277,2232:::Played stimuli ./../audio_stimuli/recs1/04pre2.mp3
+4/17/2012 13:32:16,1334683471046:::South Africa,./../audio_stimuli/recs1/06pre3.mp3,-5,2949,3492:::Played stimuli ./../audio_stimuli/recs1/06pre3.mp3
+4/17/2012 13:34:06,1334683471046:::South Africa,./../audio_stimuli/recs2/19pre3.mp3,-5,5023,2628:::Played stimuli ./../audio_stimuli/recs2/19pre3.mp3
+4/17/2012 13:37:13,1334683471046:::South Africa,./../audio_stimuli/recs1/02pre2.mp3,-5,8206,2448:::Played stimuli ./../audio_stimuli/recs1/02pre2.mp3; (4:1334684240071); (5:1334684240841); (-5:1334684243928)
+4/17/2012 13:38:56,1334683471046:::South Africa,./../audio_stimuli/recs4/40pre2.mp3,-5,3212,2628:::Played stimuli ./../audio_stimuli/recs4/40pre2.mp3; (-5:1334684347760)
+4/17/2012 13:39:53,1334683471046:::South Africa,./../audio_stimuli/recs1/10pre5.mp3,5,1473,3780:::Played stimuli ./../audio_stimuli/recs1/10pre5.mp3
+4/17/2012 13:40:00,1334683471046:::South Africa,./../audio_stimuli/recs1/02pre6.mp3,5,1246,3204:::Played stimuli ./../audio_stimuli/recs1/02pre6.mp3
+4/17/2012 13:40:31,1334683471046:::South Africa,./../audio_stimuli/recs3/29pre5.mp3,0,2118,3204:::Played stimuli ./../audio_stimuli/recs3/29pre5.mp3
+4/17/2012 13:45:50,1334683471046:::South Africa,./../audio_stimuli/recs1/07pre4.mp3,-5,964,4608:::Played stimuli ./../audio_stimuli/recs1/07pre4.mp3; (-4:1334684760372); (-5:1334684761532)
+4/17/2012 13:46:43,1334683471046:::South Africa,./../audio_stimuli/recs1/12pre5.mp3,0,2881,3600:::Played stimuli ./../audio_stimuli/recs1/12pre5.mp3
+4/17/2012 14:00:55,1334685629114,./../audio_stimuli/recs1/10pre2.mp3,-5,1697,3348:::Played stimuli ./../audio_stimuli/recs1/10pre2.mp3; (0:1334685653979); (-1:1334685654031); (-2:1334685654047); (-3:1334685654064); (-4:1334685654098); (-5:1334685654130)
+4/17/2012 15:52:49,1334692171173:::Sussex,./../audio_stimuli/recs4/47pre1.mp3,-4,7734,2484:::Played stimuli ./../audio_stimuli/recs4/47pre1.mp3; (-1:1334692314081); (-2:1334692314152); (-3:1334692314199); (-4:1334692314244)
+4/17/2012 15:56:38,1334692171173:::Sussex,./../audio_stimuli/recs1/04pre1.mp3,-3,15167,2340:::Played stimuli ./../audio_stimuli/recs1/04pre1.mp3; (-1:1334692535751); (-2:1334692535785); (-3:1334692535950)
+4/17/2012 15:57:55,1334692171173:::Sussex,./../audio_stimuli/recs2/23pre1.mp3,5,11093,3204:::Played stimuli ./../audio_stimuli/recs2/23pre1.mp3; (0:1334692623622); (1:1334692623650); (2:1334692623750); (3:1334692623788); (4:1334692623852); (5:1334692623987)
+4/17/2012 15:59:08,1334692171173:::Sussex,./../audio_stimuli/recs4/46pre4.mp3,4,8115,2484:::Played stimuli ./../audio_stimuli/recs4/46pre4.mp3; (2:1334692692655); (3:1334692692684); (4:1334692692686)
+4/17/2012 16:03:14,1334692171173:::Sussex,./../audio_stimuli/recs2/25pre5.mp3,5,5471,2880:::Played stimuli ./../audio_stimuli/recs2/25pre5.mp3; (0:1334692938859); (1:1334692939017); (2:1334692939158); (3:1334692939258); (4:1334692939325); (5:1334692939541)
+4/17/2012 16:03:48,1334692171173:::Sussex,./../audio_stimuli/recs2/25pre5.mp3,0,41002,2880:::Played stimuli ./../audio_stimuli/recs2/25pre5.mp3; (0:1334692938859); (1:1334692939017); (2:1334692939158); (3:1334692939258); (4:1334692939325); (5:1334692939541)
+4/17/2012 16:57:52,1334696083298:::Russia,./../audio_stimuli/recs1/09pre4.mp3,-5,15785,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3; (-2:1334696264171); (-3:1334696267325); (-5:1334696269493)
+4/17/2012 20:04:08,1334707099359:::Russia,./../audio_stimuli/recs3/27pre4.mp3,-2,3905,3276:::Played stimuli ./../audio_stimuli/recs3/27pre4.mp3; (-2:1334707461200)
+4/17/2012 20:04:47,1334707099359:::Russia,./../audio_stimuli/recs4/41pre5.mp3,3,5930,3672:::Played stimuli ./../audio_stimuli/recs4/41pre5.mp3; (2:1334707498369); (3:1334707499551)
+4/17/2012 20:08:52,1334707099359:::Russia,./../audio_stimuli/recs2/19pre1.mp3,-5,1512,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (-5:1334707745284)
+4/17/2012 21:10:11,1334707099359:::Russia,./../audio_stimuli/recs1/08pre6.mp3,0,6776,4248:::Played stimuli ./../audio_stimuli/recs1/08pre6.mp3
+4/17/2012 21:10:25,1334707099359:::Russia,./../audio_stimuli/recs1/08pre6.mp3,0,21047,4248:::Played stimuli ./../audio_stimuli/recs1/08pre6.mp3
+4/17/2012 21:11:18,1334707099359:::Russia,./../audio_stimuli/recs3/26pre1.mp3,-4,5624,3384:::Played stimuli ./../audio_stimuli/recs3/26pre1.mp3; (-4:1334711487774)
+4/17/2012 21:12:27,1334707099359:::Russia,./../audio_stimuli/recs1/10pre2.mp3,-5,3874,3348:::Played stimuli ./../audio_stimuli/recs1/10pre2.mp3; (-5:1334711560185)
+4/17/2012 21:47:07,1334707099359:::Russia,./../audio_stimuli/recs4/45pre6.mp3,0,26527,5040:::Played stimuli ./../audio_stimuli/recs4/45pre6.mp3
+4/17/2012 23:10:31,1334718319857:::South Africa,./../audio_stimuli/recs2/15pre1.mp3,-4,2633,3564:::Played stimuli ./../audio_stimuli/recs2/15pre1.mp3; (0:1334718628945); (-1:1334718630510); (-2:1334718630589); (-3:1334718630645); (-4:1334718630783)
+4/17/2012 23:19:17,1334718319857:::South Africa,./../audio_stimuli/recs2/25pre5.mp3,1,5319,2880:::Played stimuli ./../audio_stimuli/recs2/25pre5.mp3; (0:1334719156913); (1:1334719157083)
+4/17/2012 23:19:46,1334718319857:::South Africa,./../audio_stimuli/recs2/21pre5.mp3,-1,6779,2592:::Played stimuli ./../audio_stimuli/recs2/21pre5.mp3; (0:1334719185313); (-1:1334719185403)
+4/17/2012 23:21:38,1334718319857:::South Africa,./../audio_stimuli/recs1/02pre5.mp3,-5,2502,2484:::Played stimuli ./../audio_stimuli/recs1/02pre5.mp3; (0:1334719297221); (-1:1334719297271); (-2:1334719297289); (-3:1334719297321); (-4:1334719297339); (-5:1334719297372)
+4/17/2012 23:21:47,1334718319857:::South Africa,./../audio_stimuli/recs4/49pre2.mp3,-1,4958,2844:::Played stimuli ./../audio_stimuli/recs4/49pre2.mp3; (0:1334719305791); (-1:1334719305951)
+4/17/2012 23:26:49,1334718319857:::South Africa,./../audio_stimuli/recs1/05pre3.mp3,2,4493,2772:::Played stimuli ./../audio_stimuli/recs1/05pre3.mp3; (0:1334719608238); (1:1334719608294); (2:1334719608367)
+4/17/2012 23:27:34,1334718319857:::South Africa,./../audio_stimuli/recs4/49pre4.mp3,3,3745,2844:::Played stimuli ./../audio_stimuli/recs4/49pre4.mp3; (0:1334719652347); (1:1334719652403); (2:1334719652443); (3:1334719652509); (4:1334719652583); (3:1334719654284)
+4/17/2012 23:30:28,1334718319857:::South Africa,./../audio_stimuli/recs4/41pre2.mp3,2,3361,3132:::Played stimuli ./../audio_stimuli/recs4/41pre2.mp3; (2:1334719828196)
+4/17/2012 23:30:34,1334718319857:::South Africa,./../audio_stimuli/recs4/44pre2.mp3,-4,2806,2736:::Played stimuli ./../audio_stimuli/recs4/44pre2.mp3; (-4:1334719833685)
+4/17/2012 23:41:41,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs2/17pre2.mp3,-3,3304,2556:::Played stimuli ./../audio_stimuli/recs2/17pre2.mp3; (0:1334720500094); (-1:1334720500183); (-2:1334720500303); (-3:1334720500528)
+4/17/2012 23:43:33,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs4/46pre1.mp3,-3,6111,2628:::Played stimuli ./../audio_stimuli/recs4/46pre1.mp3; (0:1334720610327); (-1:1334720611823); (-2:1334720611863); (-3:1334720612177)
+4/17/2012 23:45:08,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs4/44pre4.mp3,-3,2430,2988:::Played stimuli ./../audio_stimuli/recs4/44pre4.mp3; (0:1334720707415); (-1:1334720707636); (-2:1334720707661); (-3:1334720707822)
+4/17/2012 23:47:48,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs2/22pre5.mp3,5,1865,2916:::Played stimuli ./../audio_stimuli/recs2/22pre5.mp3; (0:1334720868022); (1:1334720868046); (2:1334720868072); (3:1334720868106); (4:1334720868155); (5:1334720868376)
+4/17/2012 23:47:56,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs2/25pre3.mp3,3,2521,3780:::Played stimuli ./../audio_stimuli/recs2/25pre3.mp3; (0:1334720875718); (1:1334720875774); (2:1334720875832); (3:1334720876041)
+4/17/2012 23:48:05,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs1/09pre4.mp3,-5,1918,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3; (0:1334720882127); (-1:1334720882143); (-2:1334720882174); (-3:1334720882207); (-4:1334720882255); (-5:1334720882290)
+4/17/2012 23:48:25,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs2/22pre6.mp3,4,2918,5076:::Played stimuli ./../audio_stimuli/recs2/22pre6.mp3; (0:1334720904428); (1:1334720904523); (2:1334720904581); (3:1334720904621); (4:1334720904984)
+4/17/2012 23:48:36,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs3/33pre5.mp3,-3,7313,3132:::Played stimuli ./../audio_stimuli/recs3/33pre5.mp3; (0:1334720914444); (-1:1334720914486); (-2:1334720914542); (-3:1334720916072)
+4/17/2012 23:50:56,1334720025465:::South Africa:::South Africa,./../audio_stimuli/recs1/01pre2.mp3,2,4948,2628:::Played stimuli ./../audio_stimuli/recs1/01pre2.mp3; (0:1334721054663); (1:1334721054703); (2:1334721054801)
+4/18/2012 0:03:19,1334721520175:::South Africa,./../audio_stimuli/recs3/30pre4.mp3,-5,2287,3564:::Played stimuli ./../audio_stimuli/recs3/30pre4.mp3; (0:1334721798047); (-1:1334721798110); (-2:1334721798156); (-3:1334721798171); (-4:1334721798196); (-5:1334721798313)
+4/18/2012 0:04:16,1334721520175:::South Africa,./../audio_stimuli/recs3/32pre4.mp3,-5,1826,3456:::Played stimuli ./../audio_stimuli/recs3/32pre4.mp3; (-5:1334721855167)
+4/18/2012 0:04:36,1334721520175:::South Africa,./../audio_stimuli/recs4/45pre1.mp3,-5,2967,2664:::Played stimuli ./../audio_stimuli/recs4/45pre1.mp3; (-3:1334721874235); (-4:1334721874679); (-5:1334721875316)
+4/18/2012 0:06:09,1334721520175:::South Africa,./../audio_stimuli/recs2/18pre6.mp3,1,2114,4752:::Played stimuli ./../audio_stimuli/recs2/18pre6.mp3; (1:1334721967706)
+4/18/2012 0:06:28,1334721520175:::South Africa,./../audio_stimuli/recs3/33pre1.mp3,-4,3031,3204:::Played stimuli ./../audio_stimuli/recs3/33pre1.mp3; (-4:1334721987518)
+4/18/2012 0:10:11,1334721520175:::South Africa,./../audio_stimuli/recs4/42pre3.mp3,-4,4678,2520:::Played stimuli ./../audio_stimuli/recs4/42pre3.mp3; (-1:1334722207842); (-3:1334722209123); (-4:1334722209676)
+4/18/2012 0:10:49,1334721520175:::South Africa,./../audio_stimuli/recs2/15pre3.mp3,-5,2036,4932:::Played stimuli ./../audio_stimuli/recs2/15pre3.mp3; (-5:1334722248049)
+4/18/2012 0:10:57,1334721520175:::South Africa,./../audio_stimuli/recs1/09pre6.mp3,1,3065,4428:::Played stimuli ./../audio_stimuli/recs1/09pre6.mp3; (1:1334722256403)
+4/18/2012 0:13:33,1334721520175:::South Africa,./../audio_stimuli/recs2/19pre1.mp3,-5,1518,2268:::Played stimuli ./../audio_stimuli/recs2/19pre1.mp3; (-5:1334722412532)
+4/18/2012 0:13:57,1334721520175:::South Africa,./../audio_stimuli/recs2/16pre2.mp3,-5,2134,3132:::Played stimuli ./../audio_stimuli/recs2/16pre2.mp3; (-5:1334722436309)
+4/18/2012 0:15:17,1334721520175:::South Africa,./../audio_stimuli/recs2/23pre1.mp3,-5,4821,3204:::Played stimuli ./../audio_stimuli/recs2/23pre1.mp3; (-4:1334722513006); (-3:1334722514928); (-4:1334722515814); (-5:1334722515840)
+4/18/2012 0:28:08,1334723102585:::Sussex,./../audio_stimuli/recs4/38pre3.mp3,-5,4696,3240:::Played stimuli ./../audio_stimuli/recs4/38pre3.mp3; (-1:1334723280374); (-2:1334723280407); (-5:1334723280441)
+4/18/2012 0:29:35,1334723102585:::Sussex,./../audio_stimuli/recs3/36pre5.mp3,-5,1972,2772:::Played stimuli ./../audio_stimuli/recs3/36pre5.mp3; (0:1334723369466); (-1:1334723369490); (-2:1334723369530); (-5:1334723369564)
+4/18/2012 0:29:54,1334723102585:::Sussex,./../audio_stimuli/recs3/36pre5.mp3,0,20737,2772:::Played stimuli ./../audio_stimuli/recs3/36pre5.mp3; (0:1334723369466); (-1:1334723369490); (-2:1334723369530); (-5:1334723369564)
+4/18/2012 0:32:58,1334723102585:::Sussex,./../audio_stimuli/recs1/04pre3.mp3,-5,1095,2412:::Played stimuli ./../audio_stimuli/recs1/04pre3.mp3; (0:1334723572928); (-1:1334723572968); (-2:1334723573015); (-4:1334723573049); (-5:1334723573082)
+4/18/2012 0:33:24,1334723102585:::Sussex,./../audio_stimuli/recs1/01pre1.mp3,-5,333,2880:::Played stimuli ./../audio_stimuli/recs1/01pre1.mp3; (0:1334723598511); (-1:1334723598520); (-2:1334723598578); (-3:1334723598610); (-4:1334723598648); (-5:1334723598677)
+4/18/2012 0:33:36,1334723102585:::Sussex,./../audio_stimuli/recs1/01pre1.mp3,0,12796,2880:::Played stimuli ./../audio_stimuli/recs1/01pre1.mp3; (0:1334723598511); (-1:1334723598520); (-2:1334723598578); (-3:1334723598610); (-4:1334723598648); (-5:1334723598677)
+4/18/2012 0:43:26,1334724045978:::Sussex,./../audio_stimuli/recs4/40pre3.mp3,0,14632,2772:::Played stimuli ./../audio_stimuli/recs4/40pre3.mp3
+4/18/2012 0:45:18,1334724045978:::Sussex,./../audio_stimuli/recs1/02pre4.mp3,-5,5753,3312:::Played stimuli ./../audio_stimuli/recs1/02pre4.mp3
+4/18/2012 0:48:04,1334724045978:::Sussex,./../audio_stimuli/recs1/06pre5.mp3,-5,8124,3060:::Played stimuli ./../audio_stimuli/recs1/06pre5.mp3; (-5:1334724480703)
+4/18/2012 0:48:15,1334724045978:::Sussex,./../audio_stimuli/recs1/07pre2.mp3,-5,5601,4140:::Played stimuli ./../audio_stimuli/recs1/07pre2.mp3
+4/18/2012 0:48:57,1334724045978:::Sussex,./../audio_stimuli/recs4/38pre4.mp3,-5,3978,3312:::Played stimuli ./../audio_stimuli/recs4/38pre4.mp3
+4/18/2012 0:59:29,1334724045978:::Sussex,./../audio_stimuli/recs2/15pre2.mp3,2,16851,3780:::Played stimuli ./../audio_stimuli/recs2/15pre2.mp3; (2:1334725165396)
+4/18/2012 1:08:45,1334724045978:::Sussex,./../audio_stimuli/recs4/44pre1.mp3,-5,11336,2880:::Played stimuli ./../audio_stimuli/recs4/44pre1.mp3; (-4:1334725717755); (-5:1334725719620)
+4/18/2012 1:11:59,1334725706043:::Sussex,./../audio_stimuli/recs4/49pre4.mp3,-5,18513,2844:::Played stimuli ./../audio_stimuli/recs4/49pre4.mp3; (0:1334725912411); (-1:1334725912525); (-2:1334725912565); (-3:1334725912612); (-4:1334725912646); (-5:1334725912680)
+4/18/2012 1:12:07,1334725706043:::Sussex,./../audio_stimuli/recs1/07pre1.mp3,-5,3094,3888:::Played stimuli ./../audio_stimuli/recs1/07pre1.mp3; (0:1334725921021); (-1:1334725921037); (-2:1334725921053); (-4:1334725921078); (-5:1334725921085)
+4/18/2012 1:12:22,1334725706043:::Sussex,./../audio_stimuli/recs1/07pre1.mp3,0,18158,3888:::Played stimuli ./../audio_stimuli/recs1/07pre1.mp3; (0:1334725921021); (-1:1334725921037); (-2:1334725921053); (-4:1334725921078); (-5:1334725921085)
+4/18/2012 1:12:48,1334725706043:::Sussex,./../audio_stimuli/recs2/20pre4.mp3,-5,2323,2160:::Played stimuli ./../audio_stimuli/recs2/20pre4.mp3; (0:1334725962146); (-1:1334725962231); (-2:1334725962264); (-3:1334725962298); (-5:1334725962331)
+4/18/2012 1:14:29,1334725706043:::Sussex,./../audio_stimuli/recs3/28pre1.mp3,-5,2755,3708:::Played stimuli ./../audio_stimuli/recs3/28pre1.mp3; (0:1334726063624); (-1:1334726063640); (-2:1334726063675); (-3:1334726063680); (-5:1334726063709)
+4/18/2012 1:16:16,1334725706043:::Sussex,./../audio_stimuli/recs3/36pre5.mp3,-5,3237,2772:::Played stimuli ./../audio_stimuli/recs3/36pre5.mp3; (0:1334726170730); (-1:1334726170746); (-3:1334726170794); (-4:1334726170802); (-5:1334726170828)
+4/18/2012 1:19:28,1334725706043:::Sussex,./../audio_stimuli/recs4/41pre4.mp3,-5,2650,3672:::Played stimuli ./../audio_stimuli/recs4/41pre4.mp3; (0:1334726362770); (-1:1334726362778); (-2:1334726362794); (-3:1334726362802); (-5:1334726362810)
+4/18/2012 1:22:16,1334724045978:::Sussex,./../audio_stimuli/recs1/11pre3.mp3,-5,6479,2340:::Played stimuli ./../audio_stimuli/recs1/11pre3.mp3; (-5:1334726532250)
+4/18/2012 1:23:29,1334724045978:::Sussex,./../audio_stimuli/recs1/01pre5.mp3,-5,4786,2627:::Played stimuli ./../audio_stimuli/recs1/01pre5.mp3; (-5:1334726605277)
+4/18/2012 1:24:14,1334725706043:::Sussex,./../audio_stimuli/recs1/07pre4.mp3,-5,1629,4608:::Played stimuli ./../audio_stimuli/recs1/07pre4.mp3; (0:1334726647558); (-1:1334726647623); (-2:1334726647662); (-3:1334726647694); (-4:1334726647722); (-5:1334726647755)
+4/18/2012 1:34:53,1334724045978:::Sussex,./../audio_stimuli/recs2/15pre6.mp3,-5,828,6155:::Played stimuli ./../audio_stimuli/recs2/15pre6.mp3
+4/18/2012 8:24:39,1334751715447:::South Africa,./../audio_stimuli/recs3/27pre4.mp3,-5,12706,3276:::Played stimuli ./../audio_stimuli/recs3/27pre4.mp3; (-5:1334751867793)
+4/18/2012 8:27:45,1334751715447:::South Africa,./../audio_stimuli/recs4/49pre5.mp3,-4,6359,2628:::Played stimuli ./../audio_stimuli/recs4/49pre5.mp3; (-4:1334752063471)
+4/18/2012 8:29:23,1334751715447:::South Africa,./../audio_stimuli/recs2/23pre6.mp3,-5,2090,4140:::Played stimuli ./../audio_stimuli/recs2/23pre6.mp3
+4/18/2012 8:30:36,1334751715447:::South Africa,./../audio_stimuli/recs2/25pre3.mp3,-5,1902,3780:::Played stimuli ./../audio_stimuli/recs2/25pre3.mp3; (-5:1334752236097)
+4/18/2012 8:32:40,1334751715447:::South Africa,./../audio_stimuli/recs4/44pre6.mp3,-5,3098,4104:::Played stimuli ./../audio_stimuli/recs4/44pre6.mp3; (-5:1334752360854)
+4/18/2012 8:33:34,1334751715447:::South Africa,./../audio_stimuli/recs1/02pre2.mp3,-4,2959,2448:::Played stimuli ./../audio_stimuli/recs1/02pre2.mp3; (-4:1334752415064)
+4/18/2012 8:34:27,1334751715447:::South Africa,./../audio_stimuli/recs2/25pre1.mp3,-5,1361,3492:::Played stimuli ./../audio_stimuli/recs2/25pre1.mp3; (-5:1334752468527)
+4/18/2012 8:35:39,1334751715447:::South Africa,./../audio_stimuli/recs2/13pre1.mp3,-5,2059,2808:::Played stimuli ./../audio_stimuli/recs2/13pre1.mp3; (-5:1334752539803)
+4/18/2012 8:37:14,1334751715447:::South Africa,./../audio_stimuli/recs2/20pre5.mp3,-5,2393,2268:::Played stimuli ./../audio_stimuli/recs2/20pre5.mp3; (-5:1334752636218)
+4/18/2012 8:37:28,1334751715447:::South Africa,./../audio_stimuli/recs3/35pre1.mp3,-5,1700,3996:::Played stimuli ./../audio_stimuli/recs3/35pre1.mp3; (-5:1334752649436)
+4/18/2012 8:40:42,1334751715447:::South Africa,./../audio_stimuli/recs4/40pre4.mp3,-5,3705,2808:::Played stimuli ./../audio_stimuli/recs4/40pre4.mp3; (-5:1334752844866)
+4/18/2012 8:40:49,1334751715447:::South Africa,./../audio_stimuli/recs4/47pre3.mp3,-5,3424,2556:::Played stimuli ./../audio_stimuli/recs4/47pre3.mp3
+4/18/2012 13:15:51,1334769315150:::Russia,./../audio_stimuli/recs4/39pre6.mp3,-5,848,3852:::Played stimuli ./../audio_stimuli/recs4/39pre6.mp3; (0:1334769357263); (-1:1334769357351); (-2:1334769357439); (-3:1334769357519); (-4:1334769357583); (-5:1334769357655)
+4/18/2012 13:22:35,1334769315150:::Russia,./../audio_stimuli/recs1/03pre3.mp3,-5,381,3492:::Played stimuli ./../audio_stimuli/recs1/03pre3.mp3; (0:1334769760271); (-1:1334769760327); (-2:1334769760423); (-3:1334769760455); (-4:1334769760495); (-5:1334769760647)
+4/18/2012 13:24:04,1334769315150:::Russia,./../audio_stimuli/recs4/50pre6.mp3,-5,1487,3887:::Played stimuli ./../audio_stimuli/recs4/50pre6.mp3; (0:1334769849607); (-1:1334769849656); (-2:1334769849759); (-3:1334769849791); (-4:1334769849839); (-5:1334769850951)
+4/18/2012 13:24:56,1334769315150:::Russia,./../audio_stimuli/recs3/30pre3.mp3,-5,2834,2772:::Played stimuli ./../audio_stimuli/recs3/30pre3.mp3; (0:1334769901460); (-1:1334769901951); (-2:1334769902023); (-3:1334769902087); (-4:1334769902127); (-5:1334769902239)
+4/18/2012 13:29:51,1334770071533:::Sussex,./../audio_stimuli/recs4/38pre3.mp3,-5,10086,3240:::Played stimuli ./../audio_stimuli/recs4/38pre3.mp3; (-1:1334770187487); (-2:1334770187567); (-3:1334770187635); (-4:1334770187693); (-5:1334770187761)
+4/18/2012 13:29:59,1334770071533:::Sussex,./../audio_stimuli/recs1/06pre1.mp3,-5,4120,3060:::Played stimuli ./../audio_stimuli/recs1/06pre1.mp3; (0:1334770196064); (-1:1334770196151); (-2:1334770196264); (-3:1334770196326); (-4:1334770196370); (-5:1334770196437)
+4/18/2012 13:30:24,1334770071533:::Sussex,./../audio_stimuli/recs4/48pre1.mp3,-4,13572,3708:::Played stimuli ./../audio_stimuli/recs4/48pre1.mp3; (0:1334770215883); (-1:1334770215953); (-2:1334770216099); (-3:1334770216739); (-4:1334770217123)
+4/18/2012 13:30:26,1334769315150:::Russia,./../audio_stimuli/recs4/38pre5.mp3,-3,15,6155:::Played stimuli ./../audio_stimuli/recs4/38pre5.mp3; (0:1334770232536); (-1:1334770232551); (-2:1334770232607); (-3:1334770232791)
+4/18/2012 13:31:14,1334770071533:::Sussex,./../audio_stimuli/recs3/26pre1.mp3,-5,3164,3384:::Played stimuli ./../audio_stimuli/recs3/26pre1.mp3; (-5:1334770271703)
+4/18/2012 13:33:32,1334770071533:::Sussex,./../audio_stimuli/recs3/30pre4.mp3,-5,3505,3564:::Played stimuli ./../audio_stimuli/recs3/30pre4.mp3; (-5:1334770409856)
+4/18/2012 13:35:11,1334770071533:::Sussex,./../audio_stimuli/recs2/24pre1.mp3,-5,3228,3672:::Played stimuli ./../audio_stimuli/recs2/24pre1.mp3
+4/18/2012 13:36:59,1334770071533:::Sussex,./../audio_stimuli/recs1/12pre4.mp3,-5,3245,3528:::Played stimuli ./../audio_stimuli/recs1/12pre4.mp3; (-5:1334770616214)
+4/18/2012 13:37:52,1334770071533:::Sussex,./../audio_stimuli/recs2/22pre5.mp3,-5,2376,2916:::Played stimuli ./../audio_stimuli/recs2/22pre5.mp3; (-5:1334770669676)
+4/18/2012 13:39:43,1334770071533:::Sussex,./../audio_stimuli/recs1/05pre3.mp3,-5,1897,2772:::Played stimuli ./../audio_stimuli/recs1/05pre3.mp3; (-5:1334770781241)
+4/18/2012 13:43:19,1334770071533:::Sussex,./../audio_stimuli/recs4/39pre4.mp3,-5,2090,2808:::Played stimuli ./../audio_stimuli/recs4/39pre4.mp3; (-5:1334770996798)
+4/18/2012 13:44:04,1334770071533:::Sussex,./../audio_stimuli/recs2/16pre5.mp3,-5,924,3348:::Played stimuli ./../audio_stimuli/recs2/16pre5.mp3; (-5:1334771041909)
+4/18/2012 13:44:17,1334770071533:::Sussex,./../audio_stimuli/recs2/16pre5.mp3,0,13342,3348:::Played stimuli ./../audio_stimuli/recs2/16pre5.mp3; (-5:1334771041909)
+4/18/2012 13:44:44,1334770071533:::Sussex,./../audio_stimuli/recs2/15pre6.mp3,-5,-816,6156:::Played stimuli ./../audio_stimuli/recs2/15pre6.mp3
+4/18/2012 13:48:03,1334770071533:::Sussex,./../audio_stimuli/recs4/49pre4.mp3,-5,1720,2844:::Played stimuli ./../audio_stimuli/recs4/49pre4.mp3; (-5:1334771281086)
+4/18/2012 13:51:09,1334770071533:::Sussex,./../audio_stimuli/recs3/35pre6.mp3,-5,2726,6408:::Played stimuli ./../audio_stimuli/recs3/35pre6.mp3
+4/18/2012 13:51:46,1334770071533:::Sussex,./../audio_stimuli/recs1/09pre4.mp3,-5,2354,3168:::Played stimuli ./../audio_stimuli/recs1/09pre4.mp3
+4/18/2012 13:52:37,1334506609217:::Sussex,./../audio_stimuli/recs1/01pre6.mp3,-5,2891,3996:::Played stimuli ./../audio_stimuli/recs1/01pre6.mp3; (0:1334771542626); (-1:1334771542677); (-2:1334771542701); (-3:1334771542714); (-4:1334771542728); (-5:1334771542738)
+4/18/2012 13:56:54,1334506609217:::Sussex,./../audio_stimuli/recs3/28pre2.mp3,-5,4345,3132:::Played stimuli ./../audio_stimuli/recs3/28pre2.mp3; (0:1334771798534); (1:1334771798747); (2:1334771799022); (1:1334771799383); (0:1334771799407); (-1:1334771799420); (-2:1334771799433); (-3:1334771799447); (-4:1334771799457); (-5:1334771799487)
+4/18/2012 13:57:38,1334506609217:::Sussex,./../audio_stimuli/recs1/11pre3.mp3,-5,3894,2340:::Played stimuli ./../audio_stimuli/recs1/11pre3.mp3; (0:1334771842071); (-1:1334771842133); (-2:1334771842144); (-3:1334771842157); (-4:1334771842183); (-5:1334771843770)
+4/18/2012 15:52:07,1334778348625:::Russia,./../audio_stimuli/recs1/10pre1.mp3,-5,9719,3132:::Played stimuli ./../audio_stimuli/recs1/10pre1.mp3; (-5:1334778724650)
+4/18/2012 15:59:33,1334778348625:::Russia,./../audio_stimuli/recs2/14pre2.mp3,-3,4334,2412:::Played stimuli ./../audio_stimuli/recs2/14pre2.mp3; (-3:1334779176940)
+4/18/2012 16:01:28,1334778348625:::Russia,./../audio_stimuli/recs1/12pre3.mp3,2,19143,3312:::Played stimuli ./../audio_stimuli/recs1/12pre3.mp3; (2:1334779291068)
+4/18/2012 16:01:38,1334778348625:::Russia,./../audio_stimuli/recs2/14pre5.mp3,-2,6725,2484:::Played stimuli ./../audio_stimuli/recs2/14pre5.mp3; (-2:1334779301227)
+4/18/2012 16:05:31,1334778348625:::Russia,./../audio_stimuli/recs3/27pre6.mp3,-4,12529,4500:::Played stimuli ./../audio_stimuli/recs3/27pre6.mp3; (-4:1334779534977)
+4/18/2012 16:06:23,1334778438023:::Sussex,./../audio_stimuli/recs1/06pre6.mp3,-4,11857,4463:::Played stimuli ./../audio_stimuli/recs1/06pre6.mp3; (0:1334779582069); (-1:1334779582223); (-2:1334779582436); (-3:1334779582688); (-4:1334779583138)
+4/18/2012 16:07:20,1334778348625:::Russia,./../audio_stimuli/recs1/07pre1.mp3,-5,5149,3888:::Played stimuli ./../audio_stimuli/recs1/07pre1.mp3; (-5:1334779643587)
+4/18/2012 16:10:29,1334778348625:::Russia,./../audio_stimuli/recs1/11pre1.mp3,-4,4187,2412:::Played stimuli ./../audio_stimuli/recs1/11pre1.mp3; (-4:1334779833061)
+4/18/2012 16:12:48,1334778348625:::Russia,./../audio_stimuli/recs3/31pre3.mp3,-3,8813,2592:::Played stimuli ./../audio_stimuli/recs3/31pre3.mp3; (-3:1334779972000)
+4/18/2012 16:13:56,1334778348625:::Russia,./../audio_stimuli/recs4/39pre1.mp3,-4,3600,2880:::Played stimuli ./../audio_stimuli/recs4/39pre1.mp3; (-4:1334780039492)
+4/18/2012 16:14:11,1334778348625:::Russia,./../audio_stimuli/recs4/43pre6.mp3,-4,9934,4284:::Played stimuli ./../audio_stimuli/recs4/43pre6.mp3; (-3:1334780051713); (-4:1334780052960)
+4/18/2012 16:16:20,1334778348625:::Russia,./../audio_stimuli/recs3/36pre2.mp3,-4,4638,2160:::Played stimuli ./../audio_stimuli/recs3/36pre2.mp3; (-4:1334780183711)
+4/18/2012 16:16:26,1334778438023:::Sussex,./../audio_stimuli/recs4/39pre2.mp3,-5,3308,2735:::Played stimuli ./../audio_stimuli/recs4/39pre2.mp3; (-5:1334780186744)
+4/18/2012 16:16:36,1334778438023:::Sussex,./../audio_stimuli/recs4/47pre6.mp3,-5,5255,3635:::Played stimuli ./../audio_stimuli/recs4/47pre6.mp3
+4/18/2012 16:19:53,1334778438023:::Sussex,./../audio_stimuli/recs3/28pre1.mp3,-5,3237,3707:::Played stimuli ./../audio_stimuli/recs3/28pre1.mp3; (-5:1334780393615)
+4/18/2012 16:33:00,1334778438023:::Sussex,./../audio_stimuli/recs2/15pre6.mp3,-4,6123,6155:::Played stimuli ./../audio_stimuli/recs2/15pre6.mp3
+4/18/2012 16:33:30,1334778438023:::Sussex,./../audio_stimuli/recs2/22pre6.mp3,-4,3184,5075:::Played stimuli ./../audio_stimuli/recs2/22pre6.mp3; (-4:1334781211754)
+4/18/2012 16:41:29,1334778438023:::Sussex,./../audio_stimuli/recs2/17pre1.mp3,-4,4232,2123:::Played stimuli ./../audio_stimuli/recs2/17pre1.mp3
+4/18/2012 16:47:18,1334778438023:::Sussex,./../audio_stimuli/recs3/36pre1.mp3,-5,3248,2555:::Played stimuli ./../audio_stimuli/recs3/36pre1.mp3; (-5:1334782039610)
+4/18/2012 16:49:17,1334778438023:::Sussex,./../audio_stimuli/recs3/33pre5.mp3,-3,7474,3132:::Played stimuli ./../audio_stimuli/recs3/33pre5.mp3; (-4:1334782155595); (-3:1334782158108)
+4/18/2012 16:50:57,1334778438023:::Sussex,./../audio_stimuli/recs1/12pre3.mp3,-4,3676,3312:::Played stimuli ./../audio_stimuli/recs1/12pre3.mp3
+4/18/2012 17:15:25,1334783519205:::Russia,./../audio_stimuli/recs2/20pre1.mp3,-5,6802,2376:::Played stimuli ./../audio_stimuli/recs2/20pre1.mp3; (0:1334783726053); (-1:1334783726101); (-2:1334783726138); (-3:1334783726150); (-4:1334783726162); (-5:1334783726187)
+4/18/2012 17:17:07,1334783519205:::Russia,./../audio_stimuli/recs3/29pre5.mp3,-5,5910,3204:::Played stimuli ./../audio_stimuli/recs3/29pre5.mp3; (0:1334783827574); (-1:1334783827662); (-2:1334783827697); (-3:1334783827735); (-4:1334783827771); (-5:1334783827919)
+4/18/2012 17:18:57,1334783519205:::Russia,./../audio_stimuli/recs3/31pre1.mp3,-5,7036,2160:::Played stimuli ./../audio_stimuli/recs3/31pre1.mp3; (0:1334783934937); (-1:1334783935024); (-2:1334783935084); (-3:1334783935134); (-4:1334783935219); (-5:1334783935843); (-4:1334783936186); (-5:1334783937902)
+4/18/2012 17:23:42,1334783519205:::Russia,./../audio_stimuli/recs2/25pre4.mp3,-5,3038,3312:::Played stimuli ./../audio_stimuli/recs2/25pre4.mp3; (0:1334784223263); (-1:1334784223300); (-2:1334784223323); (-3:1334784223336); (-4:1334784223348); (-5:1334784223374)
+4/18/2012 17:26:11,1334783519205:::Russia,./../audio_stimuli/recs1/12pre4.mp3,5,4392,3528:::Played stimuli ./../audio_stimuli/recs1/12pre4.mp3; (0:1334784372432); (1:1334784372457); (2:1334784372518); (3:1334784372557); (4:1334784372579); (5:1334784372622)
+4/18/2012 17:29:35,1334783519205:::Russia,./../audio_stimuli/recs1/08pre3.mp3,-5,5166,3204:::Played stimuli ./../audio_stimuli/recs1/08pre3.mp3; (0:1334784574519); (-1:1334784574556); (-2:1334784574580); (-3:1334784574592); (-5:1334784574608); (2:1334784575306); (1:1334784576468); (0:1334784576479); (-1:1334784576493); (-2:1334784576505); (-3:1334784576517); (-4:1334784576529); (-5:1334784576541)
+4/18/2012 17:30:04,1334783519205:::Russia,./../audio_stimuli/recs1/06pre4.mp3,4,4562,3132:::Played stimuli ./../audio_stimuli/recs1/06pre4.mp3; (0:1334784603869); (1:1334784603905); (2:1334784603966); (1:1334784604936); (0:1334784604997); (1:1334784605414); (2:1334784605450); (3:1334784605475); (4:1334784605512)
+4/18/2012 17:33:06,1334783519205:::Russia,./../audio_stimuli/recs4/48pre1.mp3,-5,1609,3708:::Played stimuli ./../audio_stimuli/recs4/48pre1.mp3; (0:1334784786982); (-1:1334784787007); (-2:1334784787043); (-3:1334784787057); (-4:1334784787081); (-5:1334784787106)
+4/18/2012 17:33:27,1334783519205:::Russia,./../audio_stimuli/recs4/50pre2.mp3,-5,2803,2448:::Played stimuli ./../audio_stimuli/recs4/50pre2.mp3; (0:1334784808547); (-1:1334784808571); (-2:1334784808585); (-4:1334784808596); (-5:1334784808608)
+4/18/2012 17:36:26,1334783519205:::Russia,./../audio_stimuli/recs1/10pre2.mp3,-5,2250,3348:::Played stimuli ./../audio_stimuli/recs1/10pre2.mp3; (0:1334784986849); (-1:1334784986899); (-3:1334784986912); (-5:1334784986924)
+4/18/2012 17:37:20,1334783519205:::Russia,./../audio_stimuli/recs3/28pre3.mp3,-5,3947,3168:::Played stimuli ./../audio_stimuli/recs3/28pre3.mp3; (0:1334785038766); (-1:1334785038792); (-3:1334785038815); (-4:1334785038827); (-5:1334785038840); (2:1334785039822); (1:1334785040778); (0:1334785040802); (-2:1334785040814); (-4:1334785040828); (-5:1334785040842)
+4/18/2012 18:59:38,1334789900563:::Russia,./../audio_stimuli/recs4/45pre5.mp3,-4,6532,3276:::Played stimuli ./../audio_stimuli/recs4/45pre5.mp3; (-1:1334789972512); (-2:1334789972546); (-3:1334789972595); (-4:1334789972663)
+4/18/2012 19:00:39,1334789900563:::Russia,./../audio_stimuli/recs3/36pre4.mp3,-5,2161,2664:::Played stimuli ./../audio_stimuli/recs3/36pre4.mp3; (-5:1334790033335)
+4/18/2012 19:03:57,1334790050101:::South Africa,./../audio_stimuli/recs3/35pre3.mp3,-5,5176,4608:::Played stimuli ./../audio_stimuli/recs3/35pre3.mp3; (0:1334790233559); (-1:1334790233567); (-2:1334790233582); (-3:1334790233598); (-4:1334790233615); (-5:1334790233654)
+4/18/2012 19:04:04,1334790050101:::South Africa,./../audio_stimuli/recs4/43pre3.mp3,2,2839,3132:::Played stimuli ./../audio_stimuli/recs4/43pre3.mp3; (2:1334790241751)
+4/18/2012 22:38:10,1334802889278:::Russia,./../audio_stimuli/recs2/25pre2.mp3,-5,2836,3095:::Played stimuli ./../audio_stimuli/recs2/25pre2.mp3; (-5:1334803091031)
+4/18/2012 22:42:56,1334802889278:::Russia,./../audio_stimuli/recs4/41pre6.mp3,3,3226,4607:::Played stimuli ./../audio_stimuli/recs4/41pre6.mp3; (-4:1334803374866); (-3:1334803375175); (1:1334803376248); (3:1334803377357)
+4/18/2012 22:43:39,1334802889278:::Russia,./../audio_stimuli/recs1/05pre5.mp3,-5,1108,2663:::Played stimuli ./../audio_stimuli/recs1/05pre5.mp3; (-5:1334803420258)
+4/18/2012 22:43:49,1334802889278:::Russia,./../audio_stimuli/recs1/05pre5.mp3,0,11648,2663:::Played stimuli ./../audio_stimuli/recs1/05pre5.mp3; (-5:1334803420258)
+4/18/2012 22:45:52,1334802889278:::Russia,./../audio_stimuli/recs4/44pre1.mp3,-5,1316,2880:::Played stimuli ./../audio_stimuli/recs4/44pre1.mp3; (-5:1334803553342)
+4/18/2012 22:46:10,1334802889278:::Russia,./../audio_stimuli/recs2/14pre1.mp3,-5,2178,2520:::Played stimuli ./../audio_stimuli/recs2/14pre1.mp3; (-5:1334803572133)
+4/19/2012 10:14:48,1334844520454:::Russia,./../audio_stimuli/recs1/04pre3.mp3,-3,8365,2412:::Played stimuli ./../audio_stimuli/recs1/04pre3.mp3; (-3:1334844888503)
+4/19/2012 10:20:29,1334844520454:::Russia,./../audio_stimuli/recs1/02pre2.mp3,0,13179,2448:::Played stimuli ./../audio_stimuli/recs1/02pre2.mp3
+4/19/2012 10:24:31,1334844520454:::Russia,./../audio_stimuli/recs4/38pre3.mp3,3,20497,3240:::Played stimuli ./../audio_stimuli/recs4/38pre3.mp3; (3:1334845466537)
+4/19/2012 10:24:56,1334844520454:::Russia,./../audio_stimuli/recs2/15pre4.mp3,-2,18309,5148:::Played stimuli ./../audio_stimuli/recs2/15pre4.mp3; (-2:1334845490830)
