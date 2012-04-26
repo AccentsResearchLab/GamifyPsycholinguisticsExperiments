@@ -25,6 +25,15 @@ h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
   	 main=title) 
 dev.off()
 
+# histogram for all lab participants recationtime for the native
+pdf("~/Downloads/SpyOrNot/analysis/reactiontime_native_histogram.pdf",width=6,height=6,paper='special')
+x <- native$reactionTime
+title <-"Histogram of Votes for Native Speaker Stimuli"
+h<-hist(x, breaks=1000000, col="red", xlab="Vote", yaxt="n", xlim=range(-2000,5000)
+  	 main=title) 
+dev.off()
+
+
 pre <- read.table("~/Downloads/SpyOrNot/analysis/pre.csv", header=TRUE, sep="," )
 # histogram for all lab participants votes
 pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_pretest_histogram.pdf",width=6,height=6,paper='special')
