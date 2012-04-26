@@ -1,4 +1,4 @@
-x#create labels for plots
+#create labels for plots
 participantIDlabel <- "ParticipantID"
 audioStimulilabel <- "AudioStimuli"
 votelabel <- "(n=11)"
@@ -14,9 +14,18 @@ x <- SpyOrNot$vote
 title <-"Histogram of Votes"
 h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
   	 main=title) 
+b<-boxplot(x)
 dev.off()
 
+# histogram for the majority of the reaction times
+# requires that you remove the NULL rows from the .csv
+pdf("~/Downloads/SpyOrNot/analysis/reaction_times_histogram.pdf",width=6,height=6,paper='special')
 native <- read.table("~/Downloads/SpyOrNot/analysis/native.csv", header=TRUE, sep="," )
+x <- native$reactionTime
+h<-hist(x, breaks=10000, col="red", xlab="Reaction Time (ms)", yaxt="n", main=title, xlim=range(-2000,5000))
+dev.off()
+
+native <- read.table("~/github/GamifyPsycholinguisticsExperiments/analysis/native.csv", header=TRUE, sep="," )
 # histogram for all lab participants votes
 pdf("~/Downloads/SpyOrNot/analysis/votes_native_histogram.pdf",width=6,height=6,paper='special')
 x <- native$vote
