@@ -1,31 +1,112 @@
 #create labels for plots
-articulationlabel <- "Articulation rate (syl/phonation)"
-labparticipantslabel <- "Lab Participants"
-bloggingpodcasterslabel <- "Blogging Podcasters"
-nusableparticipants <- "(n=5)"
-nallparticipants <- "(n=12)"
+participantIDlabel <- "ParticipantID"
+audioStimulilabel <- "AudioStimuli"
+votelabel <- "(n=11)"
+reactionlabel <- "reaction"
 
 
 #read in data
-aublog <- read.table("/Users/gina/Documents/aublog/results/resultsboxplotformat.csv", header=TRUE, sep="," )
-aublogall <- read.table("/Users/gina/Documents/aublog/results/results.csv", header=TRUE, sep="," )
+SpyOrNot <- read.table("~/Downloads/SpyOrNot/analysis/SpyOrNotVoteTable120419.csv", header=TRUE, sep="," )
 
-# histogram for all lab participant aritculation rate
-pdf("/Users/gina/Documents/aublog/results/histogramalllab.pdf",width=6,height=6,paper='special')
-x <- aublogall$artirate
-title <-paste(labparticipantslabel,nallparticipants, sep = " ", collapse = NULL)
-h<-hist(x, breaks=10, col="red", xlab=articulationlabel, yaxt="n",
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_histogram.pdf",width=6,height=6,paper='special')
+x <- SpyOrNot$vote
+title <-"Histogram of Votes"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
   	 main=title) 
-xfit<-seq(min(x),max(x),length=40) 
-yfit<-dnorm(xfit,mean=mean(x),sd=sd(x)) 
-yfit <- yfit*diff(h$mids[1:2])*length(x) 
-lines(xfit, yfit, col="blue", lwd=2)
+b<-boxplot(x)
 dev.off()
+
+# histogram for the majority of the reaction times
+# requires that you remove the NULL rows from the .csv
+pdf("~/Downloads/SpyOrNot/analysis/reaction_times_histogram.pdf",width=6,height=6,paper='special')
+native <- read.table("~/Downloads/SpyOrNot/analysis/native.csv", header=TRUE, sep="," )
+x <- native$reactionTime
+h<-hist(x, breaks=10000, col="red", xlab="Reaction Time (ms)", yaxt="n", main=title, xlim=range(-2000,5000))
+dev.off()
+
+native <- read.table("~/github/GamifyPsycholinguisticsExperiments/analysis/native.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_histogram.pdf",width=6,height=6,paper='special')
+x <- native$vote
+title <-"Histogram of Votes for Native Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+# histogram for all lab participants recationtime for the native
+pdf("~/Downloads/SpyOrNot/analysis/reactiontime_native_histogram.pdf",width=6,height=6,paper='special')
+x <- native$reactionTime
+title <-"Histogram of Votes for Native Speaker Stimuli"
+h<-hist(x, breaks=1000000, col="red", xlab="Vote", yaxt="n", xlim=range(-2000,5000)
+  	 main=title) 
+dev.off()
+
+
+pre <- read.table("~/Downloads/SpyOrNot/analysis/pre.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_pretest_histogram.pdf",width=6,height=6,paper='special')
+x <- pre$vote
+title <-"Histogram of Votes for Non-Native Speaker Pre-test Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+post <- read.table("~/Downloads/SpyOrNot/analysis/post.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_posttest_histogram.pdf",width=6,height=6,paper='special')
+x <- post$vote
+title <-"Histogram of Votes for Non-Native Speaker Post-test Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+unknown <- read.table("~/Downloads/SpyOrNot/analysis/target.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_non-native_unknowntest_histogram.pdf",width=6,height=6,paper='special')
+x <- post$vote
+title <-"Histogram of Votes for Non-Native Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+
+rusnative <- read.table("~/Downloads/SpyOrNot/analysis/nativerussian.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_russian_histogram.pdf",width=6,height=6,paper='special')
+x <- rusnative$vote
+title <-"Histogram of Votes for Native Russian Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+souafrnative <- read.table("~/Downloads/SpyOrNot/analysis/nativesouthafrican.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_southafrican_histogram.pdf",width=6,height=6,paper='special')
+x <- souafrnative$vote
+title <-"Histogram of Votes for Native South African Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+
+
+sussexnative <- read.table("~/Downloads/SpyOrNot/analysis/nativesussex.csv", header=TRUE, sep="," )
+# histogram for all lab participants votes
+pdf("~/Downloads/SpyOrNot/analysis/votes_native_sussex_histogram.pdf",width=6,height=6,paper='special')
+x <- sussexnative$vote
+title <-"Histogram of Votes for Native Sussex Speaker Stimuli"
+h<-hist(x, breaks=11, col="red", xlab="Vote", yaxt="n",
+  	 main=title) 
+dev.off()
+####################################################
+
+
+
 
 #Box plot comparing articulation rate in the two blog drafts
 # http://www.statmethods.net/graphs/boxplot.html
-pdf("/Users/gina/Documents/aublog/results/boxplotusablelab.pdf",width=6,height=6,paper='special')
-title <-paste(labparticipantslabel,nusableparticipants,"p = 0.2662", sep = " ", collapse = NULL)
+pdf("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/boxplot.pdf",width=6,height=6,paper='special')
+title <-paste(participantIDlabel,nusableparticipants,"p = 0.2662", sep = " ", collapse = NULL)
 boxplot(artirate~draft,data=aublog, notch=TRUE, col=(c("red","darkgreen")), main=title,  xlab="(Insignificant Tendency for faster syllable timing in second Blog Draft)", ylab=articulationlabel)
 dev.off()
 
@@ -35,8 +116,8 @@ dev.off()
 
 
 #Compaire groups via kernal density
-pdf("/Users/gina/Documents/aublog/results/densityusablelab.pdf",width=6,height=6,paper='special')
-title <-paste(labparticipantslabel,"density distribution",nusableparticipants, sep = " ", collapse = NULL)
+pdf("/Users/mdotedot/Documents/iLanguageLab/SpyOrNotResults/densityusablelab.pdf",width=6,height=6,paper='special')
+title <-paste(votelabel,"density distribution",participantIDlabel, sep = " ", collapse = NULL)
 sm.density.compare(aublog$artirate, aublog$draft, xlab=articulationlabel) 
 title(main=title)
 # add legend via mouse click
