@@ -6,7 +6,7 @@ var addVoteDetails = function(newValue) {
    /* QUESTION: Why is this Date.now() instead of moment?
     */
    window.lastAction = Date.now();
-}
+};
 
 // Draw the spy meter as a collection of heat-coloured buttons.
 // Note: This is a workaround for platforms that do not support the 
@@ -35,7 +35,7 @@ var drawMeter = function() {
 // spy meter to the HTML slider version.
 var transferVoteToMeter = function(value) {
    document.getElementById("meter").value = value;
-}
+};
 
 var voteMeter = function(newValue) {
    // Calculate how long it's been since the audio started playing

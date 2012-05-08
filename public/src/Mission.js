@@ -6,7 +6,7 @@ loadData("./../json/game_description.json", null);
 // Display the mission text and play the mission audio for the given
 // gameindex. Valid game indexes are the valid index in the 
 // window.games array.
-setGameLanguage = function(gameindex) {
+var setGameLanguage = function(gameindex) {
    // Store which language the user wants to play
    window.currentGame = gameindex;
 
@@ -60,13 +60,13 @@ setGameLanguage = function(gameindex) {
          localStorage.setItem("game", JSON.stringify(window.game));
       };
    }
-}
+};
 
 // Play or pause the mission audio depending on whether the 
 // event.target.value is that of a pause button or a play button.
 // Also keep track of the user's play/pause activity in the
 // visitor object.
-playGameMission = function(event) {
+var playGameMission = function(event) {
    if (event.target.value.indexOf("Pause") > -1) {
       // Change the button's text to make it a play button
       event.target.value = "Play Sound Check";
@@ -101,7 +101,7 @@ playGameMission = function(event) {
         localStorage.setItem("visitor", JSON.stringify(visitor));
       }
    }
-}
+};
 
 // Based on the user's settings (location, browser language, acceptlanguage),
 // try to guess which game (Russia, Sussex, South African) they should play 
@@ -162,7 +162,7 @@ var tryToGuessDialect = function() {
       a.disabled = true;
       a.setAttribute("class", "button");
    }
-}
+};
 
 // After 2000ms, call tryToGuessDialect
 window.setTimeout("tryToGuessDialect();", 2000);

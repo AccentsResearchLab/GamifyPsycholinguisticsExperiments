@@ -2,7 +2,7 @@
 // description from a JSON file on the disk, or from a server.
 
 // Reads in stimuli from a JSON file and calls the callback, if there is one.
-loadStimuliList = function(filename, callback) {
+var loadStimuliList = function(filename, callback) {
    debug("SampleLoaderDisk:loadStimuliList - Loading stimuli");
 
    // Get the list of stimuli from the JSON file
@@ -18,7 +18,7 @@ loadStimuliList = function(filename, callback) {
 };
 
 // Reads in stimuli from a server
-loadRemoteStimuliList = function(filename) {
+var loadRemoteStimuliList = function(filename) {
    // Get the server from where to download the stimuli
    var logicURL = localStorage.getItem("logicUrl");
 
@@ -64,7 +64,7 @@ var getstimuliorder = function(data) {
 
 // Reads in data from a JSON file, stores the data in window.games, and 
 // calls the callback, if there is one.
-loadData = function(filename, callback) {
+var loadData = function(filename, callback) {
    debug("SampleLoaderDisk:loadData - Will read in data");
 
    // Get the list of data from the JSON file

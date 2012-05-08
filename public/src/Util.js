@@ -1,66 +1,57 @@
 // Utility functions
 
-/* QUESTION: Is there any difference between defining a named function like this:
- *			function hasClass(ele, cls) { ... }
- * and like this:
- *			var hasClass = function(ele, cls) { ... };
- * and like this:
- *			hasClass = function(ele, cls) { ... };
- * ?
- */
-
 // Determine whether the given element already has the given class.
-function hasClass(ele, cls) {
+var hasClass = function(ele, cls) {
    return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-}
+};
 
 // If it's not already there, add the given class to the given element
-function addClass(ele, cls) {
+var addClass = function(ele, cls) {
    if (!this.hasClass(ele, cls)) {
       ele.className += " " + cls;
    }
-}
+};
 
 // If the given element has the given class, remove all occurrences
 // of the class from the element.
-function removeClass(ele, cls) {
+var removeClass = function(ele, cls) {
    if (hasClass(ele, cls)) {
       var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)', 'g');
       ele.className = ele.className.replace(reg, ' ');
    }
-}
+};
 
 // Print debug messages to the console.
-debug = function(message) {
+var debug = function(message) {
    console.log(message);
 };
 
 // Print bug message to an alert box.
-bug = function(message) {
+var bug = function(message) {
    alert(message);
-}
+};
 
 // Determine whether the the user is using an Android.
-isAndroidApp = function() {
+var isAndroidApp = function() {
    //Development tablet navigator.userAgent:
    //Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; gTablet Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13 
    //console.log(navigator.userAgent.indexOf("Spy or Not"));
    return navigator.userAgent.indexOf("Spy or Not") > -1;
-}
+};
 
 // Determine whether the user is using an Android 4.
-isAndroid4 = function() {
+var isAndroid4 = function() {
    return navigator.userAgent.indexOf("Android 4") > -1;
-}
+};
 
 // Determine whether the user is using a Chrome Extension.
-isChromeApp = function() {
+var isChromeApp = function() {
    return window.location.href.indexOf("chrome-extension") > -1;
-}
+};
 
 // Play the audio from the <div> with the given divid.
 // Note: Android 4 is able to play HTML5 audio.
-playAudioFile = function(divid) {
+var playAudioFile = function(divid) {
    if (isAndroidApp()) {
       // Use Android JSI method
       Android.playAudio(document.getElementById(divid).src);
@@ -68,11 +59,11 @@ playAudioFile = function(divid) {
       // Use HTML5 audio
       document.getElementById(divid).play();
    }
-}
+};
 
 // Pause the audio from the <div> with the given divid.
 // Note: Android 4 is able to play HTML5 audio.
-pauseAudioFile = function(divid) {
+var pauseAudioFile = function(divid) {
    if (isAndroidApp()) {
       // Use Android JSI method
       Android.pauseAudio();
@@ -80,7 +71,7 @@ pauseAudioFile = function(divid) {
       // Use HTML5 audio
       document.getElementById(divid).pause();
    }
-}
+};
 
 // Set the URL that will be used to download audio files.
 // Note: Android 4 is able to play HTML5 audio.
@@ -139,7 +130,7 @@ var hideBugFrameOnAndroid = function() {
          b.innerHTML="";
       }
    }
-}
+};
 
 hideBugFrameOnAndroid();
 
