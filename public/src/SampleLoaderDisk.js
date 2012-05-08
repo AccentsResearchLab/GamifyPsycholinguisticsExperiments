@@ -62,7 +62,8 @@ var getstimuliorder = function(data) {
    downloadNext12Audio();
 };
 
-// Reads in data from a JSON file and calls the callback, if there is one.
+// Reads in data from a JSON file, stores the data in window.games, and 
+// calls the callback, if there is one.
 loadData = function(filename, callback) {
    debug("SampleLoaderDisk:loadData - Will read in data");
 
