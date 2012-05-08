@@ -2,7 +2,7 @@ The Gamify Psycholinguisics Experiment is a collaboration between Dr. Laura Spin
 
 ## How it works
 
-The experiment is code tries to "gamify" psycho linguistics experiments to get more participants, get participants to share the experiments to gather more data, and data which might be of a reasonable quality... For a quick overview of what is under the hood see https://github.com/AccentsResearchLab/GamifyPsycholinguisticsExperiments/wiki/How-It-Works 
+The experiment is code that tries to "gamify" psycho linguistics experiments to get more participants, get participants to share the experiments to gather more data, and data which might be of a reasonable quality... For a quick overview of what is under the hood see https://github.com/AccentsResearchLab/GamifyPsycholinguisticsExperiments/wiki/How-It-Works .
 
 
 ## Contributors
