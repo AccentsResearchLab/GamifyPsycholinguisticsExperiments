@@ -6,7 +6,6 @@
 	,"missionAudio":"./../mission_audio/russian_distort.ogg"
 	,"description":"Your mission is to assess whether these passengers are from Russia, use the slider on the hot-cold scale to accomplish your mission. \n\nWe will provide you with a report on your progress every 12th stop."
 	}
-
   ,{
 	"language":"Sussex"
 	,"adjective": "Sussex"
@@ -15,7 +14,6 @@
 	,"missionAudio":"./../mission_audio/sussex_distort.ogg"
 	,"description":"Your mission is to assess whether these passengers are from Sussex, use the slider on the hot-cold scale to accomplish your mission. \n\nWe will provide you with a report on your progress every 12th stop."
 	}
-	
 	,{
 	"language":"South Africa"
 	,"adjective": "South African"
@@ -24,24 +22,4 @@
 	,"missionAudio":"./../mission_audio/southAfrica_distort.ogg"
 	,"description":"Your mission is to assess whether these passengers are from South Africa, use the slider on the hot-cold scale to accomplish your mission. \n\nWe will provide you with a report on your progress every 12th stop."
 	}
-
-   ,{
-	"language":"Japan"
-	,"adjective": "Japanese"
-
-	,"stimuliJson":"./../json/audio_stimuli_southafrican.json"
-	,"missionAudio":"./../mission_audio/southAfrica_distort.ogg"
-	,"description":"Your mission is to assess whether these passengers are from Japan, use the slider on the hot-cold scale to accomplish your mission. \n\nWe will provide you with a report on your progress every 12th stop."
-	}
-
-
-	,{
-	"language":"Germany"
-	,"adjective": "German"
-
-	,"stimuliJson":"./../json/audio_stimuli_southafrican.json"
-	,"missionAudio":"./../mission_audio/southAfrica_distort.ogg"
-	,"description":"Your mission is to assess whether these passengers are from Germany, use the slider on the hot-cold scale to accomplish your mission. \n\nWe will provide you with a report on your progress every 12th stop."
-	}
-
 ]
