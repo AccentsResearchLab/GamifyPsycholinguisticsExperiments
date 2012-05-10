@@ -142,6 +142,8 @@ input.green{
     .blue.button:hover                  { background-color: #2575cf; }
     .yellow.button  { background-color: #fbb117; }
     .yellow.button:hover                { background-color: #cf2525; }
+    .deepskyblue.button  { background-color: #3bb9ff; }
+    .deepskyblue.button:hover                { background-color: #ff00ff; }
 
 	.purple.button       { 
 	    background-color: #736aff; }
